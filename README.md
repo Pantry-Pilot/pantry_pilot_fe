@@ -1,26 +1,23 @@
-# README
+# Pantry Pilot Documentation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Contributors
+<ul>
+  <li>Antoine Aube [GitHub]()</li>
+  <li>Lane Bretschneider [GitHub]()</li>
+  <li>Will Chen [GitHub]()</li>
+  <li>Jorja Fleming [GitHub]()</li>
+</ul>
 
-Things you may want to cover:
+## About this Project
+Pantry Pilot is an application that allows users to search for and save meal recipes based on simple ingredients found in their pantries.
 
-* Ruby version
+## Built With
 
-* System dependencies
 
-* Configuration
+## Running On
 
-* Database creation
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# pantry_pilot_fe
-# pantry_pilot_fe
+## 
