@@ -26,7 +26,7 @@ RSpec.describe "Login Page" do
           fill_in :email, with: "lane@example.com"
           fill_in :password, with: "laneiscool"
 
-          click_on "Register"
+          click_on "Submit"
 
           fill_in :email, with: "lane@example.com"
           fill_in :password, with: "laneiscool"
@@ -50,7 +50,7 @@ RSpec.describe "Login Page" do
           fill_in :email, with: "lane@example.com"
           fill_in :password, with: "laneiscool"
 
-          click_on "Register"
+          click_on "Submit"
 
           fill_in :email, with: "lane@example.com"
           fill_in :password, with: "laneisnotcool"
