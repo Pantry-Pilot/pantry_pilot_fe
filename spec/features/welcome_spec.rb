@@ -13,7 +13,7 @@ RSpec.describe "Welcome Page" do
 
       it "I see a navigation bar with a button to login" do
         visit "/"
-        save_and_open_page
+        # save_and_open_page
         expect(page).to have_button("Login")
       end
     end
