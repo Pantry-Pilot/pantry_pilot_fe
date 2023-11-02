@@ -12,6 +12,12 @@
   </head>
 
   <body>
+    <div class= "container">
+      <% unless request.path == '/' %>
+        <h1>Pantry Pilot</h1>
+        <p>"Making your pantry a better place!"</p>
+      <% end %>
     <%= yield %>
+    </div>
   </body>
 </html>
