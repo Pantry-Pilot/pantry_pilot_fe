@@ -51,7 +51,7 @@ jobs:
           command: |
             mkdir -p spec/reports
             bundle exec rspec
-        sotre_test_results:
+      - store_test_results:
           path: spec/reports
 
 workflows:
