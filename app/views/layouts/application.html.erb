@@ -13,11 +13,9 @@
 
   <body>
     <div class= "container">
-      <% if session[:user_id] %>
-            <%= link_to "Logout", '/', method: :delete, class: "btn btn-danger" %>
-          <% else %>
-            <%= link_to "Login", '/login', class: "btn btn-secondary" %>
-          <% end %>
+      <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
+        <%= link_to "Logout", '/', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
+      <% end %>
       <% unless request.path == '/' %>
         <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
         <h1>Pantry Pilot</h1>
