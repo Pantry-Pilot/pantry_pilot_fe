@@ -24,12 +24,14 @@ RSpec.describe "Register Page" do
         it "I am taken to the user login page '/login'" do
           visit "/register"
 
-          fill_in :name, with: "Lane"
-          fill_in :email, with: "lane@example.com"
-          fill_in :password, with: "laneiscool"
-          fill_in :confirm_password, with: "laneiscool"
+          VCR.use_cassette("lane_register") do
+            fill_in :name, with: "Lane"
+            fill_in :email, with: "lane@example.com"
+            fill_in :password, with: "laneiscool"
+            fill_in :confirm_password, with: "laneiscool"
 
-          click_on "Submit"
+            click_on "Submit"
+          end
 
           expect(current_path).to eq("/login")
         end
