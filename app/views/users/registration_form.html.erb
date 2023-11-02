@@ -1,11 +1,23 @@
-<%= form_with url: "/register", method: :post do |f| %>
-  <%= f.label "Name:" %>
-  <%= f.text_field :name %>
-  <%= f.label "Email:" %>
-  <%= f.text_field :email %>
-  <%= f.label "Password:" %>
-  <%= f.password_field :password %>
-  <%= f.label "Confirm Password:" %>
-  <%= f.password_field :confirm_password %>
-  <%= f.submit "Submit" %>
-<% end %>
+<div class="container">
+  
+  <h2 class="text-center">Create Your Account</h2>
+  <%= form_with url: "/register", method: :post, class: "mt-4" do |f| %>
+    <div class="form-group">
+      <%= f.label "Name:" %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label "Email:" %>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label "Password:" %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label "Confirm Password:" %>
+      <%= f.password_field :confirm_password, class: "form-control" %>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  <% end %>
+</div>

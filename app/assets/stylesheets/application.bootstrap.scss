@@ -1,6 +1,14 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333333; /* Dark grey background color */
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #ffffff; /* White text color */
+}
 body.login {
   margin: 0;
   padding: 0;
@@ -9,6 +17,13 @@ body.login {
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #fff;
+}
+img.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
 }
 .overlay {
   background: rgba(0, 0, 0, 0.5);

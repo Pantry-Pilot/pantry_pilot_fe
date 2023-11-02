@@ -21,16 +21,18 @@ RSpec.describe "Login Page" do
           visit "/"
 
           click_on "Create an Account"
-
-          fill_in :name, with: "Lane B"
-          fill_in :email, with: "lane@example.com"
+          user_number = (1...1000).to_a.sample
+          fill_in :name, with: "Lane B#{user_number}}"
+          fill_in :email, with: "lane#{user_number}@example.com"
           fill_in :password, with: "laneiscool"
+          fill_in :confirm_password, with: "laneiscool"
 
           click_on "Submit"
-
-          fill_in :email, with: "lane@example.com"
+          
+          fill_in :email, with: "lane#{user_number}@example.com"
           fill_in :password, with: "laneiscool"
 
+          expect(current_path).to eq("/login")
           click_on "Login"
 
           expect(current_path).to eq("/dashboard")

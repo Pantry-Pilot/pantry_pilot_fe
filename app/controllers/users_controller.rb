@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     if params[:password] == params[:confirm_password]
       response = UsersFacade.register_user(params[:name], params[:email], params[:password])
       if response[:status] == 201
+        flash[:success] = "You are now registered please log in"
         redirect_to "/login"
       else
         flash[:error] = "Missing Required Information"
