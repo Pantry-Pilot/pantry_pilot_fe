@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/register
+    body:
+      encoding: UTF-8
+      string: '{"name":"Lane","email":"lane@example.com","password":"laneiscool"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"74117d7f74774c1abef419b11309d3bf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e78bcdda-1f77-41c1-8ca5-f65cc7c2ca32
+      X-Runtime:
+      - '0.230018'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, unpermitted_parameters.action_controller;dur=0.04,
+        sql.active_record;dur=2.48, process_action.action_controller;dur=225.19
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"users","attributes":{"name":"Lane","email":"lane@example.com"}}}'
+  recorded_at: Thu, 02 Nov 2023 20:20:09 GMT
+recorded_with: VCR 6.2.0
