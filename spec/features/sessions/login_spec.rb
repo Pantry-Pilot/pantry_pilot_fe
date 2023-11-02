@@ -37,7 +37,7 @@ RSpec.describe "Login Page" do
 
           expect(current_path).to eq("/dashboard")
 
-          expect(page).to have_button("Log out")
+          expect(page).to have_button("Logout")
           expect(page).to_not have_button("Login")
         end
       end
