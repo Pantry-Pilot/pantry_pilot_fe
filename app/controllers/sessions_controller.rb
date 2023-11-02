@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
   def login
     response = SessionsFacade.user_login(params[:email], params[:password])
- .    if response[:status] == 201
+   if response[:status] == 201
       session[:user_id] = response[:user_id]
       redirect_to "/dashboard"
     else
