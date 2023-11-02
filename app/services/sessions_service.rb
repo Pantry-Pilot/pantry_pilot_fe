@@ -1,8 +1,9 @@
 class SessionsService
   # BASE_URL = "http://localhost:5000"
+  # Rails.configuration.x.sessions_service_url
 
   def conn
-    Faraday.new(url: Rails.configuration.x.sessions_service_url) do |config|
+    Faraday.new(url: "https://pantrypilotbe-70491616d27f.herokuapp.com") do |config|
       config.request :json 
       config.adapter Faraday.default_adapter 
     end
