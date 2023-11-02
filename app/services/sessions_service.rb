@@ -3,9 +3,8 @@ class SessionsService
 
   def conn
     Faraday.new(url: BASE_URL) do |config|
-      config.request :json  # Automatically set Content-Type and encode request body as JSON
-      config.response :json  # Automatically parse JSON responses
-      config.adapter Faraday.default_adapter  # Use the default HTTP adapter
+      config.request :json 
+      config.adapter Faraday.default_adapter 
     end
   end
   
