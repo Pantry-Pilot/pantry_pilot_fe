@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post "/register", to: "users#register"
   get "/login", to: "sessions#login_form"
   post "/login", to: "sessions#login"
+  get "/dashboard", to: "users#show"
 end

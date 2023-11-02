@@ -3,9 +3,8 @@ class UsersService
 
   def conn
     Faraday.new(url: BASE_URL) do |config|
-      config.request :json  # Automatically set Content-Type and encode request body as JSON
-      config.response :json  # Automatically parse JSON responses
-      config.adapter Faraday.default_adapter  # Use the default HTTP adapter
+      config.request :json  
+      config.adapter Faraday.default_adapter  
     end
   end
 
@@ -14,5 +13,9 @@ class UsersService
       request.headers['Content-Type'] = 'application/json'
       request.body = { name: name, email: email, password: password }
     end
+  end
+
+  def get_user_from_db(user_id)
+    conn.get("/api/v1/users/#{user_id}")
   end
 end
