@@ -17,4 +17,8 @@ class UsersController < ApplicationController
         redirect_to "/register"
     end
   end
+
+  def show
+    @user = UsersFacade.new.get_user(current_user)
+  end
 end
