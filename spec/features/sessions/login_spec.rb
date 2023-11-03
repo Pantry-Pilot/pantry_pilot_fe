@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Login Page" do
   describe "As a user," do
-    describe "When I am on the home page and click the 'Login' button" do
+    describe "When I am on the home page and click the 'Login' button", :vcr do
       it "I see a form to log in that includes a field for my email and a field for my password." do
         visit "/"
 
