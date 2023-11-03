@@ -1,15 +1,40 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #46584a; 
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #dbdfba; 
+}
+body.login {
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg');
+  background-size: cover;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #fff;
+}
+img.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.container {
+  margin-top: 50px;
+}
+h1 {
+  font-size: 36px;
+}
+p {
+  font-size: 24px;
+}

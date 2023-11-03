@@ -32,7 +32,6 @@ RSpec.describe "Register Page" do
 
             click_on "Submit"
           end
-
           expect(current_path).to eq("/login")
         end
       end
