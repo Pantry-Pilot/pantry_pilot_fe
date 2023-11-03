@@ -8,20 +8,10 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
-    <% if current_user %>
-      <%= button_to "My Dashboard", "/dashboard", method: :get %>
-      <%= button_to "Log out", "/logout", method: :get %>
-    <% else %>
-      <% unless controller_name == 'sessions' && action_name == 'login_form' %>
-        <%= button_to "Login", "/login", method: :get %>
-      <% end %>
-    <% end %>
-  </head>
-
   <body>
     <div class= "container">
       <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
-        <%= link_to "Logout", '/', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
+        <%= button_to "Logout", '/', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
       <% end %>
       <% unless request.path == '/' %>
         <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">

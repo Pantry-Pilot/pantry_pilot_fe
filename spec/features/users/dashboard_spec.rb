@@ -10,10 +10,10 @@ RSpec.describe "User Dashboard Page" do
         fill_in :password, with: "1234"
 
         click_on "Login"
-
+        save_and_open_page
         expect(page).to have_content("Welcome, test")
         expect(page).to have_button("My Dashboard")
-        expect(page).to have_button("Log out")
+        expect(page).to have_button("Logout")
         expect(page).to have_content("My Recipes")
       end
     end
@@ -32,7 +32,7 @@ RSpec.describe "User Dashboard Page" do
         expect(current_path).to eq("/")
 
         expect(page).to_not have_button("My Dashboard")
-        expect(page).to_not have_button("Log out")
+        expect(page).to_not have_button("Logout")
         expect(page).to have_button("Login")
       end
     end
