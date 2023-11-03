@@ -1,0 +1,15 @@
+<div class="recipe-show">
+  <h1><%= @recipe.title %></h1>
+  <%= image_tag(@recipe.image, alt: @recipe.title) if @recipe.image.present? %>
+  <p><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
+
+  <h2>Ingredients</h2>
+  <ul>
+    <% @recipe.ingredients.each do |ingredient| %>
+      <li><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></li>
+    <% end %>
+  </ul>
+
+  <h2>Instructions</h2>
+  <p><%= raw @recipe.instructions %></p>
+</div>
