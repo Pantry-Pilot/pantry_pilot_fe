@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"72f0cb2c950b149f51ae28fdac3e8437"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ff4833a4-3ec8-4699-9064-ec3c15306f5c
+      X-Runtime:
+      - '0.561147'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=556.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"123","type":"recipe","attributes":{"id":123,"title":"Tart
+        Green Salad with Avocado Dressing","image":"https://spoonacular.com/recipeImages/123-556x370.jpg","summary":"Tart
+        Green Salad with Avocado Dressing takes roughly \u003cb\u003e15 minutes\u003c/b\u003e
+        from beginning to end. This gluten free, primal, whole 30, and pescatarian
+        recipe serves 4 and costs \u003cb\u003e$1.65 per serving\u003c/b\u003e. This
+        hor d''oeuvre has \u003cb\u003e67 calories\u003c/b\u003e, \u003cb\u003e3g
+        of protein\u003c/b\u003e, and \u003cb\u003e4g of fat\u003c/b\u003e per serving.
+        7 people found this recipe to be delicious and satisfying. Head to the store
+        and pick up coarse salt and ground pepper, lemon balm, lemon juice, and a
+        few other things to make it today. It is brought to you by wholeliving.com.
+        All things considered, we decided this recipe \u003cb\u003edeserves a spoonacular
+        score of 58%\u003c/b\u003e. This score is solid. Similar recipes include \u003ca
+        href=\"https://spoonacular.com/recipes/grapefruit-avocado-salad-with-pepita-green-goddess-dressing-857435\"\u003egrapefruit-avocado
+        salad with pepita green goddess dressing\u003c/a\u003e, \u003ca href=\"https://spoonacular.com/recipes/tuna-nicoise-salad-with-avocado-green-goddess-dressing-835966\"\u003eTuna
+        Nicoise Salad with Avocado Green Goddess Dressing\u003c/a\u003e, and \u003ca
+        href=\"https://spoonacular.com/recipes/tuna-nicoise-salad-with-avocado-green-goddess-dressing-1274419\"\u003eTuna
+        Nicoise Salad with Avocado Green Goddess Dressing\u003c/a\u003e.","instructions":"\u003col\u003e\u003cli\u003eCombine
+        salad ingredients in a large bowl and season with salt and pepper.\u003c/li\u003e\u003cli\u003ePlace
+        dressing ingredients and 1/4 cup water in a blender and puree until smooth.
+        Season with salt and pepper. (If thick, add water by the tablespoon.)\u003c/li\u003e\u003cli\u003eDrizzle
+        salad with 1/3 cup dressing.\u003c/li\u003e\u003c/ol\u003e","ingredients":[{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":15001,"aisle":"Seafood","image":"anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":9037,"aisle":"Produce","image":"avocado.jpg","consistency":"SOLID","name":"avocado","nameClean":"avocado","original":"1/2
+        ripe avocado","originalName":"ripe avocado","amount":0.5,"unit":"","meta":["ripe"],"measures":{"us":{"amount":0.5,"unitShort":"","unitLong":""},"metric":{"amount":0.5,"unitShort":"","unitLong":""}}},{"id":11156,"aisle":"Produce","image":"fresh-chives.jpg","consistency":"SOLID","name":"freshly
+        chives","nameClean":"chives","original":"2 tablespoons freshly minced chives","originalName":"freshly
+        minced chives","amount":2.0,"unit":"tablespoons","meta":["minced"],"measures":{"us":{"amount":2.0,"unitShort":"Tbsps","unitLong":"Tbsps"},"metric":{"amount":2.0,"unitShort":"Tbsps","unitLong":"Tbsps"}}},{"id":1002030,"aisle":"Spices
+        and Seasonings","image":"pepper.jpg","consistency":"SOLID","name":"coarse
+        salt and ground pepper","nameClean":"black pepper","original":"Coarse salt
+        and ground black pepper","originalName":"Coarse salt and ground black pepper","amount":4.0,"unit":"servings","meta":["black"],"measures":{"us":{"amount":4.0,"unitShort":"servings","unitLong":"servings"},"metric":{"amount":4.0,"unitShort":"servings","unitLong":"servings"}}},{"id":11215,"aisle":"Produce","image":"garlic.png","consistency":"SOLID","name":"garlic","nameClean":"garlic","original":"1
+        clove garlic, chopped","originalName":"garlic, chopped","amount":1.0,"unit":"clove","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"clove","unitLong":"clove"},"metric":{"amount":1.0,"unitShort":"clove","unitLong":"clove"}}},{"id":1012064,"aisle":"Produce","image":"lemon-balm.jpg","consistency":"SOLID","name":"lemon
+        balm","nameClean":"lemon balm","original":"1/2 cup lemon balm","originalName":"lemon
+        balm","amount":0.5,"unit":"cup","meta":[],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":22.5,"unitShort":"g","unitLong":"grams"}}},{"id":9152,"aisle":"Produce","image":"lemon-juice.jpg","consistency":"LIQUID","name":"lemon
+        juice","nameClean":"lemon juice","original":"1 tablespoon fresh lemon juice","originalName":"fresh
+        lemon juice","amount":1.0,"unit":"tablespoon","meta":["fresh"],"measures":{"us":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"},"metric":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"}}},{"id":1088,"aisle":"Milk,
+        Eggs, Other Dairy","image":"buttermilk.jpg","consistency":"SOLID","name":"buttermilk","nameClean":"low
+        fat buttermilk","original":"1/2 cup low-fat buttermilk","originalName":"low-fat
+        buttermilk","amount":0.5,"unit":"cup","meta":["low-fat"],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":120.0,"unitShort":"ml","unitLong":"milliliters"}}},{"id":93621,"aisle":"Spices
+        and Seasonings","image":"sorrel.jpg","consistency":"SOLID","name":"sorrel","nameClean":"sorrel","original":"4
+        packed cups sorrel (4 oz)","originalName":"packed cups sorrel","amount":4.0,"unit":"oz","meta":["packed"],"measures":{"us":{"amount":4.0,"unitShort":"oz","unitLong":"ounces"},"metric":{"amount":113.398,"unitShort":"g","unitLong":"grams"}}}]}}}'
+  recorded_at: Fri, 03 Nov 2023 14:11:45 GMT
+recorded_with: VCR 6.2.0

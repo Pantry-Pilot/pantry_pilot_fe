@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
   root "welcome#index"
 
   get "/register", to: "users#registration_form"
@@ -9,4 +6,6 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#login_form"
   post "/login", to: "sessions#login"
   get "/dashboard", to: "users#show"
+
+  resources :recipes, only: [:index, :show]
 end
