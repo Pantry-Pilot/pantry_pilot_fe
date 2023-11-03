@@ -1,0 +1,40 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #46584a; 
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #dbdfba; 
+}
+body.login {
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg');
+  background-size: cover;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #fff;
+}
+img.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.container {
+  margin-top: 50px;
+}
+h1 {
+  font-size: 36px;
+}
+p {
+  font-size: 24px;
+}
