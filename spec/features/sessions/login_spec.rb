@@ -43,7 +43,7 @@ RSpec.describe "Login Page" do
 
           expect(current_path).to eq("/login")
 
-          expect(page).to have_content("Invalid credentials")
+          expect(page).to have_content("Invalid email or password")
         end
       end
     end
