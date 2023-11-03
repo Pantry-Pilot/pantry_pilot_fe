@@ -7,17 +7,13 @@
   </div>
 <% end %>
 
-<% if params[:query].present? %>
-  <% if @recipes.present? %>
-    <div id="recipes">
-      <% @recipes.each do |recipe| %>
-        <div class="recipe">
-          <h2><%= link_to recipe.title, recipe_path(recipe.id) %></h2>
-          <%= image_tag(recipe.image, alt: recipe.title, height: "100") if recipe.image.present? %>
-        </div>
-      <% end %>
-    </div>
-  <% else %>
-    <p>No recipes found. Try a different search!</p>
-  <% end %>
+<% if @recipes.present? %>
+  <div id="recipes">
+    <% @recipes.each do |recipe| %>
+      <div class="recipe">
+        <h2><%= link_to recipe.title, recipe_path(recipe.id) %></h2>
+        <%= image_tag(recipe.image, alt: recipe.title, height: "100") if recipe.image.present? %>
+      </div>
+    <% end %>
+  </div>
 <% end %>

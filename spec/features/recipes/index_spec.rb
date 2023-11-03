@@ -21,10 +21,15 @@ RSpec.feature 'Recipes Index/Search', type: :feature do
     end
   end
 
-  scenario 'User submits search with no query' do
+  scenario 'User searches for a recipe with no results', :vcr do
     visit recipes_path
+
+    expect(page).to have_content('Search for recipes:')
+
+    fill_in 'query', with: 'asdfasdfasdfasdfasdfasdf'
     click_button 'Search'
-    
-    expect(page).to have_content('No recipes found. Try a different search!')
+
+    expect(page).to have_current_path(recipes_path, ignore_query: true)
+    expect(page).to have_content('No recipes found')
   end
 end
