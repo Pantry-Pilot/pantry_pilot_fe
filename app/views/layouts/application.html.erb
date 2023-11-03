@@ -9,10 +9,22 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <%= button_to "Login", "/login", method: :get %>
+    <% if current_user %>
+      <%= button_to "My Dashboard", "/dashboard", method: :get %>
+      <%= button_to "Log out", "/logout", method: :get %>
+    <% else %>
+      <% unless controller_name == 'sessions' && action_name == 'login_form' %>
+        <%= button_to "Login", "/login", method: :get %>
+      <% end %>
+    <% end %>
   </head>
 
   <body>
     <%= yield %>
+    <% flash.each do |type, msg| %>
+      <div class="alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
   </body>
 </html>
