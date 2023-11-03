@@ -74,9 +74,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
-  # need to configure our API key
-  # config.filter_sensitive_data('tmdb_key') { Rails.application.credentials.tmdb[:key] }
   config.configure_rspec_metadata!
   #This could be useful if we are making a request that we don't need to make a casette for
-  config.allow_http_connections_when_no_cassette = true
+  # config.allow_http_connections_when_no_cassette = true
 end

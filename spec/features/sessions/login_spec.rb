@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Login Page" do
   describe "As a user," do
-    describe "When I am on the home page and click the 'Login' button" do
+    describe "When I am on the home page and click the 'Login' button", :vcr do
       it "I see a form to log in that includes a field for my email and a field for my password." do
         visit "/"
 
@@ -18,50 +18,32 @@ RSpec.describe "Login Page" do
 
       describe "When I fill out the form with valid credentials and I click 'submit'" do
         it "I am taken to my dashboard page '/dashboard, where I no longer see a button to log in, and I now see a button to log out instead" do
-          visit "/"
+          visit "/login"
 
-          click_on "Create an Account"
-          user_number = (1...1000).to_a.sample
-          fill_in :name, with: "Lane B#{user_number}}"
-          fill_in :email, with: "lane#{user_number}@example.com"
-          fill_in :password, with: "laneiscool"
-          fill_in :confirm_password, with: "laneiscool"
+          fill_in :email, with: "test@test.com"
+          fill_in :password, with: "1234"
 
-          click_on "Submit"
-          
-          fill_in :email, with: "lane#{user_number}@example.com"
-          fill_in :password, with: "laneiscool"
-
-          expect(current_path).to eq("/login")
           click_on "Login"
 
           expect(current_path).to eq("/dashboard")
 
-          expect(page).to have_button("Logout")
+          expect(page).to have_button("Log out")
           expect(page).to_not have_button("Login")
         end
       end
 
       describe "When I log in with in invalid credentials" do
         it "I am redirected to the login page and I see an error message that tells me that I did not use valid credentials" do
-          visit "/"
+          visit "/login"
 
-          click_on "Create an Account"
+          fill_in :email, with: "test@test.com"
+          fill_in :password, with: "wrong password"
 
-          fill_in :name, with: "Lane B"
-          fill_in :email, with: "lane@example.com"
-          fill_in :password, with: "laneiscool"
-    
-          click_on "Submit"
-
-          fill_in :email, with: "lane@example.com"
-          fill_in :password, with: "laneisnotcool"
-
-          click_on "Submit"
+          click_on "Login"
 
           expect(current_path).to eq("/login")
 
-          expect(page).to have_content("Invalid credentials")
+          expect(page).to have_content("Invalid email or password")
         end
       end
     end

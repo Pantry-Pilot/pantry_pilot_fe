@@ -24,14 +24,48 @@ RSpec.describe "Register Page" do
         it "I am taken to the user login page '/login'" do
           visit "/register"
 
-          fill_in :name, with: "Lane"
-          fill_in :email, with: "lane@example.com"
-          fill_in :password, with: "laneiscool"
-          fill_in :confirm_password, with: "laneiscool"
+          VCR.use_cassette("lane_register") do
+            fill_in :name, with: "Lane"
+            fill_in :email, with: "lane@example.com"
+            fill_in :password, with: "laneiscool"
+            fill_in :confirm_password, with: "laneiscool"
+
+            click_on "Submit"
+          end
+
+          expect(current_path).to eq("/login")
+        end
+      end
+
+      describe "When I fill in passwords that do not match" do
+        it "I am redirected to the registration form, and I see an error message telling me that my passwords do not match" do
+          visit "/register"
+
+          fill_in :name, with: "test2"
+          fill_in :email, with: "test2@test.com"
+          fill_in :password, with: "password1"
+          fill_in :confirm_password, with: "password2"
 
           click_on "Submit"
 
-          expect(current_path).to eq("/login")
+          expect(current_path).to eq("/register")
+          expect(page).to have_content("Passwords do not match")
+        end
+      end
+
+      describe "When I do not fill in all fields" do
+        it "I am redirected to the registration form, and I see an error message telling me that I am missing required information", :vcr do
+          visit "/register"
+
+          fill_in :email, with: "test3@test.com"
+          fill_in :password, with: "password"
+          fill_in :confirm_password, with: "password"
+
+
+          click_on "Submit"
+
+          expect(current_path).to eq("/register")
+          expect(page).to have_content("Name can't be blank")
         end
       end
     end
