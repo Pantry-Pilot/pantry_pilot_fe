@@ -54,7 +54,7 @@ RSpec.describe "Register Page" do
       end
 
       describe "When I do not fill in all fields" do
-        it "I am redirected to the registration form, and I see an error message telling me that I am missing required information" do
+        it "I am redirected to the registration form, and I see an error message telling me that I am missing required information", :vcr do
           visit "/register"
 
           fill_in :email, with: "test3@test.com"
