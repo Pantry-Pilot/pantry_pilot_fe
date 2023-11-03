@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post "/register", to: "users#register"
   get "/login", to: "sessions#login_form"
   post "/login", to: "sessions#login"
-  get "/logout", to: "sessions#logout"
+  delete "/logout", to: "sessions#logout"
   get "/dashboard", to: "users#show"
 
   resources :recipes, only: [:index, :show]
