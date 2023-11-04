@@ -1,4 +1,4 @@
-<%= form_with url: "/login", method: :post do |f| %>
+<%= form_with url: "/login", method: :post, html: { class: "my-form" } do |f| %>
   <%= f.label "Email:" %>
   <%= f.text_field :email %>
   <%= f.label "Password:" %>

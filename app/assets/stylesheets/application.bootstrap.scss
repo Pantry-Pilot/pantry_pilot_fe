@@ -5,10 +5,10 @@ body {
   margin: 0;
   margin-top: 300px;
   padding: 0;
-  background-color: #020502; 
+  background-color: #a0c8a4;
   font-family: 'Pacifico', cursive;
   text-align: center;
-  color: #dbdfba; 
+  color: #000000; 
 }
 body.login {
   margin: 0;
@@ -38,13 +38,20 @@ img.logo {
   width: 225px; /* Adjust the width as needed */
   height: auto;
 }
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
 .container {
-  margin-top: 110px;
+  margin-top: 85px;
+  margin-bottom: 85px;
 }
+.my-form {
+  margin: 0;
+  margin-top: 300px;
+  padding: 0;
+  background-color: #0f100f; /* Your desired background color */
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #dbdfba; /* Your desired text color */
+}
+
 h1 {
   font-size: 36px;
 }
