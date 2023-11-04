@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#login"
   delete "/logout", to: "sessions#logout"
   get "/dashboard", to: "users#show"
+  get "/dashboard/search", to: "recipes#index"
+  get "/dashboard/search/:recipe_id", to: "recipes#show"
+   
 
-  resources :recipes, only: [:index, :show]
+  # resources :recipes, only: [:index, :show]
 end
