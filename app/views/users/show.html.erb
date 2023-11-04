@@ -1,3 +1,11 @@
 <p>Welcome, <%= @user.name %></p>
 <%= button_to "Search Recipes", "/dashboard/search", method: :get  %>
 <h2>My Recipes</h2>
+<% @user_recipes.each do |recipe| %>
+<table>
+  <tbody>
+    <td><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></td>
+    <td><%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %></td>
+  </tbody>
+</table>
+<%end %>
