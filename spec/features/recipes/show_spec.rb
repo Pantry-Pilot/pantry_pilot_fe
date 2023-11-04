@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'Recipe show page', type: :feature do
   scenario 'User visits recipe show page', :vcr do
-    visit recipe_path(637876)
+    visit "/dashboard/search/637876"
     
     expect(page).to have_content("Chicken 65")
     expect(page).to have_content("Chicken 65 could be just the gluten free recipe you've been looking for")
