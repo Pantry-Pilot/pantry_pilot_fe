@@ -13,3 +13,13 @@
   <h2>Instructions</h2>
   <p><%= raw @recipe.instructions %></p>
 </div>
+
+<%= form_with url: "/dashboard/recipes", method: :post do %>
+  <%= hidden_field_tag :title, @recipe.title %>
+  <%= hidden_field_tag :recipe_id, @recipe.id %>
+  <%= hidden_field_tag :image , @recipe.image %>
+  <%= hidden_field_tag :summary, @recipe.summary %>
+  <%= hidden_field_tag :instructions, @recipe.instructions %>
+  <%= hidden_field_tag :ingredients, @recipe.ingredients.map(&:attributes) %>
+  <%= submit_tag "Add Recipe to my dashboard" %>
+<% end %>
