@@ -17,16 +17,13 @@ class RecipesController < ApplicationController
   def create
     recipe_data = params.permit(:recipe_id, :title, :image, :summary, :instructions, :ingredients)
     recipe_data[:user_id] = session[:user_id] 
-    response = RecipesService.new.store_recipe(recipe_data)
-    # require 'pry';binding.pry
-    redirect_to "/dashboard"
-    #possible error handling method below
-    # if response[:status] == 204
-    #   flash[:notice] = "Recipe added to your dashboard"
-    #   redirect_to "/dashboard"
-    # else 
-    #   flash[:error] = "Recipe already exists in your dashboard"
-    #   redirect_to "/dashboard"
-    # end
+    response = RecipeFacade.new.store_recipe(recipe_data)
+    if response[:status] == 204
+      flash[:notice] = "Recipe added to your dashboard"
+      redirect_to "/dashboard"
+    else 
+      flash[:error] = response[:error]
+      redirect_to "/dashboard"
+    end
   end 
 end
