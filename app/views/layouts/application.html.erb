@@ -2,28 +2,38 @@
 <html>
   <head>
     <title>PantryPilotFe</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-
+  </head>
   <body>
-    <div class= "container">
-      <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
-        <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
-      <% end %>
-      <% unless request.path == '/' %>
-        <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
-        <h1>Pantry Pilot</h1>
-        <p>"Making your pantry a happier place!"</p>
-      <% end %>
-    </div> 
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <% unless request.path == '/' %>
+            <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
+            <div class="app-info">
+              <h1>Pantry Pilot</h1>
+              <p>"Making your pantry a happier place!"</p>
+            </div>
+          <% end %>
+          <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
+            <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
+          <% end %>
+          <% if session[:user_id] %>
+            <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </header>
+
     <%= yield %>
     <% flash.each do |type, msg| %>
       <div class="alert-info">
-        <%= msg %>
-      </div>
+          <%= msg %>
+        </div>
     <% end %>
+    
   </body>
 </html>

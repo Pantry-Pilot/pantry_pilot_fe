@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #46584a; 
+  background-color: #020502; 
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #dbdfba; 
@@ -18,11 +18,18 @@ body.login {
   text-align: center;
   color: #fff;
 }
+header {
+  background-color: #46584a;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: #dbdfba;
+}
 img.logo {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 150px; /* Adjust the width as needed */
+  width: 225px; /* Adjust the width as needed */
   height: auto;
 }
 .overlay {
