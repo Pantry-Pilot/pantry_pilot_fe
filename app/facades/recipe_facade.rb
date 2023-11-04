@@ -15,12 +15,21 @@ class RecipeFacade
       nil
     end
   end
-  #We may need this for error handling
-  # def self.store_recipe(data)
-  #   response = RecipesService.new.store_recipe(data)
-  #   require 'pry';binding.pry
-  #   parsed_response = JSON.parse(response.body, symbolize_names: true)
-  # end
+
+  def store_recipe(data)
+    response = RecipesService.new.store_recipe(data)
+
+    if response.status == 204
+      {
+        status: response.status,
+      }
+    else
+      {
+        status: response.status,
+        error: response_body[:error]
+      }
+    end
+  end
 
   private
 
