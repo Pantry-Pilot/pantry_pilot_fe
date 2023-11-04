@@ -39,11 +39,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5fb21ca0-0fd4-4af7-b01c-fe5bc03a838f
+      - aa8007a8-d689-4bfc-8d86-13ac2cc432c1
       X-Runtime:
-      - '0.525288'
+      - '0.618468'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=520.89
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=612.58
       Transfer-Encoding:
       - chunked
     body:
@@ -103,5 +103,5 @@ http_interactions:
         Vinegar, Salad Dressing","image":"vegetable-oil.jpg","consistency":"LIQUID","name":"vegetable
         oil","nameClean":"vegetable oil","original":"vegetable oil for frying","originalName":"vegetable
         oil for frying","amount":3.0,"unit":"servings","meta":["for frying"],"measures":{"us":{"amount":3.0,"unitShort":"servings","unitLong":"servings"},"metric":{"amount":3.0,"unitShort":"servings","unitLong":"servings"}}}]}}}'
-  recorded_at: Fri, 03 Nov 2023 14:15:48 GMT
+  recorded_at: Sat, 04 Nov 2023 19:14:08 GMT
 recorded_with: VCR 6.2.0

@@ -22,6 +22,5 @@ class UsersController < ApplicationController
   def show
     @user = UsersFacade.new.get_user(current_user)
     @user_recipes = UserRecipesFacade.new.get_user_recipes(current_user)
-    require 'pry';binding.pry
   end
 end
