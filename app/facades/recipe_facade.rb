@@ -15,7 +15,13 @@ class RecipeFacade
       nil
     end
   end
-  
+  #We may need this for error handling
+  # def self.store_recipe(data)
+  #   response = RecipesService.new.store_recipe(data)
+  #   require 'pry';binding.pry
+  #   parsed_response = JSON.parse(response.body, symbolize_names: true)
+  # end
+
   private
 
   def self.create_recipe(data)

@@ -41,18 +41,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b798e339-7106-4930-8cd3-bcf76c68014f
+      - 3436bf62-cc96-4481-a98f-68b5c3a03162
       X-Runtime:
-      - '0.272687'
+      - '0.281696'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=28.03,
-        instantiation.active_record;dur=0.02, process_action.action_controller;dur=267.60
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=5.57, instantiation.active_record;dur=6.11,
+        process_action.action_controller;dur=275.09
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Fri, 03 Nov 2023 01:22:03 GMT
+  recorded_at: Sat, 04 Nov 2023 19:14:11 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -92,16 +92,81 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2e419965-677a-484c-afee-fa8e810d5102
+      - 68c74d8a-882b-4809-8023-f7e253b9419a
       X-Runtime:
-      - '0.004869'
+      - '0.011953'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.48, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.91
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.37, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.12
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Fri, 03 Nov 2023 01:22:03 GMT
+  recorded_at: Sat, 04 Nov 2023 19:14:11 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_recipes/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a378092410a675e8a5da0e86f7d606ac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - eaf5e7d4-3414-4613-8981-bdda31ee8df1
+      X-Runtime:
+      - '0.023326'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=4.80, instantiation.active_record;dur=2.08,
+        process_action.action_controller;dur=17.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"3","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"5","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"7","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"9","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"11","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"12","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"13","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"14","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
+  recorded_at: Sat, 04 Nov 2023 19:14:11 GMT
 recorded_with: VCR 6.2.0

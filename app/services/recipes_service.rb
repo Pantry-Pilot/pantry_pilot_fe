@@ -11,6 +11,12 @@ class RecipesService
     parse_response(response)
   end
 
+  def store_recipe(data)
+    conn.post("/api/v1/add_recipe") do |req|
+      req.body = data.to_json
+    end
+  end
+
   private
 
   def conn
