@@ -10,7 +10,8 @@ class RecipesController < ApplicationController
   end
 
   def show
-    recipe_data = RecipesService.new.find(params[:id])
+    # require 'pry';binding.pry
+    recipe_data = RecipesService.new.find(params[:recipe_id])
     @recipe = Recipe.new(recipe_data[:data][:attributes])
   end
 end
