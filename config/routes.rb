@@ -11,6 +11,5 @@ Rails.application.routes.draw do
   get "/dashboard/search/:recipe_id", to: "recipes#show"
   post "/dashboard/recipes", to: "recipes#create"
 
-
   # resources :recipes, only: [:index, :show]
 end
