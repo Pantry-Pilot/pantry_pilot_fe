@@ -37,19 +37,19 @@ RSpec.describe "User Dashboard Page" do
       end
     end
 #incomplete test
-    describe "When I add a recipe to my dashbaord" do 
-      visit "/login"
+    # describe "When I add a recipe to my dashbaord" do 
+    #   visit "/login"
 
-        fill_in :email, with: "test@test.com"
-        fill_in :password, with: "1234"
+    #     fill_in :email, with: "test@test.com"
+    #     fill_in :password, with: "1234"
 
-        click_on "Login"
+    #     click_on "Login"
 
-        expect(current_path).to eq("/dashboard")
-        click_on "Search Recipes"
-        expect(current_path).to eq("/dashboard/search")
-        fill_in :search, with: "chicken"
-        expect(page).to have_link
-    end
+    #     expect(current_path).to eq("/dashboard")
+    #     click_on "Search Recipes"
+    #     expect(current_path).to eq("/dashboard/search")
+    #     fill_in :search, with: "chicken"
+    #     expect(page).to have_link
+    # end
   end
 end
