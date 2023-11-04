@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get "/dashboard", to: "users#show"
   get "/dashboard/search", to: "recipes#index"
   get "/dashboard/search/:recipe_id", to: "recipes#show"
-   
+  post "/dashboard/recipes", to: "recipes#create"
+
 
   # resources :recipes, only: [:index, :show]
 end
