@@ -39,12 +39,12 @@ img.logo {
   height: auto;
 }
 .container {
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .my-form {
   margin: 0;
-  margin-top: 600px;
+  margin-top: 200px;
   padding: 0;
   background-color: #a0c8a4; /* Your desired background color */
   font-family: 'Pacifico', cursive;
