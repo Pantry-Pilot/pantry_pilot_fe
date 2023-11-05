@@ -31,6 +31,22 @@ class RecipeFacade
     end
   end
 
+  def remove_recipe(id)
+    response = RecipesService.new.remove_recipe(id)
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    if response.status == 200
+      {
+        status: response.status,
+        notice: response_body[:notice]
+      }
+    else
+      {
+        status: response.status,
+        error: response_body[:error]
+      }
+    end
+  end
+
   private
 
   def self.create_recipe(data)
