@@ -35,12 +35,8 @@ img.logo {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 225px; /* Adjust the width as needed */
+  width: 20%; /* Adjust the width as needed */
   height: auto;
-}
-.container {
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 .my-form {
   margin: 0;

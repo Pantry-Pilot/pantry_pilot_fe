@@ -2,7 +2,12 @@ require 'rails_helper'
 
 RSpec.feature 'Recipes Index/Search', type: :feature do
   scenario 'User searches for a recipe', :vcr do
-    visit "/dashboard/search"
+    visit "/login"
+    fill_in 'email', with: 'aset284@gmail.com'
+    fill_in 'password', with: 'password'
+    click_button 'Login'
+
+    click_button 'Search Recipes'
 
     expect(page).to have_content('Search for recipes:')
 
