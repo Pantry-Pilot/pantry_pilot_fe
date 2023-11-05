@@ -7,7 +7,6 @@ class Recipe
     @image = data[:image]
     @summary = data[:summary] || ""
     @instructions = data[:instructions] || ""
-    # require 'pry';binding.pry
     @ingredients = data[:ingredients] ? data[:ingredients].map do |ingredient_data|
       Ingredient.new(ingredient_data)
     end : []

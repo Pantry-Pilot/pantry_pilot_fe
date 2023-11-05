@@ -14,8 +14,9 @@
         <div class="header-content">
           <div class="app-info">
             <h1>Pantry Pilot</h1>
+            <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
           </div>
-          <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
+          
           <% if session[:user_id] && request.path != "/dashboard" %>
             <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary" %>
           <% end %>

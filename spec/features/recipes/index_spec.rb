@@ -26,7 +26,7 @@ RSpec.feature 'Recipes Index/Search', type: :feature do
     expect(page).to have_current_path("/dashboard/search", ignore_query: true)
 
     within '#recipes' do
-      expect(page).to have_css('.recipe', count: 10)
+      expect(page).to have_css('.recipe-details', count: 10)
 
       all('.recipe').each do |recipe|
         expect(recipe.find('h2')).to have_link
