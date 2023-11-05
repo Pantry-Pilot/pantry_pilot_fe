@@ -5,7 +5,7 @@ body {
   margin: 0;
   margin-top: 300px;
   padding: 0;
-  background-color: #a0c8a4;
+  background-color: #ffffff;
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #000000; 
@@ -51,7 +51,7 @@ img.logo {
   margin: 0;
   margin-top: 130px;
   padding: 0;
-  background-color: #a0c8a4; /* Your desired background color */
+  background-color: #ffffff; /* Your desired background color */
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #000000; /* Your desired text color */
@@ -67,28 +67,21 @@ img.logo {
   text-decoration: none;
 }
 
-.recipe-container:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 /* Style for the link to the recipe show page */
 .recipe-link {
   text-decoration: none;
   color: inherit; /* Inherit the color from parent styles */
 }
-
 /* Style for the recipe image */
 .recipe-image {
   width: 50%;
   height: auto;
 }
-
 /* Style for the recipe title */
 .recipe-details h2 {
   font-size: 18px;
   margin: 0;
 }
-
 /* Style for the recipe summary */
 .recipe-details p {
   font-size: 14px;
