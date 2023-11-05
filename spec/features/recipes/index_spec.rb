@@ -1,13 +1,22 @@
 require 'rails_helper'
 
 RSpec.feature 'Recipes Index/Search', type: :feature do
+  before :each do
+    data = {
+      data: {
+        attributes: {
+          name: 'Alex',
+          email: 'alex@example.com'
+        }
+      }
+    }
+    allow_any_instance_of(UsersFacade).to receive(:get_user).and_return(
+      User.new(data)
+    )
+  end
   scenario 'User searches for a recipe', :vcr do
-    visit "/login"
-    fill_in 'email', with: 'aset284@gmail.com'
-    fill_in 'password', with: 'password'
-    click_button 'Login'
 
-    click_button 'Search Recipes'
+    visit "/dashboard/search"
 
     expect(page).to have_content('Search for recipes:')
 

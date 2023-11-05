@@ -1,6 +1,19 @@
 require 'rails_helper'
 
 RSpec.feature 'Recipe show page', type: :feature do
+  before :each do
+    data = {
+      data: {
+        attributes: {
+          name: 'Alex',
+          email: 'alex@example.com'
+        }
+      }
+    }
+    allow_any_instance_of(UsersFacade).to receive(:get_user).and_return(
+      User.new(data)
+    )
+  end
   scenario 'User visits recipe show page', :vcr do
     visit "/dashboard/search/637876"
     
