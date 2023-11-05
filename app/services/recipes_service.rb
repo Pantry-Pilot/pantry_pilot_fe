@@ -17,6 +17,12 @@ class RecipesService
     end
   end
 
+  def remove_recipe(id)
+    conn.delete("/api/v1/delete_recipe") do |req|
+      req.body = {id: id}.to_json
+    end
+  end
+
   private
 
   def conn
