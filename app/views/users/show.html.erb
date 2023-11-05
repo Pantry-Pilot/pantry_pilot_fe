@@ -1,3 +1,4 @@
+<p>Welcome, <%= @user.name %></p>
 <%= button_to "Search Recipes", "/dashboard/search", method: :get  %>
 <h2>My Recipes</h2>
 <% @user_recipes.each do |recipe| %>
