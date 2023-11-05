@@ -2,10 +2,13 @@
 <%= button_to "Search Recipes", "/dashboard/search", method: :get  %>
 <h2>My Recipes</h2>
 <% @user_recipes.each do |recipe| %>
-<table>
-  <tbody>
-    <td><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></td>
-    <td><%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %></td>
-  </tbody>
-</table>
+<center>
+  <table>
+    <tbody>
+      <td><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></td>
+      <td><%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %></td>
+      <td><%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: {id: recipe.id}, class: "btn btn-danger" %></td>
+    </tbody>
+  </table>
+</center>
 <%end %>
