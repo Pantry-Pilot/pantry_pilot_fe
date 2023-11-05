@@ -1,5 +1,5 @@
 class UserRecipe
-  attr_reader :recipe_id, :title, :image
+  attr_reader :id, :recipe_id, :title, :image
 
   def initialize(data)
     @id = data[:id]
