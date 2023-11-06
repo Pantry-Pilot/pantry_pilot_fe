@@ -2,65 +2,73 @@
 @import 'bootstrap-icons/font/bootstrap-icons';
 
 body {
+  position: static;
   margin: 0;
-  margin-top: 100px;
   padding: 0;
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   color: #000000;
+  height: 100%;
 }
 
 body.login {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
   background: url('background.jpg');
   background-size: cover;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font */
-  text-align: center;
   color: #fff;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: static;
   width: 100%;
   background-color: #46584a;
-  padding: 20px;
+  padding: 30px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
-  height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: flex;
   z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 img.logo {
   position: absolute;
-  top: 15px;
-  left: 15px;
   width: auto;
-  height: 80%;
+  height: 20%; /* Takes up 100% of the header's height */
 }
 
-.form-container {
-  padding-bottom: 20px;
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust the spacing between buttons as needed */
+  align-items: center;
+}
+
+.app-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Allow app info to take available space */
+  flex-basis: 0; /* Distribute remaining space */
 }
 
 .my-form {
   margin: 0;
-  margin-top: 130px;
-  padding: 0;
+  padding: 50px;
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   color: #000000;
 }
-
 /* Style for the white box container with rounded corners */
 .recipe-container {
   background-color: #fff;
