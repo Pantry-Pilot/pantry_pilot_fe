@@ -36,20 +36,27 @@ RSpec.describe "User Dashboard Page" do
         expect(page).to have_button("Login")
       end
     end
-#incomplete test
-    # describe "When I add a recipe to my dashbaord" do 
-    #   visit "/login"
 
-    #     fill_in :email, with: "test@test.com"
-    #     fill_in :password, with: "1234"
+    describe "When I add a recipe to my dashboard" do 
+      it "I see a message that tells me the recipe has been added to my dashboard, along with a link to the recipe show" do
+      visit "/login"
+    
+        fill_in :email, with: "test@test.com"
+        fill_in :password, with: "1234"
 
-    #     click_on "Login"
+        click_on "Login"
 
-    #     expect(current_path).to eq("/dashboard")
-    #     click_on "Search Recipes"
-    #     expect(current_path).to eq("/dashboard/search")
-    #     fill_in :search, with: "chicken"
-    #     expect(page).to have_link
-    # end
+        expect(current_path).to eq("/dashboard")
+        click_on "Search Recipes"
+        expect(current_path).to eq("/dashboard/search")
+        fill_in :query, with: "chicken"
+        click_on "Search"
+        expect(page).to have_link "Chicken 65"
+        click_on "Chicken 65"
+        expect(page).to have_button "Add Recipe to my dashboard"
+        click_on "Add Recipe to my dashboard"
+        expect(current_path).to eq("/dashboard")
+      end 
+    end
   end
 end
