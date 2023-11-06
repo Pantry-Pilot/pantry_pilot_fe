@@ -41,18 +41,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b9872130-c203-4728-8146-68bb24ad6eee
+      - a347c89e-ebbf-4960-aef1-c7b57c074002
       X-Runtime:
-      - '0.248676'
+      - '0.242556'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.36, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=243.24
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.37, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=237.75
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:15 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -92,18 +92,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd502512-83be-40ed-9f23-2593c49073af
+      - 60b192be-9d8a-4c0b-a845-19fd5993559e
       X-Runtime:
-      - '0.005541'
+      - '0.004940'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.88, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=1.48
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.75, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.15
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:15 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -139,24 +139,127 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"4b8c2e86f6d3d85546cf3e49ffdb74dd"
+      - W/"f180122ebf1420225fa96e8e0986595b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - acbc7393-54d4-4d4b-ac39-3bf23b82974c
+      - 77353398-a1fd-4b71-9fde-64fc42e85598
       X-Runtime:
-      - '0.024697'
+      - '0.005491'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=13.72,
-        instantiation.active_record;dur=0.05, process_action.action_controller;dur=14.71
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.11, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.83
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
-  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"651190","title":"Masala-Tofu
+        Burger","image":"https://spoonacular.com/recipeImages/651190-556x370.jpg"}},{"id":"7","type":"user_recipes","attributes":{"recipe_id":"635370","title":"Blue
+        Cheese Tartlets With Fig Jam and Walnuts","image":"https://spoonacular.com/recipeImages/635370-556x370.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 16:56:15 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 426a70c1-d6ee-42bd-ab08-ddfc9cc525ff
+      X-Runtime:
+      - '0.004595'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.32, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.70
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 16:56:15 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e1faf015-f001-47a2-a753-84aa59938aff
+      X-Runtime:
+      - '0.004797'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.67
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 16:56:15 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/recipes/search?query=chicken
@@ -196,11 +299,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dd6e8f8b-61ad-48f4-a249-29b304d6c144
+      - 1b275626-e4c1-4585-98b0-e675a677bacd
       X-Runtime:
-      - '0.717441'
+      - '0.848347'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=712.95
+      - start_processing.action_controller;dur=0.04, process_action.action_controller;dur=838.12
       Transfer-Encoding:
       - chunked
     body:
@@ -216,7 +319,58 @@ http_interactions:
         Porridge","image":"https://spoonacular.com/recipeImages/638257-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"637999","type":"recipe","attributes":{"id":637999,"title":"Chicken
         Burritos","image":"https://spoonacular.com/recipeImages/637999-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638125","type":"recipe","attributes":{"id":638125,"title":"Chicken
         In A Pot","image":"https://spoonacular.com/recipeImages/638125-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
-  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 451186a0-0408-437b-9233-3e568dd9e087
+      X-Runtime:
+      - '0.007557'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.45, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.14
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/recipes/637876
@@ -256,18 +410,69 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c2872ea2-6b2e-4dc0-95fc-ca30e7bf0d60
+      - 0562bcd5-225b-47ff-a79f-2fb1629fe6c6
       X-Runtime:
-      - '0.624833'
+      - '0.660585'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=619.56
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=655.40
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJkYXRhIjp7ImlkIjoiNjM3ODc2IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsiaWQiOjYzNzg3NiwidGl0bGUiOiJDaGlja2VuIDY1IiwiaW1hZ2UiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjM3ODc2LTU1NngzNzAuanBnIiwic3VtbWFyeSI6IkNoaWNrZW4gNjUgY291bGQgYmUganVzdCB0aGUgXHUwMDNjYlx1MDAzZWdsdXRlbiBmcmVlXHUwMDNjL2JcdTAwM2UgcmVjaXBlIHlvdSd2ZSBiZWVuIGxvb2tpbmcgZm9yLiBUaGlzIGhvciBkJ29ldXZyZSBoYXMgXHUwMDNjYlx1MDAzZTEyMSBjYWxvcmllc1x1MDAzYy9iXHUwMDNlLCBcdTAwM2NiXHUwMDNlMTlnIG9mIHByb3RlaW5cdTAwM2MvYlx1MDAzZSwgYW5kIFx1MDAzY2JcdTAwM2UzZyBvZiBmYXRcdTAwM2MvYlx1MDAzZSBwZXIgc2VydmluZy4gRm9yIFx1MDAzY2JcdTAwM2UkMS4xNSBwZXIgc2VydmluZ1x1MDAzYy9iXHUwMDNlLCB0aGlzIHJlY2lwZSBcdTAwM2NiXHUwMDNlY292ZXJzIDExJVx1MDAzYy9iXHUwMDNlIG9mIHlvdXIgZGFpbHkgcmVxdWlyZW1lbnRzIG9mIHZpdGFtaW5zIGFuZCBtaW5lcmFscy4gVGhpcyByZWNpcGUgc2VydmVzIDYuIEhlYWQgdG8gdGhlIHN0b3JlIGFuZCBwaWNrIHVwIHNhbHQsIGNoaWxpIHBvd2RlciwgeW9ndXJ0LCBhbmQgYSBmZXcgb3RoZXIgdGhpbmdzIHRvIG1ha2UgaXQgdG9kYXkuIDYgcGVvcGxlIGhhdmUgbWFkZSB0aGlzIHJlY2lwZSBhbmQgd291bGQgbWFrZSBpdCBhZ2Fpbi4gSXQgaXMgYnJvdWdodCB0byB5b3UgYnkgRm9vZGlzdGEuIEZyb20gcHJlcGFyYXRpb24gdG8gdGhlIHBsYXRlLCB0aGlzIHJlY2lwZSB0YWtlcyBhcHByb3hpbWF0ZWx5IFx1MDAzY2JcdTAwM2U0NSBtaW51dGVzXHUwMDNjL2JcdTAwM2UuIE92ZXJhbGwsIHRoaXMgcmVjaXBlIGVhcm5zIGEgXHUwMDNjYlx1MDAzZW5vdCBzbyBzcGVjdGFjdWxhciBzcG9vbmFjdWxhciBzY29yZSBvZiAzOSVcdTAwM2MvYlx1MDAzZS4gU2ltaWxhciByZWNpcGVzIGFyZSBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2ktYWludC1jaGlja2VuLWNoaWNrZW4tY3Jpc3B5LXJvYXN0ZWQtY2hpY2tlbi1icmVhc3RzLXdpdGgtb3JhbmdlLWFuZC1jYXJkYW1vbS0xMjQzMjUxXCJcdTAwM2VJIEFpbid0IENoaWNrZW4gQ2hpY2tlbjogQ3Jpc3B5IFJvYXN0ZWQgQ2hpY2tlbiBCcmVhc3RzIHdpdGggT3JhbmdlIGFuZCBDYXJkYW1vbVx1MDAzYy9hXHUwMDNlLCBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2ktYWludC1jaGlja2VuLWNoaWNrZW4tY3Jpc3B5LXJvYXN0ZWQtY2hpY2tlbi1icmVhc3RzLXdpdGgtb3JhbmdlLWFuZC1jYXJkYW1vbS0xMjMwMDU5XCJcdTAwM2VJIEFpbid0IENoaWNrZW4gQ2hpY2tlbjogQ3Jpc3B5IFJvYXN0ZWQgQ2hpY2tlbiBCcmVhc3RzIHdpdGggT3JhbmdlIGFuZCBDYXJkYW1vbVx1MDAzYy9hXHUwMDNlLCBhbmQgXHUwMDNjYSBocmVmPVwiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlcy9pLWFpbnQtY2hpY2tlbi1jaGlja2VuLWNyaXNweS1yb2FzdGVkLWNoaWNrZW4tYnJlYXN0cy13aXRoLW9yYW5nZS1hbmQtY2FyZGFtb20tMTIyNDMyMVwiXHUwMDNlSSBBaW4ndCBDaGlja2VuIENoaWNrZW46IENyaXNweSBSb2FzdGVkIENoaWNrZW4gQnJlYXN0cyB3aXRoIE9yYW5nZSBhbmQgQ2FyZGFtb21cdTAwM2MvYVx1MDAzZS4iLCJpbnN0cnVjdGlvbnMiOiJcdTAwM2NvbFx1MDAzZVx1MDAzY2xpXHUwMDNlVGFrZSBhIGxhcmdlIGJvd2wgbWl4IGluIHRoZSBnaW5nZXIgYW5kIGdhcmxpYyBwYXN0ZSwgeW9ndXJ0LCByZWQgY2hpbGx5IHBvd2RlciwgdHVybWVyaWMgcG93ZGVyLCBhbmQgc2FsdC5cdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZU1peCB3ZWxsIHRvIGZyb20gc21vb3RoIGFuZCB0aGljayBwYXN0ZSwgYWRkIHRoZSBjaGlja2VuIHBpZWNlcyB0byB0aGUgbWFzYWxhIHBhc3RlIGFuZCAgbWFyaW5hZGVkIGZvciA0IGhvdXJzLlx1MDAzYy9saVx1MDAzZVx1MDAzY2xpXHUwMDNlSGVhdCBlbm91Z2ggb2lsIGluIGEgcGFuIHRvIGRlZXAgZnJ5IHRoZSBtYXJpbmFkZWQgY2hpY2tlbiBwaWVjZXMuIERlZXAgZnJ5IHRoZSBjaGlja2VuIHBpZWNlcyBpbiBiYXRjaGVzIHRpbGwgY3Jpc3AgYW5kIGdvbGRlbiBjb2xvci5cdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZU5vdGU6IFRoZSB0YXN0ZSBvZiB0aGUgQ2hpY2tlbiA2NSBkZXBlbmRzIG1haW5seSBvbiB0aGUgYW1vdW50IG9mIHRpbWUgaXQgZ2V0cyBtYXJpbmF0ZWQgaW4gdGhlIG1hc2FsYSwgaXQgaXMgYmVzdCB0byBtYXJpbmF0ZSB0aGUgY2hpY2tlbiBwaWVjZXMgdGhlIGRheSBiZWZvcmUuXHUwMDNjL2xpXHUwMDNlXHUwMDNjL29sXHUwMDNlIiwiaW5ncmVkaWVudHMiOlt7ImlkIjo1MDYyLCJhaXNsZSI6Ik1lYXQiLCJpbWFnZSI6ImNoaWNrZW4tYnJlYXN0cy5wbmciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImNoaWNrZW4gYnJlYXN0IiwibmFtZUNsZWFuIjoiY2hpY2tlbiBicmVhc3QiLCJvcmlnaW5hbCI6IjUwMCBncmFtcyBib25lbGVzcyBjaGlja2VuIGJyZWFzdCIsIm9yaWdpbmFsTmFtZSI6ImJvbmVsZXNzIGNoaWNrZW4gYnJlYXN0IiwiYW1vdW50Ijo1MDAuMCwidW5pdCI6ImdyYW1zIiwibWV0YSI6WyJib25lbGVzcyJdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjEuMTAyLCJ1bml0U2hvcnQiOiJsYiIsInVuaXRMb25nIjoicG91bmRzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjUwMC4wLCJ1bml0U2hvcnQiOiJnIiwidW5pdExvbmciOiJncmFtcyJ9fX0seyJpZCI6MjAwOSwiYWlzbGUiOiJTcGljZXMgYW5kIFNlYXNvbmluZ3MiLCJpbWFnZSI6ImNoaWxpLXBvd2Rlci5qcGciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImNoaWxpIHBvd2RlciIsIm5hbWVDbGVhbiI6ImNoaWxpIHBvd2RlciIsIm9yaWdpbmFsIjoiMi0zIHRzcCBjaGlsaSBwb3dkZXIiLCJvcmlnaW5hbE5hbWUiOiJjaGlsaSBwb3dkZXIiLCJhbW91bnQiOjIuMCwidW5pdCI6InRzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn0sIm1ldHJpYyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn19fSx7ImlkIjoxMDExMTIxNSwiYWlzbGUiOiJFdGhuaWMgRm9vZHMiLCJpbWFnZSI6ImdhcmxpYy1wYXN0ZS5wbmciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImdpbmdlciBhbmQgZ2FybGljIHBhc3RlIiwibmFtZUNsZWFuIjoiZ2FybGljIHBhc3RlIiwib3JpZ2luYWwiOiI0IHRic3AgR2luZ2VyIGFuZCBHYXJsaWMgcGFzdGUiLCJvcmlnaW5hbE5hbWUiOiJHaW5nZXIgYW5kIEdhcmxpYyBwYXN0ZSIsImFtb3VudCI6NC4wLCJ1bml0IjoidGJzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjQuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjQuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn19fSx7ImlkIjoyMDQ3LCJhaXNsZSI6IlNwaWNlcyBhbmQgU2Vhc29uaW5ncyIsImltYWdlIjoic2FsdC5qcGciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6InNhbHQiLCJuYW1lQ2xlYW4iOiJ0YWJsZSBzYWx0Iiwib3JpZ2luYWwiOiLCvSB0YnNwLiBzYWx0Iiwib3JpZ2luYWxOYW1lIjoic2FsdCIsImFtb3VudCI6MC41LCJ1bml0IjoidGJzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjAuNSwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjAuNSwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn19fSx7ImlkIjoyMDQzLCJhaXNsZSI6IlNwaWNlcyBhbmQgU2Vhc29uaW5ncyIsImltYWdlIjoidHVybWVyaWMuanBnIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJ0dXJtZXJpYyBwb3dkZXIiLCJuYW1lQ2xlYW4iOiJ0dXJtZXJpYyIsIm9yaWdpbmFsIjoiMS80IHRzcCBUdXJtZXJpYyBwb3dkZXIiLCJvcmlnaW5hbE5hbWUiOiJUdXJtZXJpYyBwb3dkZXIiLCJhbW91bnQiOjAuMjUsInVuaXQiOiJ0c3AiLCJtZXRhIjpbXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50IjowLjI1LCJ1bml0U2hvcnQiOiJ0c3BzIiwidW5pdExvbmciOiJ0ZWFzcG9vbnMifSwibWV0cmljIjp7ImFtb3VudCI6MC4yNSwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn19fSx7ImlkIjoxMTE2LCJhaXNsZSI6Ik1pbGssIEVnZ3MsIE90aGVyIERhaXJ5IiwiaW1hZ2UiOiJwbGFpbi15b2d1cnQuanBnIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJ5b2d1cnQiLCJuYW1lQ2xlYW4iOiJ5b2d1cnQiLCJvcmlnaW5hbCI6IjQgdGJzcCB5b2d1cnQiLCJvcmlnaW5hbE5hbWUiOiJ5b2d1cnQiLCJhbW91bnQiOjQuMCwidW5pdCI6InRic3AiLCJtZXRhIjpbXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50Ijo0LjAsInVuaXRTaG9ydCI6IlRic3BzIiwidW5pdExvbmciOiJUYnNwcyJ9LCJtZXRyaWMiOnsiYW1vdW50Ijo0LjAsInVuaXRTaG9ydCI6IlRic3BzIiwidW5pdExvbmciOiJUYnNwcyJ9fX1dfX19
-  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f5fbd1d-593b-4709-9e54-75c1efbef8c1
+      X-Runtime:
+      - '0.007976'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=1.67, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=2.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
 - request:
     method: post
     uri: http://localhost:5000/api/v1/add_recipe
@@ -333,16 +538,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0bd304e0-b5e5-4b60-bba1-e777c799a196
+      - 97f7138e-a056-40ae-80bb-6a4cdab9be2b
       X-Runtime:
-      - '0.022669'
+      - '0.014160'
       Server-Timing:
-      - start_processing.action_controller;dur=0.39, unpermitted_parameters.action_controller;dur=0.57,
-        sql.active_record;dur=12.38, instantiation.active_record;dur=0.07, process_action.action_controller;dur=15.62
+      - start_processing.action_controller;dur=0.26, unpermitted_parameters.action_controller;dur=0.46,
+        sql.active_record;dur=6.22, instantiation.active_record;dur=0.06, process_action.action_controller;dur=9.20
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -382,18 +587,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 16aa5328-f77e-4897-8753-d0fa43bb004a
+      - 5d7124f1-5725-497d-993c-bbf5c6578fce
       X-Runtime:
-      - '0.005627'
+      - '0.005209'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.33, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.80
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.31, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.72
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -429,23 +634,24 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"af31c86d6e437761121e6a88436c1163"
+      - W/"d16447ce63bbabc79e868cfa28d230fa"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 95db7458-75ac-4920-986c-7066a56ae910
+      - cf5f737d-23a0-40c2-b592-c2fb5bc9a612
       X-Runtime:
-      - '0.006025'
+      - '0.005708'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.11, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.98
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.03, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.82
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"3","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"651190","title":"Masala-Tofu
+        Burger","image":"https://spoonacular.com/recipeImages/651190-556x370.jpg"}},{"id":"7","type":"user_recipes","attributes":{"recipe_id":"635370","title":"Blue
+        Cheese Tartlets With Fig Jam and Walnuts","image":"https://spoonacular.com/recipeImages/635370-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
         65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
-  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+  recorded_at: Mon, 06 Nov 2023 16:56:16 GMT
 recorded_with: VCR 6.2.0
