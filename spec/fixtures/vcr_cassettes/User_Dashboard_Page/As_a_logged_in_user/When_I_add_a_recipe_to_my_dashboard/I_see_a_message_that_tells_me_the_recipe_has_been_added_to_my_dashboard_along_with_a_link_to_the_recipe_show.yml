@@ -1,0 +1,451 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/login
+    body:
+      encoding: UTF-8
+      string: '{"email":"test@test.com","password":"1234"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b9872130-c203-4728-8146-68bb24ad6eee
+      X-Runtime:
+      - '0.248676'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.36, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=243.24
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd502512-83be-40ed-9f23-2593c49073af
+      X-Runtime:
+      - '0.005541'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.88, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.48
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_recipes/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4b8c2e86f6d3d85546cf3e49ffdb74dd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - acbc7393-54d4-4d4b-ac39-3bf23b82974c
+      X-Runtime:
+      - '0.024697'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=13.72,
+        instantiation.active_record;dur=0.05, process_action.action_controller;dur=14.71
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/search?query=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"586c7b277e3f9e0d66441ffa3518c35d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dd6e8f8b-61ad-48f4-a249-29b304d6c144
+      X-Runtime:
+      - '0.717441'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=712.95
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"637876","type":"recipe","attributes":{"id":637876,"title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"716342","type":"recipe","attributes":{"id":716342,"title":"Chicken
+        Suya","image":"https://spoonacular.com/recipeImages/716342-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638420","type":"recipe","attributes":{"id":638420,"title":"Chicken
+        Wings","image":"https://spoonacular.com/recipeImages/638420-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638308","type":"recipe","attributes":{"id":638308,"title":"Chicken
+        Satay","image":"https://spoonacular.com/recipeImages/638308-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638086","type":"recipe","attributes":{"id":638086,"title":"Chicken
+        Fingers","image":"https://spoonacular.com/recipeImages/638086-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638174","type":"recipe","attributes":{"id":638174,"title":"Chicken
+        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"667707","type":"recipe","attributes":{"id":667707,"title":"chicken
+        marbella","image":"https://spoonacular.com/recipeImages/667707-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638257","type":"recipe","attributes":{"id":638257,"title":"Chicken
+        Porridge","image":"https://spoonacular.com/recipeImages/638257-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"637999","type":"recipe","attributes":{"id":637999,"title":"Chicken
+        Burritos","image":"https://spoonacular.com/recipeImages/637999-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638125","type":"recipe","attributes":{"id":638125,"title":"Chicken
+        In A Pot","image":"https://spoonacular.com/recipeImages/638125-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
+  recorded_at: Mon, 06 Nov 2023 01:49:56 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/637876
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a7cfc929a24123e29c212d41d7fc4ba6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c2872ea2-6b2e-4dc0-95fc-ca30e7bf0d60
+      X-Runtime:
+      - '0.624833'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=619.56
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNjM3ODc2IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsiaWQiOjYzNzg3NiwidGl0bGUiOiJDaGlja2VuIDY1IiwiaW1hZ2UiOiJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVJbWFnZXMvNjM3ODc2LTU1NngzNzAuanBnIiwic3VtbWFyeSI6IkNoaWNrZW4gNjUgY291bGQgYmUganVzdCB0aGUgXHUwMDNjYlx1MDAzZWdsdXRlbiBmcmVlXHUwMDNjL2JcdTAwM2UgcmVjaXBlIHlvdSd2ZSBiZWVuIGxvb2tpbmcgZm9yLiBUaGlzIGhvciBkJ29ldXZyZSBoYXMgXHUwMDNjYlx1MDAzZTEyMSBjYWxvcmllc1x1MDAzYy9iXHUwMDNlLCBcdTAwM2NiXHUwMDNlMTlnIG9mIHByb3RlaW5cdTAwM2MvYlx1MDAzZSwgYW5kIFx1MDAzY2JcdTAwM2UzZyBvZiBmYXRcdTAwM2MvYlx1MDAzZSBwZXIgc2VydmluZy4gRm9yIFx1MDAzY2JcdTAwM2UkMS4xNSBwZXIgc2VydmluZ1x1MDAzYy9iXHUwMDNlLCB0aGlzIHJlY2lwZSBcdTAwM2NiXHUwMDNlY292ZXJzIDExJVx1MDAzYy9iXHUwMDNlIG9mIHlvdXIgZGFpbHkgcmVxdWlyZW1lbnRzIG9mIHZpdGFtaW5zIGFuZCBtaW5lcmFscy4gVGhpcyByZWNpcGUgc2VydmVzIDYuIEhlYWQgdG8gdGhlIHN0b3JlIGFuZCBwaWNrIHVwIHNhbHQsIGNoaWxpIHBvd2RlciwgeW9ndXJ0LCBhbmQgYSBmZXcgb3RoZXIgdGhpbmdzIHRvIG1ha2UgaXQgdG9kYXkuIDYgcGVvcGxlIGhhdmUgbWFkZSB0aGlzIHJlY2lwZSBhbmQgd291bGQgbWFrZSBpdCBhZ2Fpbi4gSXQgaXMgYnJvdWdodCB0byB5b3UgYnkgRm9vZGlzdGEuIEZyb20gcHJlcGFyYXRpb24gdG8gdGhlIHBsYXRlLCB0aGlzIHJlY2lwZSB0YWtlcyBhcHByb3hpbWF0ZWx5IFx1MDAzY2JcdTAwM2U0NSBtaW51dGVzXHUwMDNjL2JcdTAwM2UuIE92ZXJhbGwsIHRoaXMgcmVjaXBlIGVhcm5zIGEgXHUwMDNjYlx1MDAzZW5vdCBzbyBzcGVjdGFjdWxhciBzcG9vbmFjdWxhciBzY29yZSBvZiAzOSVcdTAwM2MvYlx1MDAzZS4gU2ltaWxhciByZWNpcGVzIGFyZSBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2ktYWludC1jaGlja2VuLWNoaWNrZW4tY3Jpc3B5LXJvYXN0ZWQtY2hpY2tlbi1icmVhc3RzLXdpdGgtb3JhbmdlLWFuZC1jYXJkYW1vbS0xMjQzMjUxXCJcdTAwM2VJIEFpbid0IENoaWNrZW4gQ2hpY2tlbjogQ3Jpc3B5IFJvYXN0ZWQgQ2hpY2tlbiBCcmVhc3RzIHdpdGggT3JhbmdlIGFuZCBDYXJkYW1vbVx1MDAzYy9hXHUwMDNlLCBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2ktYWludC1jaGlja2VuLWNoaWNrZW4tY3Jpc3B5LXJvYXN0ZWQtY2hpY2tlbi1icmVhc3RzLXdpdGgtb3JhbmdlLWFuZC1jYXJkYW1vbS0xMjMwMDU5XCJcdTAwM2VJIEFpbid0IENoaWNrZW4gQ2hpY2tlbjogQ3Jpc3B5IFJvYXN0ZWQgQ2hpY2tlbiBCcmVhc3RzIHdpdGggT3JhbmdlIGFuZCBDYXJkYW1vbVx1MDAzYy9hXHUwMDNlLCBhbmQgXHUwMDNjYSBocmVmPVwiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlcy9pLWFpbnQtY2hpY2tlbi1jaGlja2VuLWNyaXNweS1yb2FzdGVkLWNoaWNrZW4tYnJlYXN0cy13aXRoLW9yYW5nZS1hbmQtY2FyZGFtb20tMTIyNDMyMVwiXHUwMDNlSSBBaW4ndCBDaGlja2VuIENoaWNrZW46IENyaXNweSBSb2FzdGVkIENoaWNrZW4gQnJlYXN0cyB3aXRoIE9yYW5nZSBhbmQgQ2FyZGFtb21cdTAwM2MvYVx1MDAzZS4iLCJpbnN0cnVjdGlvbnMiOiJcdTAwM2NvbFx1MDAzZVx1MDAzY2xpXHUwMDNlVGFrZSBhIGxhcmdlIGJvd2wgbWl4IGluIHRoZSBnaW5nZXIgYW5kIGdhcmxpYyBwYXN0ZSwgeW9ndXJ0LCByZWQgY2hpbGx5IHBvd2RlciwgdHVybWVyaWMgcG93ZGVyLCBhbmQgc2FsdC5cdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZU1peCB3ZWxsIHRvIGZyb20gc21vb3RoIGFuZCB0aGljayBwYXN0ZSwgYWRkIHRoZSBjaGlja2VuIHBpZWNlcyB0byB0aGUgbWFzYWxhIHBhc3RlIGFuZCAgbWFyaW5hZGVkIGZvciA0IGhvdXJzLlx1MDAzYy9saVx1MDAzZVx1MDAzY2xpXHUwMDNlSGVhdCBlbm91Z2ggb2lsIGluIGEgcGFuIHRvIGRlZXAgZnJ5IHRoZSBtYXJpbmFkZWQgY2hpY2tlbiBwaWVjZXMuIERlZXAgZnJ5IHRoZSBjaGlja2VuIHBpZWNlcyBpbiBiYXRjaGVzIHRpbGwgY3Jpc3AgYW5kIGdvbGRlbiBjb2xvci5cdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZU5vdGU6IFRoZSB0YXN0ZSBvZiB0aGUgQ2hpY2tlbiA2NSBkZXBlbmRzIG1haW5seSBvbiB0aGUgYW1vdW50IG9mIHRpbWUgaXQgZ2V0cyBtYXJpbmF0ZWQgaW4gdGhlIG1hc2FsYSwgaXQgaXMgYmVzdCB0byBtYXJpbmF0ZSB0aGUgY2hpY2tlbiBwaWVjZXMgdGhlIGRheSBiZWZvcmUuXHUwMDNjL2xpXHUwMDNlXHUwMDNjL29sXHUwMDNlIiwiaW5ncmVkaWVudHMiOlt7ImlkIjo1MDYyLCJhaXNsZSI6Ik1lYXQiLCJpbWFnZSI6ImNoaWNrZW4tYnJlYXN0cy5wbmciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImNoaWNrZW4gYnJlYXN0IiwibmFtZUNsZWFuIjoiY2hpY2tlbiBicmVhc3QiLCJvcmlnaW5hbCI6IjUwMCBncmFtcyBib25lbGVzcyBjaGlja2VuIGJyZWFzdCIsIm9yaWdpbmFsTmFtZSI6ImJvbmVsZXNzIGNoaWNrZW4gYnJlYXN0IiwiYW1vdW50Ijo1MDAuMCwidW5pdCI6ImdyYW1zIiwibWV0YSI6WyJib25lbGVzcyJdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjEuMTAyLCJ1bml0U2hvcnQiOiJsYiIsInVuaXRMb25nIjoicG91bmRzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjUwMC4wLCJ1bml0U2hvcnQiOiJnIiwidW5pdExvbmciOiJncmFtcyJ9fX0seyJpZCI6MjAwOSwiYWlzbGUiOiJTcGljZXMgYW5kIFNlYXNvbmluZ3MiLCJpbWFnZSI6ImNoaWxpLXBvd2Rlci5qcGciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImNoaWxpIHBvd2RlciIsIm5hbWVDbGVhbiI6ImNoaWxpIHBvd2RlciIsIm9yaWdpbmFsIjoiMi0zIHRzcCBjaGlsaSBwb3dkZXIiLCJvcmlnaW5hbE5hbWUiOiJjaGlsaSBwb3dkZXIiLCJhbW91bnQiOjIuMCwidW5pdCI6InRzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn0sIm1ldHJpYyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn19fSx7ImlkIjoxMDExMTIxNSwiYWlzbGUiOiJFdGhuaWMgRm9vZHMiLCJpbWFnZSI6ImdhcmxpYy1wYXN0ZS5wbmciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6ImdpbmdlciBhbmQgZ2FybGljIHBhc3RlIiwibmFtZUNsZWFuIjoiZ2FybGljIHBhc3RlIiwib3JpZ2luYWwiOiI0IHRic3AgR2luZ2VyIGFuZCBHYXJsaWMgcGFzdGUiLCJvcmlnaW5hbE5hbWUiOiJHaW5nZXIgYW5kIEdhcmxpYyBwYXN0ZSIsImFtb3VudCI6NC4wLCJ1bml0IjoidGJzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjQuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjQuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn19fSx7ImlkIjoyMDQ3LCJhaXNsZSI6IlNwaWNlcyBhbmQgU2Vhc29uaW5ncyIsImltYWdlIjoic2FsdC5qcGciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6InNhbHQiLCJuYW1lQ2xlYW4iOiJ0YWJsZSBzYWx0Iiwib3JpZ2luYWwiOiLCvSB0YnNwLiBzYWx0Iiwib3JpZ2luYWxOYW1lIjoic2FsdCIsImFtb3VudCI6MC41LCJ1bml0IjoidGJzcCIsIm1ldGEiOltdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjAuNSwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjAuNSwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn19fSx7ImlkIjoyMDQzLCJhaXNsZSI6IlNwaWNlcyBhbmQgU2Vhc29uaW5ncyIsImltYWdlIjoidHVybWVyaWMuanBnIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJ0dXJtZXJpYyBwb3dkZXIiLCJuYW1lQ2xlYW4iOiJ0dXJtZXJpYyIsIm9yaWdpbmFsIjoiMS80IHRzcCBUdXJtZXJpYyBwb3dkZXIiLCJvcmlnaW5hbE5hbWUiOiJUdXJtZXJpYyBwb3dkZXIiLCJhbW91bnQiOjAuMjUsInVuaXQiOiJ0c3AiLCJtZXRhIjpbXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50IjowLjI1LCJ1bml0U2hvcnQiOiJ0c3BzIiwidW5pdExvbmciOiJ0ZWFzcG9vbnMifSwibWV0cmljIjp7ImFtb3VudCI6MC4yNSwidW5pdFNob3J0IjoidHNwcyIsInVuaXRMb25nIjoidGVhc3Bvb25zIn19fSx7ImlkIjoxMTE2LCJhaXNsZSI6Ik1pbGssIEVnZ3MsIE90aGVyIERhaXJ5IiwiaW1hZ2UiOiJwbGFpbi15b2d1cnQuanBnIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJ5b2d1cnQiLCJuYW1lQ2xlYW4iOiJ5b2d1cnQiLCJvcmlnaW5hbCI6IjQgdGJzcCB5b2d1cnQiLCJvcmlnaW5hbE5hbWUiOiJ5b2d1cnQiLCJhbW91bnQiOjQuMCwidW5pdCI6InRic3AiLCJtZXRhIjpbXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50Ijo0LjAsInVuaXRTaG9ydCI6IlRic3BzIiwidW5pdExvbmciOiJUYnNwcyJ9LCJtZXRyaWMiOnsiYW1vdW50Ijo0LjAsInVuaXRTaG9ydCI6IlRic3BzIiwidW5pdExvbmciOiJUYnNwcyJ9fX1dfX19
+  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/add_recipe
+    body:
+      encoding: UTF-8
+      string: '{"recipe_id":"637876","title":"Chicken 65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg","summary":"Chicken
+        65 could be just the \u003cb\u003egluten free\u003c/b\u003e recipe you''ve
+        been looking for. This hor d''oeuvre has \u003cb\u003e121 calories\u003c/b\u003e,
+        \u003cb\u003e19g of protein\u003c/b\u003e, and \u003cb\u003e3g of fat\u003c/b\u003e
+        per serving. For \u003cb\u003e$1.15 per serving\u003c/b\u003e, this recipe
+        \u003cb\u003ecovers 11%\u003c/b\u003e of your daily requirements of vitamins
+        and minerals. This recipe serves 6. Head to the store and pick up salt, chili
+        powder, yogurt, and a few other things to make it today. 6 people have made
+        this recipe and would make it again. It is brought to you by Foodista. From
+        preparation to the plate, this recipe takes approximately \u003cb\u003e45
+        minutes\u003c/b\u003e. Overall, this recipe earns a \u003cb\u003enot so spectacular
+        spoonacular score of 39%\u003c/b\u003e. Similar recipes are \u003ca href=\"https://spoonacular.com/recipes/i-aint-chicken-chicken-crispy-roasted-chicken-breasts-with-orange-and-cardamom-1243251\"\u003eI
+        Ain''t Chicken Chicken: Crispy Roasted Chicken Breasts with Orange and Cardamom\u003c/a\u003e,
+        \u003ca href=\"https://spoonacular.com/recipes/i-aint-chicken-chicken-crispy-roasted-chicken-breasts-with-orange-and-cardamom-1230059\"\u003eI
+        Ain''t Chicken Chicken: Crispy Roasted Chicken Breasts with Orange and Cardamom\u003c/a\u003e,
+        and \u003ca href=\"https://spoonacular.com/recipes/i-aint-chicken-chicken-crispy-roasted-chicken-breasts-with-orange-and-cardamom-1224321\"\u003eI
+        Ain''t Chicken Chicken: Crispy Roasted Chicken Breasts with Orange and Cardamom\u003c/a\u003e.","instructions":"\u003col\u003e\u003cli\u003eTake
+        a large bowl mix in the ginger and garlic paste, yogurt, red chilly powder,
+        turmeric powder, and salt.\u003c/li\u003e\u003cli\u003eMix well to from smooth
+        and thick paste, add the chicken pieces to the masala paste and  marinaded
+        for 4 hours.\u003c/li\u003e\u003cli\u003eHeat enough oil in a pan to deep
+        fry the marinaded chicken pieces. Deep fry the chicken pieces in batches till
+        crisp and golden color.\u003c/li\u003e\u003cli\u003eNote: The taste of the
+        Chicken 65 depends mainly on the amount of time it gets marinated in the masala,
+        it is best to marinate the chicken pieces the day before.\u003c/li\u003e\u003c/ol\u003e","ingredients":"{:name=\u003e\"chicken
+        breast\", :amount=\u003e500.0, :unit=\u003e\"grams\"} {:name=\u003e\"chili
+        powder\", :amount=\u003e2.0, :unit=\u003e\"tsp\"} {:name=\u003e\"ginger and
+        garlic paste\", :amount=\u003e4.0, :unit=\u003e\"tbsp\"} {:name=\u003e\"salt\",
+        :amount=\u003e0.5, :unit=\u003e\"tbsp\"} {:name=\u003e\"turmeric powder\",
+        :amount=\u003e0.25, :unit=\u003e\"tsp\"} {:name=\u003e\"yogurt\", :amount=\u003e4.0,
+        :unit=\u003e\"tbsp\"}","user_id":"1"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0bd304e0-b5e5-4b60-bba1-e777c799a196
+      X-Runtime:
+      - '0.022669'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.39, unpermitted_parameters.action_controller;dur=0.57,
+        sql.active_record;dur=12.38, instantiation.active_record;dur=0.07, process_action.action_controller;dur=15.62
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 16aa5328-f77e-4897-8753-d0fa43bb004a
+      X-Runtime:
+      - '0.005627'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.33, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_recipes/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"af31c86d6e437761121e6a88436c1163"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95db7458-75ac-4920-986c-7066a56ae910
+      X-Runtime:
+      - '0.006025'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.11, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.98
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"3","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 01:49:57 GMT
+recorded_with: VCR 6.2.0
