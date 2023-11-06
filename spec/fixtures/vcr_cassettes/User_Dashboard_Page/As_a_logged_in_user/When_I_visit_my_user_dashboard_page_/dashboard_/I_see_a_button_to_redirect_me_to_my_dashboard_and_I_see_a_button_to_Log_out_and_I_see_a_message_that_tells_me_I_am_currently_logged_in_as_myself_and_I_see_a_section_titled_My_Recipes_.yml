@@ -41,18 +41,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 38c0bcf5-674c-4cf5-b642-828632b6a3af
+      - debc3bbd-e551-41b5-8e9f-9a65c5b90c66
       X-Runtime:
-      - '0.279790'
+      - '0.282980'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=9.77, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=274.06
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.52, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=257.11
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 22:25:19 GMT
+  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -92,18 +92,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4c79bee3-dc5d-43f4-a3b9-a7a6fc572e49
+      - 5bdb3cc6-4457-48c0-b495-4c394837267e
       X-Runtime:
-      - '0.006457'
+      - '0.005431'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=0.51, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.33
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.49, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.95
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 22:25:19 GMT
+  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -139,20 +139,21 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      - W/"e0a4a558f9e5fa624f23007e516304d8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 620bc240-4387-4f32-8e1e-1e419ed31dd4
+      - ff1e94f4-0a41-49d0-b8af-e8acadbd6f12
       X-Runtime:
-      - '0.007886'
+      - '0.007454'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=2.77, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=4.08
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.04, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.19
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Mon, 06 Nov 2023 22:25:19 GMT
+      string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
+  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
 recorded_with: VCR 6.2.0

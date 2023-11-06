@@ -35,15 +35,15 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"72f0cb2c950b149f51ae28fdac3e8437"
+      - W/"dabaf4febfd9649a64f77aaa91fccbb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1e94152f-256c-4335-8962-c8a4909d8604
+      - c54a286b-6859-49c4-92f3-31460f82132b
       X-Runtime:
-      - '0.625763'
+      - '0.765095'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=620.18
+      - start_processing.action_controller;dur=0.13, process_action.action_controller;dur=759.05
       Transfer-Encoding:
       - chunked
     body:
@@ -68,8 +68,8 @@ http_interactions:
         salad ingredients in a large bowl and season with salt and pepper.\u003c/li\u003e\u003cli\u003ePlace
         dressing ingredients and 1/4 cup water in a blender and puree until smooth.
         Season with salt and pepper. (If thick, add water by the tablespoon.)\u003c/li\u003e\u003cli\u003eDrizzle
-        salad with 1/3 cup dressing.\u003c/li\u003e\u003c/ol\u003e","ingredients":[{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
-        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":15001,"aisle":"Seafood","image":"anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        salad with 1/3 cup dressing.\u003c/li\u003e\u003c/ol\u003e","ingredients":[{"id":15001,"aisle":"Seafood","image":"anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
         anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":9037,"aisle":"Produce","image":"avocado.jpg","consistency":"SOLID","name":"avocado","nameClean":"avocado","original":"1/2
         ripe avocado","originalName":"ripe avocado","amount":0.5,"unit":"","meta":["ripe"],"measures":{"us":{"amount":0.5,"unitShort":"","unitLong":""},"metric":{"amount":0.5,"unitShort":"","unitLong":""}}},{"id":11156,"aisle":"Produce","image":"fresh-chives.jpg","consistency":"SOLID","name":"freshly
         chives","nameClean":"chives","original":"2 tablespoons freshly minced chives","originalName":"freshly
@@ -87,5 +87,5 @@ http_interactions:
         buttermilk","amount":0.5,"unit":"cup","meta":["low-fat"],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":120.0,"unitShort":"ml","unitLong":"milliliters"}}},{"id":93621,"aisle":"Spices
         and Seasonings","image":"sorrel.jpg","consistency":"SOLID","name":"sorrel","nameClean":"sorrel","original":"4
         packed cups sorrel (4 oz)","originalName":"packed cups sorrel","amount":4.0,"unit":"oz","meta":["packed"],"measures":{"us":{"amount":4.0,"unitShort":"oz","unitLong":"ounces"},"metric":{"amount":113.398,"unitShort":"g","unitLong":"grams"}}}]}}}'
-  recorded_at: Sat, 04 Nov 2023 19:14:23 GMT
+  recorded_at: Mon, 06 Nov 2023 23:39:03 GMT
 recorded_with: VCR 6.2.0

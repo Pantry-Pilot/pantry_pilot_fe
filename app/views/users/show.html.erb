@@ -2,8 +2,8 @@
 <%= button_to "Search Recipes", "/dashboard/search", method: :get %>
 <h2>My Recipes</h2>
 <% @user_recipes.each do |recipe| %>
-  <div class="recipe-container"> <!-- Add the container class here -->
-    <div class="recipe"> <!-- Wrap each recipe in a container -->
+  <div class="recipe-container"> 
+    <div class="recipe"> 
       <h3><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></h3>
       <%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %>
       <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: { id: recipe.id }, class: "btn btn-danger" %>
