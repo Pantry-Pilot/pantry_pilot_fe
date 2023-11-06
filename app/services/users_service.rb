@@ -21,4 +21,11 @@ private
       config.adapter Faraday.default_adapter  
     end
   end
+
+  def oauth_verification(email)
+    request = conn.get("/api/v1/auth/google_oauth2/callback") do |request|
+      request.headers['Content-Type'] = 'application/json'
+      request.body = { email: email }
+    end
+  end 
 end

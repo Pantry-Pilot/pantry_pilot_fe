@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   delete "/dashboard/delete_recipe", to: "recipes#destroy"
   post "/email_recipe", to: "email#email_recipe"
 
+  get "/auth/google_oauth2/callback", to: "sessions#create_oauth"
+
   # resources :recipes, only: [:index, :show]
 end
