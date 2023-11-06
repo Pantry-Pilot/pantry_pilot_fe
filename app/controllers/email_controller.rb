@@ -4,8 +4,9 @@ class EmailController < ApplicationController
     if response[:status] == 200
       redirect_to "/dashboard"
       flash[:success] = "Successfully sent recipe to #{params[:recipient_email]}"
-    else
-      flash[:error] = "Unable to send email to #{params[:recipient_email]}"
+    elsif response[:status] == 400
+      flash[:error] = "Please save this recipe to your dashboard before emailing it!"
+      redirect_to "/dashboard/search/#{params[:recipe_id]}"
     end
   end
 end
