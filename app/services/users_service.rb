@@ -18,4 +18,11 @@ class UsersService
   def get_user_from_db(user_id)
     conn.get("/api/v1/users/#{user_id}")
   end
+
+  def oauth_verification(email)
+    request = conn.get("/api/v1/auth/google_oauth2/callback") do |request|
+      request.headers['Content-Type'] = 'application/json'
+      request.body = { email: email }
+    end
+  end 
 end
