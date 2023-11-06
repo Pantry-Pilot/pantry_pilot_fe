@@ -4,11 +4,13 @@
   <p class="small"><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
 
   <h2>Ingredients</h2>
-  <ul>
-    <% @recipe.ingredients.each do |ingredient| %>
-      <li><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></li>
-    <% end %>
-  </ul>
+  <div>
+    <ul>
+      <% @recipe.ingredients.each do |ingredient| %>
+        <li><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></li>
+      <% end %>
+    </ul>
+  </div>
 
   <h2>Instructions</h2>
   <p><%= raw @recipe.instructions %></p>
