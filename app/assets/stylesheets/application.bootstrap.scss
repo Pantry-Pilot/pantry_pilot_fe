@@ -24,7 +24,7 @@ header {
   width: 100%;
   background-color: #46584a;
   padding: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
@@ -32,11 +32,10 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  overflow: hidden;
 }
 
 .header-content {
-  display: absolute;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -46,8 +45,9 @@ header {
 img.logo {
   position: absolute;
   left: 0;
-  width: 30vh;
+  width: 20vh;
   height: auto;
+  overflow: hidden;
 }
 
 .button-container {
