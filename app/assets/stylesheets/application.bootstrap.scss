@@ -3,22 +3,24 @@
 
 body {
   margin: 0;
-  margin-top: 300px;
+  margin-top: 100px;
   padding: 0;
   background-color: #ffffff;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
   text-align: center;
-  color: #000000; 
+  color: #000000;
 }
+
 body.login {
   margin: 0;
   padding: 0;
   background: url('background.jpg');
   background-size: cover;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
   text-align: center;
   color: #fff;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -29,7 +31,7 @@ header {
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
-  height: 40%;
+  height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,21 +43,24 @@ img.logo {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: auto; /* Adjust the width as needed */
+  width: auto;
   height: 80%;
 }
+
 .form-container {
-  padding-bottom: 20px; /* Adjust the padding value as needed */
+  padding-bottom: 20px;
 }
+
 .my-form {
   margin: 0;
   margin-top: 130px;
   padding: 0;
-  background-color: #ffffff; /* Your desired background color */
-  font-family: 'Pacifico', cursive;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
   text-align: center;
-  color: #000000; /* Your desired text color */
+  color: #000000;
 }
+
 /* Style for the white box container with rounded corners */
 .recipe-container {
   background-color: #fff;
@@ -70,26 +75,31 @@ img.logo {
 /* Style for the link to the recipe show page */
 .recipe-link {
   text-decoration: none;
-  color: inherit; /* Inherit the color from parent styles */
+  color: inherit;
 }
+
 /* Style for the recipe image */
 .recipe-image {
   width: 50%;
   height: auto;
 }
+
 /* Style for the recipe title */
 .recipe-details h2 {
   font-size: 18px;
   margin: 0;
 }
+
 /* Style for the recipe summary */
 .recipe-details p {
   font-size: 14px;
   margin: 5px 0;
 }
+
 h1 {
   font-size: 36px;
 }
+
 p {
   font-size: 24px;
 }
