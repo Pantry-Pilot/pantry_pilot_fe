@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+
 }
 
 .header-content {
@@ -39,14 +40,15 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 20%;
+  height: 25vh;
 }
 
 img.logo {
   position: absolute;
-  left: 0;
-  width: 20vh;
-  height: auto;
+  top: 15px;
+  left: 15px;
+  width: auto; /* Adjust the width as needed */
+  height: 30%;
   overflow: hidden;
 }
 
@@ -65,6 +67,10 @@ img.logo {
   align-items: center;
   flex-grow: 1; /* Allow app info to take available space */
   flex-basis: 0; /* Distribute remaining space */
+}
+
+.form-padding {
+  padding-top: 50px; /* Add your desired padding value on top */
 }
 
 .my-form {
