@@ -41,18 +41,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 390770c6-a50b-44d8-9336-dde7666dc7ea
+      - 1c02e841-152d-418d-8067-eb6542e7dea0
       X-Runtime:
-      - '0.246620'
+      - '0.249703'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.54, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=241.40
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=242.99
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Sun, 05 Nov 2023 22:36:42 GMT
+  recorded_at: Mon, 06 Nov 2023 01:49:55 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -92,18 +92,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 71e6a37d-2ef5-4c0d-b3d0-743739eb2daa
+      - e84101b6-08af-4552-a606-8b6bde19e01f
       X-Runtime:
-      - '0.004803'
+      - '0.005097'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.45, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.86
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.46, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.99
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Sun, 05 Nov 2023 22:36:42 GMT
+  recorded_at: Mon, 06 Nov 2023 01:49:55 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -139,38 +139,22 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"3fb5d1ee9b24f60f2829e9882327bd33"
+      - W/"4b8c2e86f6d3d85546cf3e49ffdb74dd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e6382845-8dfe-44e5-b790-0708b4ea718b
+      - 0c4f3758-5ac1-47b7-8252-4e31e126fd4a
       X-Runtime:
-      - '0.012426'
+      - '0.005661'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.25, instantiation.active_record;dur=0.07,
-        process_action.action_controller;dur=2.80
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.98, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=1.84
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"636268","title":"Broiled
-        Tofu","image":"https://spoonacular.com/recipeImages/636268-556x370.jpg"}},{"id":"3","type":"user_recipes","attributes":{"recipe_id":"636268","title":"Broiled
-        Tofu","image":"https://spoonacular.com/recipeImages/636268-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"715736","title":"Eggs","image":"https://spoonacular.com/recipeImages/715736-556x370.jpg"}},{"id":"5","type":"user_recipes","attributes":{"recipe_id":"715736","title":"Eggs","image":"https://spoonacular.com/recipeImages/715736-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"715736","title":"Eggs","image":"https://spoonacular.com/recipeImages/715736-556x370.jpg"}},{"id":"7","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"9","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"11","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"12","type":"user_recipes","attributes":{"recipe_id":"638174","title":"Chicken
-        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-556x370.jpg"}},{"id":"13","type":"user_recipes","attributes":{"recipe_id":"638086","title":"Chicken
-        Fingers","image":"https://spoonacular.com/recipeImages/638086-556x370.jpg"}},{"id":"14","type":"user_recipes","attributes":{"recipe_id":"638086","title":"Chicken
-        Fingers","image":"https://spoonacular.com/recipeImages/638086-556x370.jpg"}},{"id":"15","type":"user_recipes","attributes":{"recipe_id":"638086","title":"Chicken
-        Fingers","image":"https://spoonacular.com/recipeImages/638086-556x370.jpg"}},{"id":"16","type":"user_recipes","attributes":{"recipe_id":"638086","title":"Chicken
-        Fingers","image":"https://spoonacular.com/recipeImages/638086-556x370.jpg"}},{"id":"17","type":"user_recipes","attributes":{"recipe_id":"663505","title":"Tofu
-        Gratin","image":"https://spoonacular.com/recipeImages/663505-556x370.jpg"}},{"id":"18","type":"user_recipes","attributes":{"recipe_id":"660067","title":"Silky
-        Tofu In Ginger and Spring Onion Sauce","image":"https://spoonacular.com/recipeImages/660067-556x370.jpg"}},{"id":"19","type":"user_recipes","attributes":{"recipe_id":"1098248","title":"Caramel
-        apples","image":"https://spoonacular.com/recipeImages/1098248-556x370.jpg"}},{"id":"20","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"21","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
         65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
-  recorded_at: Sun, 05 Nov 2023 22:36:42 GMT
+  recorded_at: Mon, 06 Nov 2023 01:49:55 GMT
 recorded_with: VCR 6.2.0

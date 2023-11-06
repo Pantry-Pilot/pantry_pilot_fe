@@ -37,10 +37,9 @@ RSpec.describe "User Dashboard Page" do
       end
     end
 
-    describe "When I add a recipe to my dashboard" do 
+    describe "When I add a recipe to my dashboard", :vcr do 
       it "I see a message that tells me the recipe has been added to my dashboard, along with a link to the recipe show" do
       visit "/login"
-    
         fill_in :email, with: "test@test.com"
         fill_in :password, with: "1234"
 
