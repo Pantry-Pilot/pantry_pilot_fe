@@ -16,7 +16,10 @@
         </div>
       </div>
       <h1>Welcome to Pantry Pilot</h1>
-      <p>Making your pantry a better place.</p>
+      <p>Making your pantry a happier place.</p>
+        <% if session[:user_id] && request.path != "/dashboard" %>
+          <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary", method: :get %>
+        <% end %>
     </div>
   </div>
 </body>

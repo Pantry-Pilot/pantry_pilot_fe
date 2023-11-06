@@ -3,11 +3,12 @@
 
 body {
   margin: 0;
+  margin-top: 300px;
   padding: 0;
-  background-color: #46584a; 
+  background-color: #ffffff;
   font-family: 'Pacifico', cursive;
   text-align: center;
-  color: #dbdfba; 
+  color: #000000; 
 }
 body.login {
   margin: 0;
@@ -18,19 +19,73 @@ body.login {
   text-align: center;
   color: #fff;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #46584a;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: #dbdfba;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: flex;
+  z-index: 1;
+}
+
 img.logo {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 150px; /* Adjust the width as needed */
+  width: auto; /* Adjust the width as needed */
+  height: 80%;
+}
+.form-container {
+  padding-bottom: 20px; /* Adjust the padding value as needed */
+}
+.my-form {
+  margin: 0;
+  margin-top: 130px;
+  padding: 0;
+  background-color: #ffffff; /* Your desired background color */
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #000000; /* Your desired text color */
+}
+/* Style for the white box container with rounded corners */
+.recipe-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+  text-decoration: none;
+}
+
+/* Style for the link to the recipe show page */
+.recipe-link {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from parent styles */
+}
+/* Style for the recipe image */
+.recipe-image {
+  width: 50%;
   height: auto;
 }
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+/* Style for the recipe title */
+.recipe-details h2 {
+  font-size: 18px;
+  margin: 0;
 }
-.container {
-  margin-top: 50px;
+/* Style for the recipe summary */
+.recipe-details p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 h1 {
   font-size: 36px;
