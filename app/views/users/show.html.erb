@@ -1,12 +1,12 @@
-<div class="form-padding"> 
+<div class="form-padding text-center"> 
   <p>Welcome, <%= @user.name %></p>
   <%= button_to "Search Recipes", "/dashboard/search", method: :get %>
 </div>
-<h2>My Recipes</h2>
+<h2 class="text-center">My Recipes</h2>
 
 <% @user_recipes.each do |recipe| %>
   <div class="recipe-container"> 
-    <div class="recipe"> 
+    <div class="recipe text-center"> 
       <h3><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></h3>
       <%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %>
       <div class="form-padding"> 
