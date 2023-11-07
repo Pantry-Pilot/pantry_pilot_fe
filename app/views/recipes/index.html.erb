@@ -1,7 +1,7 @@
 <div class="form-padding">
   <div class="form-container">
     <%= form_with(url: "/dashboard/search", method: :get, local: true) do |form| %>
-      <div>
+      <div class="text-center">
         <%= form.label :query, "Search for recipes:" %>
         <%= form.text_field :query %>
         <%= form.submit "Search" %>
@@ -12,7 +12,7 @@
 
 <div class="form-padding">
   <div class="container">
-    <div id="recipes" class="row">
+    <div id="recipes" class="row text-center">
       <% if @recipes.present? %>
         <% @recipes.each do |recipe| %>
           <div class="col-md-6">
