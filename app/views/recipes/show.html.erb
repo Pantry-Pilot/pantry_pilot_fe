@@ -2,28 +2,45 @@
   <div class="text-center">
     <h1><%= @recipe.title %></h1>
     <%= image_tag(@recipe.image, alt: @recipe.title) if @recipe.image.present? %>
-  </div>
-  <p class="small px-4"><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
-
-  <div class="border border-dark rounded text-left px-4">
-  <h2 class="px-1">Ingredients</h2>
-    <div class="ingredient-box text-left">
-        <% @recipe.ingredients.each do |ingredient| %>
-          <p class="small text-left"><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></p>
-        <% end %>
+    <div style="padding: 10px 0;">
+      <%= form_with url: "/dashboard/recipes", method: :post do %>
+        <%= hidden_field_tag :title, @recipe.title %>
+        <%= hidden_field_tag :recipe_id, @recipe.id %>
+        <%= hidden_field_tag :image, @recipe.image %>
+        <%= hidden_field_tag :summary, @recipe.summary %>
+        <%= hidden_field_tag :instructions, @recipe.instructions %>
+        <%= hidden_field_tag :ingredients, @recipe.ingredients.map(&:attributes) %>
+        <%= submit_tag "Add Recipe to my dashboard" %>
+      <% end %>
     </div>
+    <div class="border border border-white p-3">
+  <h2 class="text-center px-2">Summary</h2>
+  <div class="no-border-box text-left mx-5">
+    <p class="small px-2">
+      <%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %>
+    </p>
   </div>
-
-  <h2 class="px-4">Instructions</h2>
-  <p class="small px-4"><%= raw @recipe.instructions %></p>
 </div>
 
-<%= form_with url: "/dashboard/recipes", method: :post do %>
-  <%= hidden_field_tag :title, @recipe.title %>
-  <%= hidden_field_tag :recipe_id, @recipe.id %>
-  <%= hidden_field_tag :image, @recipe.image %>
-  <%= hidden_field_tag :summary, @recipe.summary %>
-  <%= hidden_field_tag :instructions, @recipe.instructions %>
-  <%= hidden_field_tag :ingredients, @recipe.ingredients.map(&:attributes) %>
-  <%= submit_tag "Add Recipe to my dashboard" %>
-<% end %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="border border-dark rounded p-3">
+          <h2 class="px-2">Ingredients</h2>
+          <div class="ingredient-box">
+            <% @recipe.ingredients.each do |ingredient| %>
+              <p class="small px-2"><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="border border-dark rounded p-3">
+          <h2 class="px-2">Instructions</h2>
+          <p class="small px-2"><%= raw @recipe.instructions %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

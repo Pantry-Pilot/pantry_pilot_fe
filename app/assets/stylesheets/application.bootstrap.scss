@@ -23,8 +23,8 @@ header {
   position: static;
   width: 100%;
   background-color: #46584a;
-  padding: 30px;
-  padding-bottom: 50px;
+  padding: 10px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
@@ -32,23 +32,14 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 25vh;
 }
 
 img.logo {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 10px;
+  left: 10px;
   width: auto; /* Adjust the width as needed */
-  height: 30%;
+  height: 15%;
   overflow: hidden;
 }
 
