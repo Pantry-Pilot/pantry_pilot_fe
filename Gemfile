@@ -82,7 +82,7 @@ gem 'faraday'
 gem "cssbundling-rails", "~> 1.3"
 
 gem "jsbundling-rails", "~> 1.2"
-
+gem "dotenv-rails"
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-google-oauth2'
