@@ -54,4 +54,27 @@ class RecipesController < ApplicationController
       redirect_to "/dashboard"
     end
   end
+
+  def edit
+    @recipe = Recipe.find(params[:id])
+  end
+
+  def update
+    recipe = Recipe.find(params[:id])
+    recipe_data = params.permit(:id, :image)
+    response = RecipeFacade.new.add_image_to_recipe(recipe_data)
+    if response[:status] == 200
+      flash[:notice] = response[:notice]
+      redirect_to "/dashboard"
+    else
+      flash[:error] = response[:error]
+      redirect_to "/dashsboard/add_image"
+    end
+  end
+
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:image)
+  end
 end
