@@ -1,4 +1,4 @@
-<div class="recipe-show">
+<div class="form-padding"> 
   <h1><%= @recipe.title %></h1>
   <%= image_tag(@recipe.image, alt: @recipe.title) if @recipe.image.present? %>
   <p class="small"><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
@@ -7,7 +7,7 @@
   <div>
     <ul>
       <% @recipe.ingredients.each do |ingredient| %>
-        <li><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></li>
+        <ul><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></ul>
       <% end %>
     </ul>
   </div>
