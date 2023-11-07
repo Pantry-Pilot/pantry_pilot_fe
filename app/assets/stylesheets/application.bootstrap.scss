@@ -54,11 +54,15 @@ img.logo {
 
 .button-container {
   display: flex;
-  gap: 10px; /* Adjust the spacing between buttons as needed */
-  align-items: center;
+  gap: 20px; /* Adjust the spacing between buttons as needed */
+  justify-content: flex-end; /* Align buttons to the right */
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.button-container .btn-primary {
+  order: -1; /* Moves the dashboard button to the left */
 }
 
 .app-info {
