@@ -42,5 +42,6 @@ class RecipesController < ApplicationController
       flash[:error] = response[:error]
       redirect_to "/dashboard"
     end
+    
   end 
 end
