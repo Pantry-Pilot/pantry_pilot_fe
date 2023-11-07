@@ -23,6 +23,11 @@ class RecipesService
     end
   end
 
+  def add_image_to_recipe(recipe_data)
+    conn.put("/api/v1/add_image")
+    req.body = {id: recipe_data[:id], image_upload: recipe_data[:image]}.to_json
+  end
+
   private
 
   def conn
