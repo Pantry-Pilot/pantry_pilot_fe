@@ -18,6 +18,7 @@ class RecipeFacade
 
   def store_recipe(data)
     response = RecipesService.new.store_recipe(data)
+    response_body = JSON.parse(response.body, symbolize_names: true)
 
     if response.status == 204
       {
@@ -33,6 +34,22 @@ class RecipeFacade
 
   def remove_recipe(id)
     response = RecipesService.new.remove_recipe(id)
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    if response.status == 200
+      {
+        status: response.status,
+        notice: response_body[:notice]
+      }
+    else
+      {
+        status: response.status,
+        error: response_body[:error]
+      }
+    end
+  end
+
+  def add_image_to_recipe(recipe_data)
+    response = RecipesService.new.add_image_to_recipe(recipe_data)
     response_body = JSON.parse(response.body, symbolize_names: true)
     if response.status == 200
       {
