@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "/dashboard/search/:recipe_id", to: "recipes#show"
   post "/dashboard/recipes", to: "recipes#create"
   delete "/dashboard/delete_recipe", to: "recipes#destroy"
+  get "/dashboard/add_image", to: "recipes#edit"
+  patch "/dahsboard/add_image", to: "recipes#update"
 
   # resources :recipes, only: [:index, :show]
 end
