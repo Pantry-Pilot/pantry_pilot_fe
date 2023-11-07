@@ -27,7 +27,7 @@ class RecipeFacade
     else
       {
         status: response.status,
-        error: response_body[:error]
+        error: response[:error]
       }
     end
   end
