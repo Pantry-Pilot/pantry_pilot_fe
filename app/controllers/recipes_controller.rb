@@ -35,7 +35,6 @@ class RecipesController < ApplicationController
 
   def destroy
     response = RecipeFacade.new.remove_recipe(params[:id])
-    require 'pry';binding.pry
     if response[:status] == 204
       flash[:notice] = "Recipe successfully removed"
       redirect_to "/dashboard"
