@@ -3,10 +3,10 @@
     <h1><%= @recipe.title %></h1>
     <%= image_tag(@recipe.image, alt: @recipe.title) if @recipe.image.present? %>
   </div>
-  <p class="small"><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
+  <p class="small px-4"><%= @recipe.summary.gsub(/<a\b[^>]*>(.*?)<\/a>/i, '\1').html_safe %></p>
 
-  <div class="border border-dark rounded text-left">
-  <h2>Ingredients</h2>
+  <div class="border border-dark rounded text-left px-4">
+  <h2 class="px-1">Ingredients</h2>
     <div class="ingredient-box text-left">
         <% @recipe.ingredients.each do |ingredient| %>
           <p class="small text-left"><%= "#{ingredient.amount} #{ingredient.unit} #{ingredient.name}" %></p>
@@ -14,8 +14,8 @@
     </div>
   </div>
 
-  <h2>Instructions</h2>
-  <p><%= raw @recipe.instructions %></p>
+  <h2 class="px-4">Instructions</h2>
+  <p class="px-4"><%= raw @recipe.instructions %></p>
 </div>
 
 <%= form_with url: "/dashboard/recipes", method: :post do %>
