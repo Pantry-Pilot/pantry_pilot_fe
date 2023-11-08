@@ -6,26 +6,31 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 </head>
 <body>
   <% unless request.path == '/' %>
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="app-info">
-            <h1>Pantry Pilot</h1>
-            <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
-          </div>
-          
-          <% if session[:user_id] && request.path != "/dashboard" %>
-            <%= button_to "Dashboard", dashboard_path, method: :get,  data: {turbo: false}, class: "btn btn-primary" %>
-          <% end %>
-          <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
-            <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger", style: "position: absolute; top: 10px; right: 10px;" %>
-          <% end %>
-        </div>
+    <header class="text-center">
+  <div class="container text-center">
+    <div class="header-content">
+      <div class="app-info">
+        <h1>Pantry Pilot</h1>
+        <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
       </div>
-    </header>
+
+      <div class="d-flex justify-content-end">
+      <% if session[:user_id] && request.path != "/dashboard" %>
+        <div class="px-2">
+        <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary" %>
+        </div>
+      <% end %>
+      <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
+        <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger" %>
+      <% end %>
+    </div>
+  </div>
+</header>
   <% end %>
   <%= yield %>
   <% flash.each do |type, msg| %>
