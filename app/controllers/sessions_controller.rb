@@ -21,6 +21,23 @@ class SessionsController < ApplicationController
     redirect_to "/"
   end
 
+  def create_oauth
+    if request.env["omniauth.auth"]["info"]["email_verified"] == true
+      response = UsersFacade.new.oauth_verification(request.env["omniauth.auth"]["info"]["email"])
+      
+      if response[:status] == 201
+        session[:user_id] = response[:user_id]
+        redirect_to "/dashboard"
+      else
+        flash[:error] = response[:error]
+        redirect_to "/login"
+      end
+    else
+      flash[:error] = response[:error]
+      redirect_to "/login"
+    end
+  end
+
 
   private
 

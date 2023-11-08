@@ -8,6 +8,6 @@ class Ingredient
   end
   
   def attributes
-    { name: name, amount: amount, unit: unit }
+    "[#{@name}, #{@amount}, #{@unit}]"
   end
 end
