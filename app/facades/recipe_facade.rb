@@ -18,7 +18,6 @@ class RecipeFacade
 
   def store_recipe(data)
     response = RecipesService.new.store_recipe(data)
-
     if response.status == 204
       {
         status: response.status,
@@ -26,7 +25,7 @@ class RecipeFacade
     else
       {
         status: response.status,
-        error: response_body[:error]
+        error: response[:error]
       }
     end
   end

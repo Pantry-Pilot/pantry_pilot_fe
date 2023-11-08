@@ -39,16 +39,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 8e27c8e3-26eb-41f9-b445-3da4c71bddaf
+      - 41299088-33cd-462b-8023-58eb5cae035b
       X-Runtime:
-      - '0.397464'
+      - '0.263683'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, unpermitted_parameters.action_controller;dur=0.04,
-        sql.active_record;dur=1.68, process_action.action_controller;dur=392.81
+      - start_processing.action_controller;dur=0.07, unpermitted_parameters.action_controller;dur=0.06,
+        sql.active_record;dur=1.66, process_action.action_controller;dur=258.27
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":"Name can''t be blank","status":400}'
-  recorded_at: Sat, 04 Nov 2023 19:14:21 GMT
+  recorded_at: Mon, 06 Nov 2023 23:39:01 GMT
 recorded_with: VCR 6.2.0
