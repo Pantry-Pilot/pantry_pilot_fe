@@ -6,7 +6,12 @@
     <div class="recipe"> 
       <h3><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></h3>
       <%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %>
-      <%= button_to "Add Image", "/dashboard/add_image", method: :get, params: { id: recipe.id }, class: "btn btn-danger" %>
+      <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
+        <%= f.label :avatar, "Add Image" %>
+        <%= f.file_field :avatar, accept: 'image/png' %>
+        <%= f.hidden_field :id, value: recipe.id %>
+        <%= f.submit "Add" %>
+      <% end %>
       <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: { id: recipe.id }, class: "btn btn-danger" %>
     </div>
   </div>
