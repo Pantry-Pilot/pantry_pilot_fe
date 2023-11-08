@@ -7,11 +7,7 @@ class AvatarsService
       'recipe[avatar]': Faraday::UploadIO.new(avatar_data[:avatar].tempfile, avatar_data[:avatar].content_type, avatar_data[:avatar].original_filename)
     }
 
-    conn.post("/api/v1/add_image", payload) do |req|
-      req.headers['Content-Type'] = 'multipart/form-data'
-      req.body = {id: avatar_data[:id], avatar: avatar_data[:avatar].tempfile}
-      # require 'pry';binding.pry
-    end
+    conn.post("/api/v1/add_image", payload)
   end
   
   private
