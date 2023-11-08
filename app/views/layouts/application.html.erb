@@ -12,15 +12,18 @@
 <body>
   <% unless request.path == '/' %>
     <header class="text-center">
-  <div class="container">
+  <div class="container text-center">
     <div class="header-content">
       <div class="app-info">
         <h1>Pantry Pilot</h1>
-        <img src="<%= image_path('background.jpg', class: "img-center") %>" alt="Logo" class="logo">
+        <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
       </div>
 
+      <div class="d-flex justify-content-end">
       <% if session[:user_id] && request.path != "/dashboard" %>
+        <div class="px-2">
         <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary" %>
+        </div>
       <% end %>
       <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
         <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger" %>
