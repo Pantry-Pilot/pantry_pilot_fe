@@ -6,11 +6,21 @@
     <div class="recipe"> 
       <h3><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></h3>
       <%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %>
-      <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
-        <%= f.label :avatar, "Add Image" %>
-        <%= f.file_field :avatar, accept: 'image/png' %>
-        <%= f.hidden_field :id, value: recipe.id %>
-        <%= f.submit "Add" %>
+      <% if recipe.avatar != "" %>
+        <%= image_tag recipe.avatar, height: "370px" %>
+        <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
+          <%= f.label :avatar, "Update Image" %>
+          <%= f.file_field :avatar, accept: 'image/png' %>
+          <%= f.hidden_field :id, value: recipe.id %>
+          <%= f.submit "Add" %>
+        <% end %>
+      <% else %>
+        <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
+          <%= f.label :avatar, "Add Image" %>
+          <%= f.file_field :avatar, accept: 'image/png' %>
+          <%= f.hidden_field :id, value: recipe.id %>
+          <%= f.submit "Add" %>
+        <% end %>
       <% end %>
       <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: { id: recipe.id }, class: "btn btn-danger" %>
     </div>
