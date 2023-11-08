@@ -22,7 +22,7 @@
       <div class="d-flex justify-content-end">
       <% if session[:user_id] && request.path != "/dashboard" %>
         <div class="px-2">
-        <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary" %>
+        <%= button_to "Dashboard", dashboard_path, method: :get, data:{turbo: false}, class: "btn btn-primary" %>
         </div>
       <% end %>
       <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
