@@ -104,6 +104,8 @@ GEM
       base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
     faraday-net_http (3.0.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -142,6 +144,7 @@ GEM
     minitest (5.20.0)
     msgpack (1.7.2)
     multi_xml (0.6.0)
+    multipart-post (2.3.0)
     net-imap (0.4.3)
       date
       net-protocol
@@ -317,6 +320,7 @@ DEPENDENCIES
   debug
   dotenv-rails
   faraday
+  faraday-multipart
   importmap-rails
   jbuilder
   jsbundling-rails (~> 1.2)
