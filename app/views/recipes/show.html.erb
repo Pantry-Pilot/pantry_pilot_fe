@@ -25,6 +25,15 @@
   </div>
 </div>
 
+  <div class="text-center" style="padding: 20px 0;">
+    <h2>Email this Recipe</h2>
+      <%= form_with url: "/email_recipe", method: :post  do |f| %>
+        <%= f.label "Email" %>
+        <%= f.text_field :recipient_email %>
+        <%= f.hidden_field :recipe_id, value: @recipe.id %>
+        <%= f.submit "send it off" %>
+      <% end %>  
+  </div>
 
   <div class="container">
     <div class="row">
@@ -49,12 +58,3 @@
     </div>
   </div>
 </div>
-
-<h2>Email this Recipe</h2>
-<%= form_with url: "/email_recipe", method: :post  do |f| %>
-  <%= f.label "Email" %>
-  <%= f.text_field :recipient_email %>
-  <%= f.hidden_field :recipe_id, value: @recipe.id %>
-  <%= f.submit "send it off" %>
-<% end %>
-
