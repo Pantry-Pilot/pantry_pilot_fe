@@ -6,12 +6,14 @@
 
 <% @user_recipes.each do |recipe| %>
   <div class="recipe-container">
-    <div class="recipe text-center">
-      <h3><%= recipe.title %></h3>
-      <%= image_tag(recipe.image, alt: recipe.title, class: "rounded") if recipe.image.present? %>
-      <div class="form-padding"> 
-        <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, data:{turbo: false}, params: { id: recipe.id }, class: "btn btn-danger rounded" %>
+    <a href="/dashboard/search/<%= recipe.recipe_id %>" class="text-decoration-none text-reset">
+      <div class="recipe text-center">
+        <h3><%= recipe.title %></h3>
+        <%= image_tag(recipe.image, alt: recipe.title, class: "rounded") if recipe.image.present? %>
       </div>
-    </div>
+    </a>
+        <div class="form-padding"> 
+          <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, data:{turbo: false}, params: { id: recipe.id }, class: "btn btn-danger rounded" %>
+        </div>
   </div>
 <% end %>

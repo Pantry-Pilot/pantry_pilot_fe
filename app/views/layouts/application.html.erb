@@ -11,13 +11,12 @@
 </head>
 <body>
   <% unless request.path == '/' %>
-    <header class="text-center">
-  <div class="container text-center">
-    <div class="header-content">
-      <div class="app-info">
-        <h1>Pantry Pilot</h1>
+    <header>
         <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
+      <div class="app-info">
+        <h1 style="text-align: center">Pantry Pilot</h1>
       </div>
+  <div class="header">
 
       <div class="d-flex justify-content-end">
       <% if session[:user_id] && request.path != "/dashboard" %>
@@ -28,7 +27,6 @@
       <% if session[:user_id] && request.path != '/' && request.path != '/register' && request.path != '/login' %>
         <%= button_to "Logout", '/logout', method: :delete, class: "btn btn-danger" %>
       <% end %>
-    </div>
   </div>
 </header>
   <% end %>
