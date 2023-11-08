@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=”en”>
 <head>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,12 +15,14 @@
           <%= button_to "Create an Account", "/register", class: "btn btn-primary", method: :get %>
         </div>
       </div>
+      <div class="text-center">
       <h1>Welcome to Pantry Pilot</h1>
       <p>Making your pantry a happier place.</p>
         <% if session[:user_id] && request.path != "/dashboard" %>
           <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary", method: :get %>
         <% end %>
     </div>
+  </div>
   </div>
 </body>
 </html>
