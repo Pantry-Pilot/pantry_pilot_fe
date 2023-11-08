@@ -1,17 +1,19 @@
-<div class="form-padding text-center"> 
+<div class="text-center"> 
   <p>Welcome, <%= @user.name %></p>
-  <%= button_to "Search Recipes", "/dashboard/search", method: :get %>
+  <%= button_to "Search Recipes", "/dashboard/search", method: :get, class: "btn btn-primary rounded" %>
 </div>
 <h2 class="text-center">My Recipes</h2>
 
 <% @user_recipes.each do |recipe| %>
-  <div class="recipe-container"> 
-    <div class="recipe text-center"> 
-      <h3><%= link_to recipe.title, "/dashboard/search/#{recipe.recipe_id}" %></h3>
-      <%= image_tag(recipe.image, alt: recipe.title) if recipe.image.present? %>
-      <div class="form-padding"> 
-        <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: { id: recipe.id }, class: "btn btn-danger" %>
+  <div class="recipe-container">
+    <a href="/dashboard/search/<%= recipe.recipe_id %>" class="text-decoration-none text-reset">
+      <div class="recipe text-center">
+        <h3><%= recipe.title %></h3>
+        <%= image_tag(recipe.image, alt: recipe.title, class: "rounded") if recipe.image.present? %>
+        <div class="form-padding"> 
+          <%= button_to "Remove from My Recipes", "/dashboard/delete_recipe", method: :delete, params: { id: recipe.id }, class: "btn btn-danger rounded" %>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 <% end %>
