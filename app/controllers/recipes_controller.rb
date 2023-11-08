@@ -13,7 +13,6 @@ class RecipesController < ApplicationController
 
   def show
     @user = UsersFacade.new.get_user(current_user)
-
     recipe_data = RecipesService.new.find(params[:recipe_id])
     @recipe = Recipe.new(recipe_data[:data][:attributes])
   end
