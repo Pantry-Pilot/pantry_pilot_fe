@@ -11,7 +11,7 @@
       <div class="col-md-6 d-flex flex-column saved-recipes">
         <h3 style="text-align: center;">Saved Recipes</h3>
         <% @user_recipes.each do |recipe| %>
-          <div class="recipe-container">
+          <div class="recipe-container" id="user_recipe-<%=recipe.recipe_id%>">
             <a href="/dashboard/search/<%= recipe.recipe_id %>" class="text-decoration-none text-reset">
               <div class="recipe text-center">
                 <h4><%= recipe.title %></h4>
@@ -29,7 +29,6 @@
       <div class="col-md-6 d-flex flex-column">
         <h3 style="text-align: center;">My Recipe Images</h3>
         <div class="d-flex flex-column">
-          <!-- Add your code for displaying uploaded recipe pictures here -->
           <% @user_recipes.each do |recipe| %>
             <div class="recipe-container"> 
               <div class="recipe text-center">

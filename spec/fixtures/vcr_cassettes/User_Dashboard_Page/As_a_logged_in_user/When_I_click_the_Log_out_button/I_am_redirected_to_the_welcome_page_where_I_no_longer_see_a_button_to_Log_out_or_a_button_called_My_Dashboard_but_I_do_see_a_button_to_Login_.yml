@@ -36,23 +36,30 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=ret0E4X6GhFtnaaN2e6DmUlVokArdGkHhO%2F%2F5%2FywR60qUcmUJmGURjw68RSoGbd3xg3KssSR1z1fUuRA83OL3zhbGSyDwNVGFnXKx5zKE%2Bf%2BpOiexBgAFCFeGKuknU4ReBFYnw2Q5ulPqyL9DkTkp8LdtoxxBuo7O31x3HyFC1lTX8uK%2Fev0k5m27g%3D%3D--EKt39PDzzP9NqZ2i--3Us%2Fm2NOsVyF6T3w4QdSCw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=ret0E4X6GhFtnaaN2e6DmUlVokArdGkHhO%2F%2F5%2FywR60qUcmUJmGURjw68RSoGbd3xg3KssSR1z1fUuRA83OL3zhbGSyDwNVGFnXKx5zKE%2Bf%2BpOiexBgAFCFeGKuknU4ReBFYnw2Q5ulPqyL9DkTkp8LdtoxxBuo7O31x3HyFC1lTX8uK%2Fev0k5m27g%3D%3D--EKt39PDzzP9NqZ2i--3Us%2Fm2NOsVyF6T3w4QdSCw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=GovA0vM8TWrQM5MMo5bTCuzBrBnoHZv6TnEw3UDudZz1z3byIx7Yr69dN99PqNA5E9h%2FwYNSeLgevo%2FHmyKoBBFk8Orh%2ByyCao531VXgxqyp%2FRkRfh6ybQTLi0vmLkbOLy3GrValnulZlVBukm8Cw6FrbxKUFtuYO7QNw0nYNKvwAQI%3D--VwfKhh%2F8VKasfwif--pe4S%2B6Wq6FqOBzl%2F9g6tXA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3ebca70b-62b3-402b-b9a0-e54d8cad78ba
+      - 96e8bd13-c0f6-4055-a87d-5dd0581cd458
       X-Runtime:
-      - '0.247563'
+      - '0.243330'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.33, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=241.72
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.46, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=238.82
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
+  recorded_at: Thu, 09 Nov 2023 16:03:31 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -87,23 +94,30 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=pOUhkLhO4dcYCsQOE3JIm2ro6OTt54hMWF43JsQev5EOGPCJk9Es44fWe4hnn5BjOhn2YzWkYu80QaVgq%2BZfhTkT8sHs%2FQggVv9vW%2BtrLMY%2Bz32Efk%2F30xgtYGuAX%2B6A%2FlLWfSGW6olSxnZlgSWZB1uMKMgPw%2F%2BF%2F24rreDDh6WPDg8LAYu8ad%2FQtQ%3D%3D--SzoN2ovsueNFeVl2--0VgGCOS6tke2V4NKP0W3kQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=pOUhkLhO4dcYCsQOE3JIm2ro6OTt54hMWF43JsQev5EOGPCJk9Es44fWe4hnn5BjOhn2YzWkYu80QaVgq%2BZfhTkT8sHs%2FQggVv9vW%2BtrLMY%2Bz32Efk%2F30xgtYGuAX%2B6A%2FlLWfSGW6olSxnZlgSWZB1uMKMgPw%2F%2BF%2F24rreDDh6WPDg8LAYu8ad%2FQtQ%3D%3D--SzoN2ovsueNFeVl2--0VgGCOS6tke2V4NKP0W3kQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=X64pEVUmfxixzLhuE%2FU45eYU1F%2BvNAp3MgyZJWQrnVoV%2B82MU8vul5iV7Qk9x7kDUis8d1umPytFDi7Y12tBQo9YohhrqVD91CKnuWUrxhe5VV4GiAQbVcBnUumk2vIT%2FdDu1PH0qQKEIn68xFksG6L4TKtHbkC5faB5WIPy8PwWNh8%3D--8JQw%2BeFzBNKfvaDn--oYCxDXhW2mruk0eS%2Fnbj3g%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a65953d-3159-43b8-935f-d49a14b77689
+      - 9ea65aab-c392-48b7-82a5-95d6c7519051
       X-Runtime:
-      - '0.006766'
+      - '0.004995'
       Server-Timing:
-      - start_processing.action_controller;dur=0.12, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.97
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.35, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.78
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
+  recorded_at: Thu, 09 Nov 2023 16:03:31 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -138,26 +152,29 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=aX0GWTymP4XrIHxwT5wFzgU80UoNXyaOwno7H5PQBaT79hIZrvIbruZTsEVO7gz13eAtEvpEGGQTN8RQyb7oR%2BM9QRe%2FCxibH2Uy6ybT2zFYQRLZxsN09vXUT3vGLLMSsquXFx1F%2BoKI7iMudHmPv1guvSMUqOyw2Kw2aQff2G%2BhI%2F1w1bIOSf35zw%3D%3D--c0YCjkbQ4fcZHrih--djqyAwL1cO5L%2FPEZTRhTRw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=aX0GWTymP4XrIHxwT5wFzgU80UoNXyaOwno7H5PQBaT79hIZrvIbruZTsEVO7gz13eAtEvpEGGQTN8RQyb7oR%2BM9QRe%2FCxibH2Uy6ybT2zFYQRLZxsN09vXUT3vGLLMSsquXFx1F%2BoKI7iMudHmPv1guvSMUqOyw2Kw2aQff2G%2BhI%2F1w1bIOSf35zw%3D%3D--c0YCjkbQ4fcZHrih--djqyAwL1cO5L%2FPEZTRhTRw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=Q1DQgsqTiJEzaHAr3L8Lqh%2FsEF15ylr9C0k7Ir11AO%2FSiZq6u8OV4WIL7s3h7nATKzdNGyV7DYdrg9TrvnLrQVC7qINzWWGPDWAyrgNNEX%2F82XNSaB8QF38ZECcqZxEPUukyeT%2B1IztzwKlsdjBfX0Z2%2BYdhrsnoYQuQqeKgsWYUXX0%3D--UC%2FAYMquhsf1qo3d--Xrd55X3U3e3yyIaNcJk4dA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"e537da2b11c3c7a6784faee1c10a4151"
+      - W/"8dc94d529e41380ade639acf969d83d4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 544790a8-7f30-4d83-9c52-8d0a6b342e4e
+      - 38b4cf57-098a-41b7-82f2-042d4ad167c0
       X-Runtime:
-      - '0.013518'
+      - '0.007086'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=5.00, instantiation.active_record;dur=0.26,
-        process_action.action_controller;dur=9.31
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.07, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=2.04
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"recipes":{"data":[{"id":"7","type":"user_recipes","attributes":{"recipe_id":"656701","title":"Pork
-        and Apple Stew","image":"https://spoonacular.com/recipeImages/656701-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"640067","title":"Corn
-        Bread","image":"https://spoonacular.com/recipeImages/640067-556x370.jpg"}},{"id":"1","type":"user_recipes","attributes":{"recipe_id":"511728","title":"Pasta
-        Margherita","image":"https://spoonacular.com/recipeImages/511728-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"634629","title":"Beef
-        Lo Mein Noodles","image":"https://spoonacular.com/recipeImages/634629-556x370.jpg"}},{"id":"11","type":"user_recipes","attributes":{"recipe_id":"634496","title":"BBQ
-        Mac and Cheese","image":"https://spoonacular.com/recipeImages/634496-556x370.jpg"}}]},"avatar_urls":["http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--08f512eec044c48b3d5bf8be859961bdfb415497/Screenshot%202023-08-23%20at%202.02.37%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9971223917b5c70e60c323ea63fbae43fc349ad9/Screenshot%202023-08-23%20at%201.43.14%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8cb1a713ca818fe34aff873978bd687709196978/Screenshot%202023-08-23%20at%201.41.50%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7366ceddf6adb8ee781049ebad775b9f12b13a5c/Screenshot%202023-08-22%20at%2012.21.45%20PM.png",null]}'
-  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
+      string: '{"recipes":{"data":[{"id":"9","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null]}'
+  recorded_at: Thu, 09 Nov 2023 16:03:31 GMT
 recorded_with: VCR 6.2.0
