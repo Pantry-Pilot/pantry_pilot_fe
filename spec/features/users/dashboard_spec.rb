@@ -57,7 +57,7 @@ RSpec.describe "User Dashboard Page" do
         expect(current_path).to eq("/dashboard")
       end 
     end
-    
+
     describe "When I delete a recipe from my dashboard", :vcr do
       it "deletes the recipe from my dashboard" do
         visit "/login"
@@ -76,6 +76,7 @@ RSpec.describe "User Dashboard Page" do
         expect(page).to have_button "Add Recipe to my dashboard"
         click_on "Add Recipe to my dashboard"
         expect(current_path).to eq("/dashboard")
+        expect(page).to have_content("Tofu Gratin")
         within("#user_recipe-663505") do 
           expect(page).to have_button("Remove from My Recipes")
           click_on "Remove from My Recipes"
