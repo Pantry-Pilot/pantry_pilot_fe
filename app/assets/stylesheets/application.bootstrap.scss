@@ -65,8 +65,7 @@ img.logo {
 }
 
 .form-padding {
-  padding-top: 50px; /* Add your desired padding value on top */
-  padding-bottom: 25px;
+  padding-top: 25px; /* Add your desired padding value on top */
 }
 
 .my-form {
@@ -87,9 +86,15 @@ img.logo {
   margin-bottom: 20px;
   margin-left: auto; /* centers the box horizontally */
   margin-right: auto; /* centers the box horizontally */
-  max-width: 800px; /* for example, this can be any width you prefer */
+  max-width: 600px; /* for example, this can be any width you prefer */
   transition: box-shadow 0.3s;
   text-decoration: none;
+  height: 400px;
+}
+
+.saved-recipes .recipe-container:hover {
+  background-color: #6d826f; /* Background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for the link to the recipe show page */
@@ -100,12 +105,13 @@ img.logo {
 
 /* Style for the recipe image */
 .recipe-image {
-  width: 50%;
+  width: 75%;
   height: auto;
 }
 
 /* Style for the recipe title */
 .recipe-details h2 {
+  padding-top: 20px;
   font-size: 18px;
   margin: 0;
 }
@@ -116,9 +122,12 @@ img.logo {
   margin: 5px 0;
 }
 
+.welcome-header {
+  font-size: 100px;
+}
 
 h1 {
-  font-size: 36px;
+  font-size: 52px;
 }
 
 p {
