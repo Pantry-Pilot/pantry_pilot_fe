@@ -2,55 +2,119 @@
 @import 'bootstrap-icons/font/bootstrap-icons';
 
 body {
+  position: static;
   margin: 0;
-  margin-top: 300px;
   padding: 0;
-  background-color: #a0c8a4;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  color: #000000; 
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+
+  color: #000000;
+  height: 100%;
 }
+
 body.login {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
   background: url('background.jpg');
   background-size: cover;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
   color: #fff;
 }
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: #46584a;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
+  z-index: 1;
 }
 
 img.logo {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 20%; /* Adjust the width as needed */
-  height: auto;
+  max-width: 5%; /* Allows the image to be as wide as its container */
+  max-height: 5%; /* Limits the height to the header's height */
+  height: auto; /* Maintains the aspect ratio */
 }
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Adjust the spacing between buttons as needed */
+  justify-content: flex-end; /* Align buttons to the right */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.button-container .btn-primary {
+  order: -1; /* Moves the dashboard button to the left */
+}
+
+.app-info {
+  display: flex;
+  justify-content: center; /* Center the app name horizontally */
+  align-items: center;
+  flex-grow: 1; /* Allow app info to take available space */
+  flex-basis: 0; /* Distribute remaining space */
+}
+
+.form-padding {
+  padding-top: 50px; /* Add your desired padding value on top */
+  padding-bottom: 25px;
+}
+
 .my-form {
   margin: 0;
-  margin-top: 200px;
-  padding: 0;
-  background-color: #a0c8a4; /* Your desired background color */
-  font-family: 'Pacifico', cursive;
+  padding: 50px;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: #000000; /* Your desired text color */
+  color: #000000;
 }
+/* Style for the white box container with rounded corners */
+.recipe-container {
+  background-color: #585454;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: auto; /* centers the box horizontally */
+  margin-right: auto; /* centers the box horizontally */
+  max-width: 800px; /* for example, this can be any width you prefer */
+  transition: box-shadow 0.3s;
+  text-decoration: none;
+}
+
+/* Style for the link to the recipe show page */
+.recipe-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style for the recipe image */
+.recipe-image {
+  width: 50%;
+  height: auto;
+}
+
+/* Style for the recipe title */
+.recipe-details h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Style for the recipe summary */
+.recipe-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 
 h1 {
   font-size: 36px;
 }
+
 p {
   font-size: 24px;
 }

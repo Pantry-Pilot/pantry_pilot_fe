@@ -12,11 +12,8 @@ Rails.application.routes.draw do
   post "/dashboard/recipes", to: "recipes#create"
   delete "/dashboard/delete_recipe", to: "recipes#destroy"
   post "/email_recipe", to: "email#email_recipe"
-
+  
   get "/auth/google_oauth2/callback", to: "sessions#create_oauth"
   
-  # get "/dashboard/add_image", to: "recipes#edit"
   post "/dashboard/add_image", to: "avatars#create"
-
-  # resources :recipes, only: [:index, :show]
 end

@@ -20,6 +20,7 @@ class UsersFacade
     response = UsersService.new.get_user_from_db(user_id)
     data = JSON.parse(response.body, symbolize_names: true)
     User.new(data)
+    # require 'pry';binding.pry
   end
 
   def oauth_verification(email)
