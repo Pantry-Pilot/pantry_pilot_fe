@@ -8,20 +8,22 @@
   <div class="overlay">
     <div class="container">
       <div class="d-flex justify-content-between align-items-start">
-        <div>
-          <%= button_to "Login", "/login", class: "btn btn-secondary", method: :get %>
+        <div class="text-center welcome-header">
+          <h1 style="margin: 100px;">Pantry Pilot</h1>
+          <% if session[:user_id] && request.path != "/dashboard" %>
+            <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary", method: :get %>
+          <% end %>
         </div>
-        <div>
-          <%= button_to "Create an Account", "/register", class: "btn btn-primary", method: :get %>
+        <div class="d-flex justify-content-right align-items-start">
+          <div>
+            <%= button_to "Login", "/login", class: "btn btn-secondary", method: :get %>
+          </div>
+          <p>&nbsp;&nbsp;</p>
+          <div>
+            <%= button_to "Create an Account", "/register", class: "btn btn-primary", method: :get %>
+          </div>
         </div>
       </div>
-      <div class="text-center">
-      <h1>Welcome to Pantry Pilot</h1>
-      <p>Making your pantry a happier place.</p>
-        <% if session[:user_id] && request.path != "/dashboard" %>
-          <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary", method: :get %>
-        <% end %>
-    </div>
   </div>
   </div>
 </body>

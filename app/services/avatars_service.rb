@@ -9,6 +9,12 @@ class AvatarsService
 
     conn.post("/api/v1/add_image", payload)
   end
+
+  def remove_avatar_from_recipe(recipe_id)
+    conn.delete("/api/v1/delete_image") do |req|
+      req.body = { id: recipe_id }
+    end
+  end
   
   private
 

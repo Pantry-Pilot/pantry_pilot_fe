@@ -10,6 +10,12 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 </head>
 <body>
+  <% flash.each do |type, msg| %>
+    <div class="alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
+  
   <% unless request.path == '/' %>
     <header>
         <img src="<%= image_path('background.jpg') %>" alt="Logo" class="logo">
@@ -31,10 +37,5 @@
 </header>
   <% end %>
   <%= yield %>
-  <% flash.each do |type, msg| %>
-    <div class="alert-info">
-      <%= msg %>
-    </div>
-  <% end %>
 </body>
 </html>

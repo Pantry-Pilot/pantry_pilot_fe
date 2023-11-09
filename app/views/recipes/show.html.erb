@@ -1,7 +1,7 @@
 <div class="form-padding">
   <div class="text-center">
     <h1><%= @recipe.title %></h1>
-    <%= image_tag(@recipe.image, alt: @recipe.title, class: "img-center") if @recipe.image.present? %>
+    <%= image_tag(@recipe.image, alt: @recipe.title, class: "img-center rounded") if @recipe.image.present? %>
   </div>
 
   <div class="text-center" style="padding: 20px 0;">

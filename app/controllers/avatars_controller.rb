@@ -10,4 +10,16 @@ class AvatarsController < ApplicationController
       redirect_to "/dashboard"
     end
   end
+
+  def destroy
+    recipe_id = params[:id]
+    response = AvatarsFacade.new.remove_avatar_from_recipe(recipe_id)
+    if response[:status] == 200
+      flash[:notice] = response[:notice]
+      redirect_to "/dashboard"
+    else
+      flash[:error] = response[:error]
+      redirect_to "/dashboard"
+    end
+  end
 end
