@@ -15,13 +15,12 @@
     <div id="recipes" class="row text-center">
       <% if @recipes.present? %>
         <% @recipes.each do |recipe| %>
-          <div class="col-md-6">
+          <div class="col-md-6 saved-recipes">
             <a href="/dashboard/search/<%= recipe.id %>" class="recipe-link">
               <div class="recipe-container">
-                <%= image_tag(recipe.image, alt: recipe.title, class: "recipe-image") if recipe.image.present? %>
+                <%= image_tag(recipe.image, alt: recipe.title, class: "recipe-image rounded") if recipe.image.present? %>
                 <div class="recipe-details">
                   <h2><%= recipe.title %></h2>
-                  <p><%= recipe.summary %></p>
                 </div>
               </div>
             </a>
