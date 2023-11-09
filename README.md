@@ -79,16 +79,22 @@ If users are registered with a gmail account they can use the Google OAuth integ
 Now, users can select "Log In with Google" to gain immediate access to Pantry Pilot without the need to remember additional login credentials. Enjoy the enhanced user experience provided by Google OAuth with Pantry Pilot!
 
 ## Screenshots of final product 
-**Landing page:**
+1. Landing page:
+
 ![Pantry Pilot Landing Page](screenshots/landing_page.png)
-Login page:
+
+2. Login page:
+
 ![Pantry Pilot Login Page](screenshots/login_page.png)
-Top of the Recipe show page
+
+3. Top of the Recipe show page
+
 ![Pantry Pilot Recipe_Show Page Top](screenshots/recipe_show_top.png)
-Bottom of Recipe show page
+
+4. Bottom of Recipe show page
+
 ![Pantry Pilot Recipe_Show Page Bottom](screenshots/recipe_show_bottom.png)
-another screen shot
-![Pantry Pilot Dashboard](screenshots/dashboard_pix.png)
+
 
 ## Contributors
 - [Antoine Aube](https://www.linkedin.com/in/antoineaube/)                - GitHub: [@Antoine-Abube](https://github.com/Antoine-Aube)
