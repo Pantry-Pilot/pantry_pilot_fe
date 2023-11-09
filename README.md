@@ -74,11 +74,21 @@ Your uploaded recipe photos will be displayed on your dashboard for quick refere
 Pantry Pilot streamlines the process of discovering, storing, and sharing your favorite recipes based on the ingredients available in your pantry. Enjoy your culinary journey!
 
 ## OAuth
-With Google OAuth integrated, users will have the option to log in quickly and efficiently using their Google accounts. This streamlined process simplifies access to Pantry Pilot and offers a seamless user experience.
+If users are registered with a gmail account they can use the Google OAuth integratation. This feature gives users the option to log in quickly and efficiently using their Google accounts. This streamlined process simplifies access to Pantry Pilot and offers a seamless user experience.
 
 Now, users can select "Log In with Google" to gain immediate access to Pantry Pilot without the need to remember additional login credentials. Enjoy the enhanced user experience provided by Google OAuth with Pantry Pilot!
 
-## Screenshots of final product
+## Screenshots of final product 
+**Landing page:**
+![Pantry Pilot Landing Page](screenshots/landing_page.png)
+Login page:
+![Pantry Pilot Login Page](screenshots/login_page.png)
+Top of the Recipe show page
+![Pantry Pilot Recipe_Show Page Top](screenshots/recipe_show_top.png)
+Bottom of Recipe show page
+![Pantry Pilot Recipe_Show Page Bottom](screenshots/recipe_show_bottom.png)
+another screen shot
+![Pantry Pilot Dashboard](screenshots/dashboard_pix.png)
 
 ## Contributors
 - [Antoine Aube](https://www.linkedin.com/in/antoineaube/)                - GitHub: [@Antoine-Abube](https://github.com/Antoine-Aube)
