@@ -7,7 +7,9 @@ class UserRecipesFacade
     end
     avatars_array = response[:avatar_urls]
     recipes_array.each_with_index do |recipe, index|
-      recipe.avatar = avatars_array[index] if avatars_array[index] != nil
+      if avatars_array[index] != nil
+        recipe.avatar = avatars_array[index]
+      end
     end
     recipes_array
   end
