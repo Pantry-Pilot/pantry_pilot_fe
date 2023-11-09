@@ -7,7 +7,7 @@
   <h2 class="text-center">My Recipes</h2>
   <div class="container">
     <div class="row">
-      <!-- Left column for saved recipes -->
+
       <div class="col-md-6 d-flex flex-column saved-recipes">
         <h3 style="text-align: center;">Saved Recipes</h3>
         <% @user_recipes.each do |recipe| %>
@@ -25,7 +25,6 @@
         <% end %>
       </div>
 
-      <!-- Right column for uploaded recipe pictures -->
       <div class="col-md-6 d-flex flex-column">
         <h3 style="text-align: center;">My Recipe Images</h3>
         <div class="d-flex flex-column">
