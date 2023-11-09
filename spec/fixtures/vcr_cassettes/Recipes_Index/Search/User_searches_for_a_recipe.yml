@@ -39,11 +39,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d413d220-b0ba-4d03-b388-4fcaefae9833
+      - 394530dd-d0c5-4564-93ef-cf781ecf9948
       X-Runtime:
-      - '0.658890'
+      - '0.843806'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=652.91
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=837.25
       Transfer-Encoding:
       - chunked
     body:
@@ -59,5 +59,5 @@ http_interactions:
         Porridge","image":"https://spoonacular.com/recipeImages/638257-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"637999","type":"recipe","attributes":{"id":637999,"title":"Chicken
         Burritos","image":"https://spoonacular.com/recipeImages/637999-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638125","type":"recipe","attributes":{"id":638125,"title":"Chicken
         In A Pot","image":"https://spoonacular.com/recipeImages/638125-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
-  recorded_at: Mon, 06 Nov 2023 23:38:55 GMT
+  recorded_at: Thu, 09 Nov 2023 00:32:46 GMT
 recorded_with: VCR 6.2.0
