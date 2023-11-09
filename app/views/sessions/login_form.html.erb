@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 offset-md-3 text-center">
+      <br>
       <%= button_to "Log In with Google", "/auth/google_oauth2", data: { turbo: false }, class: "btn btn-primary" %>
 
       <%= form_with url: "/login", method: :post, html: { class: "my-form" } do |f| %>
@@ -12,6 +13,7 @@
           <%= f.label "Password:" %>
           <%= f.password_field :password, class: "form-control" %>
         </div>
+        <br>
         <%= f.submit "Login", class: "btn btn-secondary" %>
       <% end %>
     </div>
