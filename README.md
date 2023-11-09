@@ -86,22 +86,22 @@ Landing page:
 
 Login page:
 
-![Pantry Pilot Login Page](screenshots/login_page.png)
+![Pantry Pilot Login Page](screenshots/Login_page.png)
 
 Top of the Recipe show page:
 
-![Pantry Pilot Recipe_Show Page Top](screenshots/recipe_show_top.png)
+![Pantry Pilot Recipe Show Page Top](screenshots/Recipe_show_top.png)
 
 Bottom of Recipe show page:
 
-![Pantry Pilot Recipe_Show Page Bottom](screenshots/recipe_show_bottom.png)
+![Pantry Pilot Recipe_Show Page Bottom](screenshots/Recipe_show_bottom.png)
 
 Dashboard with saved pictures:
 
-![Pantry Pilot Dashboard_saved_pics](screenshots/dashboard_with_saved_pictures.png)
+![Pantry Pilot Dashboard_saved_pics](screenshots/Dashboard_with_saved_pictures.png)
 
 ## Contributors
-- [Antoine Aube](https://www.linkedin.com/in/antoineaube/)                - GitHub: [@Antoine-Abube](https://github.com/Antoine-Aube)
+- [Antoine Aube](https://www.linkedin.com/in/antoineaube/)                - GitHub: [@Antoine-Aube](https://github.com/Antoine-Aube)
 - [Jorja Flemming](https://www.linkedin.com/in/jorjaf/)                   - GitHub: [@jorjaf](https://github.com/jorjaf)
 - [Lane Bretschneider](https://www.linkedin.com/in/lanebretschneider/)    - GitHub: [@lanebret85](https://github.com/lanebret85)
 - [Will Chen](https://www.linkedin.com/in/williamfchen/)                  - GitHub: [@williamfchen](https://github.com/williamfchen)

@@ -33,34 +33,34 @@ header {
 }
 
 img.logo {
-  max-width: 5%; /* Allows the image to be as wide as its container */
-  max-height: 5%; /* Limits the height to the header's height */
-  height: auto; /* Maintains the aspect ratio */
+  max-width: 5%; 
+  max-height: 5%;
+  height: auto; 
 }
 
 .button-container {
   display: flex;
-  gap: 20px; /* Adjust the spacing between buttons as needed */
-  justify-content: flex-end; /* Align buttons to the right */
+  gap: 20px; 
+  justify-content: flex-end;
   position: absolute;
   top: 0;
   right: 0;
 }
 
 .button-container .btn-primary {
-  order: -1; /* Moves the dashboard button to the left */
+  order: -1; 
 }
 
 .app-info {
   display: flex;
-  justify-content: center; /* Center the app name horizontally */
+  justify-content: center; 
   align-items: center;
-  flex-grow: 1; /* Allow app info to take available space */
-  flex-basis: 0; /* Distribute remaining space */
+  flex-grow: 1; 
+  flex-basis: 0; 
 }
 
 .form-padding {
-  padding-top: 50px; /* Add your desired padding value on top */
+  padding-top: 50px; 
   padding-bottom: 25px;
 }
 
@@ -72,39 +72,35 @@ img.logo {
   text-align: center;
   color: #000000;
 }
-/* Style for the white box container with rounded corners */
+
 .recipe-container {
   background-color: #585454;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
-  margin-left: auto; /* centers the box horizontally */
-  margin-right: auto; /* centers the box horizontally */
-  max-width: 800px; /* for example, this can be any width you prefer */
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 800px; 
   transition: box-shadow 0.3s;
   text-decoration: none;
 }
 
-/* Style for the link to the recipe show page */
 .recipe-link {
   text-decoration: none;
   color: inherit;
 }
 
-/* Style for the recipe image */
 .recipe-image {
   width: 50%;
   height: auto;
 }
 
-/* Style for the recipe title */
 .recipe-details h2 {
   font-size: 18px;
   margin: 0;
 }
 
-/* Style for the recipe summary */
 .recipe-details p {
   font-size: 14px;
   margin: 5px 0;
