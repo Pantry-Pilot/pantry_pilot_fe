@@ -42,4 +42,37 @@ class RecipesController < ApplicationController
       redirect_to "/dashboard"
     end
   end 
+
+  # def destroy
+  #   response = RecipeFacade.new.remove_recipe(params[:id])
+  #   if response[:status] == 204
+  #     flash[:notice] = "Recipe successfully removed"
+  #     redirect_to "/dashboard"
+  #   else
+  #     flash[:error] = response[:error]
+  #     redirect_to "/dashboard"
+  #   end
+  # end
+
+  # def edit
+  #   @recipe_id = params[:id]
+  # end
+
+  # def update
+  #   recipe_data = params.permit(:id, :avatar)
+  #   response = RecipeFacade.new.add_image_to_recipe(recipe_data)
+  #   if response[:status] == 200
+  #     flash[:notice] = response[:notice]
+  #     redirect_to "/dashboard"
+  #   else
+  #     flash[:error] = response[:error]
+  #     redirect_to "/dashsboard/add_image"
+  #   end
+  # end
+
+  # private
+
+  # def recipe_params
+  #   params.require(:recipe).permit(:avatar)
+  # end
 end

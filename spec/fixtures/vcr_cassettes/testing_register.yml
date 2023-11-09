@@ -5,7 +5,7 @@ http_interactions:
     uri: http://localhost:5000/api/v1/register
     body:
       encoding: UTF-8
-      string: '{"name":"","email":"test3@test.com","password":"password"}'
+      string: '{"name":"Testing","email":"test@test_example.com","password":"testiscool"}'
     headers:
       User-Agent:
       - Faraday v2.7.11
@@ -17,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 201
+      message: Created
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -36,19 +36,22 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Etag:
+      - W/"96c876512af307c56abd0edefa6b4632"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e8c3d04f-dc92-48aa-ae1d-a0c3bee4dd5f
+      - 4d73497e-b446-4dbc-afd8-06b323233510
       X-Runtime:
-      - '0.249383'
+      - '1.388888'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, unpermitted_parameters.action_controller;dur=0.05,
-        sql.active_record;dur=3.82, process_action.action_controller;dur=244.80
+      - start_processing.action_controller;dur=0.12, unpermitted_parameters.action_controller;dur=0.05,
+        sql.active_record;dur=5.10, render_template.action_view;dur=0.09, render_layout.action_view;dur=0.18,
+        process.action_mailer;dur=6.16, deliver.action_mailer;dur=1078.62, process_action.action_controller;dur=1346.43
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"error":"Name can''t be blank","status":400}'
-  recorded_at: Thu, 09 Nov 2023 00:32:52 GMT
+      string: '{"data":{"id":"3","type":"users","attributes":{"name":"Testing","email":"test@test_example.com"}}}'
+  recorded_at: Thu, 09 Nov 2023 00:34:18 GMT
 recorded_with: VCR 6.2.0

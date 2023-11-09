@@ -23,11 +23,17 @@ class RecipesService
     end
   end
 
+  # def add_image_to_recipe(avatar_data)
+  #   conn.post("/api/v1/add_image") do |req|
+  #     req.body = {id: avatar_data[:id], avatar: avatar_data[:avatar]}
+  #   end
+  # end
+
   private
 
   def conn
     Faraday.new(url: Rails.configuration.x.sessions_service_url) do |config|
-      config.request :json  
+      config.request :json
       config.adapter Faraday.default_adapter  
     end
   end

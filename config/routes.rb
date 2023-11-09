@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   
   get "/auth/google_oauth2/callback", to: "sessions#create_oauth"
   
-  # resources :recipes, only: [:index, :show]
+  post "/dashboard/add_image", to: "avatars#create"
 end

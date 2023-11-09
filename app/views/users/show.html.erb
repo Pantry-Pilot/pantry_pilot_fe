@@ -28,6 +28,28 @@
     <div class="col-md-6">
       <h3>Uploaded Recipes</h3>
       <!-- Add your code for displaying uploaded recipe pictures here -->
+      <% @user_recipes.each do |recipe| %>
+        <div class="recipe-container"> 
+          <div class="recipe text-center">
+            <% if recipe.avatar != "" %>
+              <%= image_tag recipe.avatar, height: "370px" %>
+              <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
+                <%= f.label :avatar, "Update Image" %>
+                <%= f.file_field :avatar, accept: 'image/png' %>
+                <%= f.hidden_field :id, value: recipe.id %>
+                <%= f.submit "Add" %>
+              <% end %>
+            <% else %>
+              <%= form_with url: "/dashboard/add_image", method: :post, local: true, multipart: true do |f| %>
+                <%= f.label :avatar, "Add Image" %>
+                <%= f.file_field :avatar, accept: 'image/png' %>
+                <%= f.hidden_field :id, value: recipe.id %>
+                <%= f.submit "Add" %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

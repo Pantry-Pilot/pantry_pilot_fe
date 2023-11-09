@@ -41,18 +41,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 449f4edb-4b78-4c44-9e13-ef398dc686ea
+      - 3ebca70b-62b3-402b-b9a0-e54d8cad78ba
       X-Runtime:
-      - '0.260641'
+      - '0.247563'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.41, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=255.73
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.33, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=241.72
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
+  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -92,18 +92,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7b7f653-14ed-4fe3-9f9a-8b05d221739e
+      - 9a65953d-3159-43b8-935f-d49a14b77689
       X-Runtime:
-      - '0.007106'
+      - '0.006766'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=2.08, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=2.73
+      - start_processing.action_controller;dur=0.12, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.97
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
+  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -139,21 +139,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"e0a4a558f9e5fa624f23007e516304d8"
+      - W/"e537da2b11c3c7a6784faee1c10a4151"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ed037f33-67bf-426e-b2b5-a4845977c7bb
+      - 544790a8-7f30-4d83-9c52-8d0a6b342e4e
       X-Runtime:
-      - '0.008462'
+      - '0.013518'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=2.25, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=3.23
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=5.00, instantiation.active_record;dur=0.26,
+        process_action.action_controller;dur=9.31
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]}'
-  recorded_at: Mon, 06 Nov 2023 23:38:57 GMT
+      string: '{"recipes":{"data":[{"id":"7","type":"user_recipes","attributes":{"recipe_id":"656701","title":"Pork
+        and Apple Stew","image":"https://spoonacular.com/recipeImages/656701-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"640067","title":"Corn
+        Bread","image":"https://spoonacular.com/recipeImages/640067-556x370.jpg"}},{"id":"1","type":"user_recipes","attributes":{"recipe_id":"511728","title":"Pasta
+        Margherita","image":"https://spoonacular.com/recipeImages/511728-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"634629","title":"Beef
+        Lo Mein Noodles","image":"https://spoonacular.com/recipeImages/634629-556x370.jpg"}},{"id":"11","type":"user_recipes","attributes":{"recipe_id":"634496","title":"BBQ
+        Mac and Cheese","image":"https://spoonacular.com/recipeImages/634496-556x370.jpg"}}]},"avatar_urls":["http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--08f512eec044c48b3d5bf8be859961bdfb415497/Screenshot%202023-08-23%20at%202.02.37%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9971223917b5c70e60c323ea63fbae43fc349ad9/Screenshot%202023-08-23%20at%201.43.14%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8cb1a713ca818fe34aff873978bd687709196978/Screenshot%202023-08-23%20at%201.41.50%20PM.png","http://localhost:5000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7366ceddf6adb8ee781049ebad775b9f12b13a5c/Screenshot%202023-08-22%20at%2012.21.45%20PM.png",null]}'
+  recorded_at: Thu, 09 Nov 2023 00:32:49 GMT
 recorded_with: VCR 6.2.0

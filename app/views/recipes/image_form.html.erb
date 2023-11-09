@@ -1,0 +1,17 @@
+<h2>Add Image</h2>
+
+<%= form_with url: "/dashboard/add_image", method: :patch, local: true do |f| %>
+  <% if recipe.errors.any? %>
+    <p><%= pluralize(recipe.errors.count, "error") %> stopped this post from being saved:</p>
+
+    <ul>
+      <% recipe.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :avatar, "Add/Update Image" %>
+  <%= f.file_field :avatar %>
+  <%= f.submit "Add" %>
+<% end %>
