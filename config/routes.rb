@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get "/auth/google_oauth2/callback", to: "sessions#create_oauth"
   
   post "/dashboard/add_image", to: "avatars#create"
+  delete "/dashboard/delete_avatar", to: "avatars#destroy"
 end
