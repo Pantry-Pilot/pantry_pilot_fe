@@ -57,32 +57,33 @@ RSpec.describe "User Dashboard Page" do
         expect(current_path).to eq("/dashboard")
       end 
     end
-    #unfinished test
-    # describe "When I delete a recipe from my dashboard", :vcr do
-    #   it "deletes the recipe from my dashboard" do
-    #     visit "/login"
-    #     fill_in :email, with: "test@test.com"
-    #     fill_in :password, with: "1234"
 
-    #     click_on "Login"
+    describe "When I delete a recipe from my dashboard", :vcr do
+      it "deletes the recipe from my dashboard" do
+        visit "/login"
+        fill_in :email, with: "test@test.com"
+        fill_in :password, with: "1234"
 
-    #     expect(current_path).to eq("/dashboard")
-    #     click_on "Search Recipes"
-    #     expect(current_path).to eq("/dashboard/search")
-    #     fill_in :query, with: "chicken"
-    #     click_on "Search"
-    #     expect(page).to have_link "Chicken 65"
-    #     click_on "Chicken 65"
-    #     expect(page).to have_button "Add Recipe to my dashboard"
-    #     click_on "Add Recipe to my dashboard"
-    #     expect(current_path).to eq("/dashboard")
-    #     within("#user_recipe-1") do 
-    #       expect(page).to have_button("Remove from My Recipes")
-    #       click_on "Remove from My Recipes"
-    #     end
-    #     expect(current_path).to eq("/dashboard")
-    #     expect(page).to_not have_content("Chicken 65")
-    #   end 
-    # end
+        click_on "Login"
+
+        expect(current_path).to eq("/dashboard")
+        click_on "Search Recipes"
+        expect(current_path).to eq("/dashboard/search")
+        fill_in :query, with: "Tofu"
+        click_on "Search"
+        expect(page).to have_link "Tofu Gratin"
+        click_on "Tofu Gratin"
+        expect(page).to have_button "Add Recipe to my dashboard"
+        click_on "Add Recipe to my dashboard"
+        expect(current_path).to eq("/dashboard")
+        expect(page).to have_content("Tofu Gratin")
+        within("#user_recipe-663505") do 
+          expect(page).to have_button("Remove from My Recipes")
+          click_on "Remove from My Recipes"
+        end
+        expect(current_path).to eq("/dashboard")
+        expect(page).to_not have_content("Tofu Gratin")
+      end 
+    end
   end
 end
