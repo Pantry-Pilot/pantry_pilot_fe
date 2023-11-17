@@ -22,7 +22,10 @@
             <tr>
               <td><%= ingredient.name %></td>
               <td><%= ingredient.quantity %></td>
-              <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
+              <td style="<%= 'color: rgb(194, 18, 18);' if Date.parse(ingredient.exp_date) < Date.today + 3 %>" >
+                <%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %>
+              </td>
+            </div>
               <td>
                   <%= button_to "Recipes", "/dashboard/search", method: :get, params: { query: ingredient.name }, data: { turbo: false }, class: "btn btn-info btn-sm mx-1" %> 
               </td>
