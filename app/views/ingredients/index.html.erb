@@ -1,0 +1,21 @@
+
+<div class="text-center">
+  <%= button_to "Add ingredient", "/pantry/new", method: :get, data:{turbo: false},  class: "btn btn-primary rounded" %>
+</div>
+<br>
+<h3>Your ingredients</h3>
+  <table>
+    <tr>
+      <th>Ingredient</th>
+      <th>Quantity</th>
+      <th>Expiration Date</th>
+    </tr>
+
+    <% @ingredients.each do |ingredient| %>
+      <tr>
+        <td><%= ingredient.name %></td>
+        <td><%= ingredient.quantity %></td>
+        <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
+      </tr>
+    <% end %>
+  </table>
