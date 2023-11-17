@@ -1,5 +1,5 @@
 <div class="text-center">
-  <p>Welcome, <%= @user.name %></p>
+  <p><%= @user.name %>'s Dashboard</p>
   <%= button_to "Search Recipes", "/dashboard/search", method: :get, class: "btn btn-primary rounded" %>
   <br>
   <%= button_to "Your Pantry", "/pantry", method: :get, class: "btn btn-success rounded" %>
