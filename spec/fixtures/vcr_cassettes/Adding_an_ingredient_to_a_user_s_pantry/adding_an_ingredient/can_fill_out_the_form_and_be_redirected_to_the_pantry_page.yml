@@ -1,0 +1,415 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/login
+    body:
+      encoding: UTF-8
+      string: '{"email":"test@test.com","password":"1234"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=YYCJlE4vHhq1uHGt%2BN5iO7vVnJbDYU7SWD8yyOA3HdNGG5p7eyWRhE7ERz%2FEM2SknIcJIIvs%2FgWJHgmVjRUTPLpRetBw%2BPtNHKKERZLYaMtYf9f9tUWceN5a76fpDih9xCVivBfA5X97tmSCZd7qp7U0fU7LTTStAr8fSUVAckMRyf3xjXBvjEvd7g%3D%3D--qBuj3jnCiKrN0mXk--%2BOqPtMGVaZz8S%2FNW6GFnxw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=YYCJlE4vHhq1uHGt%2BN5iO7vVnJbDYU7SWD8yyOA3HdNGG5p7eyWRhE7ERz%2FEM2SknIcJIIvs%2FgWJHgmVjRUTPLpRetBw%2BPtNHKKERZLYaMtYf9f9tUWceN5a76fpDih9xCVivBfA5X97tmSCZd7qp7U0fU7LTTStAr8fSUVAckMRyf3xjXBvjEvd7g%3D%3D--qBuj3jnCiKrN0mXk--%2BOqPtMGVaZz8S%2FNW6GFnxw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=8dDjMNa0Vr6vqBkdZmv84IlUFaKxauMSCR8qhG5VyOt%2BEQHwNYrzOjyfzizkbh9j2AEitX3QLNo2Av2KlC3couOngELDXZqij%2Fyva27MSrw7smR%2FAL1A4qf4RoJuOT0bG5gx1G67kdnUOe1gyLZNlyfKgGFRw1dF39oZvxbwuQjE%2BVk%3D--Y9qSl8CH2Er%2BRT2a--1GkZ84xYarDHTNe7D%2Fgu1g%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f374ecfe-94e8-40cd-b461-14f7c6776621
+      X-Runtime:
+      - '0.246650'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.33, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=242.07
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Fri, 17 Nov 2023 19:43:31 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=JTd7m2dLF0i3aQn8G%2FH6oWM%2Bo2F3M1ACfYktIjyKEy7dvO6IBlJhkyoehf2i533lPsWBpyisfeYgRmp0qvsnaUbwh6OaqZ%2FWDLiF%2BiWqOSyKNDQ4eSNSEqZUFEOaukhp9rqjfRjKKPSU9JiDJrNKdixyDUWmCqjsZJ0WBkyTj5Ne4SCpkELmc9ExyQ%3D%3D--oXgJtejvJO1CNUTz--SWpP1vpgCouKEWsHwaOmTQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=JTd7m2dLF0i3aQn8G%2FH6oWM%2Bo2F3M1ACfYktIjyKEy7dvO6IBlJhkyoehf2i533lPsWBpyisfeYgRmp0qvsnaUbwh6OaqZ%2FWDLiF%2BiWqOSyKNDQ4eSNSEqZUFEOaukhp9rqjfRjKKPSU9JiDJrNKdixyDUWmCqjsZJ0WBkyTj5Ne4SCpkELmc9ExyQ%3D%3D--oXgJtejvJO1CNUTz--SWpP1vpgCouKEWsHwaOmTQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=crhA8bm2W%2FbivpR1UT1fH4tEvtj2GIStmDUkUt1zK4voEAaZAlwFVuY3mh9%2B9EhHhtE3QuhEcHBzWIZZfKuTC3x3ivEc%2F9lW3%2BEtn3vPLuyodUKbFoVBfiBmwtz8ThuRmtx9oEJKpbZpNV0oaxEpxbvmeOKvkokLD39%2BmMAEHyPddgs%3D--Iy4msbAnqzIcbcMt--Gau2q7TpHtRQqoImY2EUmA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3266ef32-2bfe-4249-b7e0-a333a755c091
+      X-Runtime:
+      - '0.007394'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.85, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=2.96
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Fri, 17 Nov 2023 19:43:31 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_recipes/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=sXKTfPT3r4Km6IC3N1J25%2FoeWL1wTb5SNn75dA1LZqYLiLmtWwQjq%2BSTqr6EoPsrNpr%2FYWeF2X6rgdoFQ9DW2XHCGIkQkku2djRGZopTC1aiberxxP01txV%2BZO6bT%2FEWqje2PYG28Z9dXYgxBoPdBiDV7xaixxIUBHw8bMbmZcNYdi%2BowZyDBVFRlg%3D%3D--ipLj%2FhgXQ3kG2Ezd--C3SvXZBYdJbz6A5L%2BoqVOA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=sXKTfPT3r4Km6IC3N1J25%2FoeWL1wTb5SNn75dA1LZqYLiLmtWwQjq%2BSTqr6EoPsrNpr%2FYWeF2X6rgdoFQ9DW2XHCGIkQkku2djRGZopTC1aiberxxP01txV%2BZO6bT%2FEWqje2PYG28Z9dXYgxBoPdBiDV7xaixxIUBHw8bMbmZcNYdi%2BowZyDBVFRlg%3D%3D--ipLj%2FhgXQ3kG2Ezd--C3SvXZBYdJbz6A5L%2BoqVOA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=OF8THVA%2Bip6sjnoXzNnxuvNeNfPrCn5FIhNnOo8Ivu99f0UBmen3i1dgTPsxaSPJRB1qnkxL4aPd2ULgr2qMuRZgTxEhnWONmt2O%2FwUKLhIR8LSvJyhyyNl73LjDXf3VSaKdi%2BUGJ7oUSdrhNPW1L5cOhT23DR5k6hvDCCyBppWrWRw%3D--IgEjrap5yz2zIkuy--cAeplNtNFVPYQ7QWwXuILQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"d5fe42f848f989c564c84fd9273455c2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a0d99cd1-be14-4aa9-a2fe-3627c3140fac
+      X-Runtime:
+      - '0.008031'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.87, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.92
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"recipes":{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"636228","title":"Broccoli
+        Tartar","image":"https://spoonacular.com/recipeImages/636228-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null,null]}'
+  recorded_at: Fri, 17 Nov 2023 19:43:31 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/expiring_user_ingredients/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=0Kq6rb4NS6ZOL0kGdfFZyaenrags1ErXeNHPjspmMht9aeX3DCBmRhEmOBWZyoL%2BAOzfjPwKhbDmG6nzW3hFP3SlQn03uVzu0wQoTLY19TBZlDbOnL26Psu0dtav5DX7RIvIik7nyR4pMkM3dGTod3ota9Z9V5i8ZJ708yE6YD84WpDx2hMqTG0JRg%3D%3D--g1%2Fq8lKXXJ5IrEQO--N7tphPPx0szfwXpOAgKyUA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=0Kq6rb4NS6ZOL0kGdfFZyaenrags1ErXeNHPjspmMht9aeX3DCBmRhEmOBWZyoL%2BAOzfjPwKhbDmG6nzW3hFP3SlQn03uVzu0wQoTLY19TBZlDbOnL26Psu0dtav5DX7RIvIik7nyR4pMkM3dGTod3ota9Z9V5i8ZJ708yE6YD84WpDx2hMqTG0JRg%3D%3D--g1%2Fq8lKXXJ5IrEQO--N7tphPPx0szfwXpOAgKyUA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=Mdq1qKfzsS0mmqElBeo4V02p85WEwo0Dz0kcoZH6b%2BkdnIX2hNegemaWKln9QE85BjhbEGX9YSXhpXJmqPboMdrtgWjH6CD4HB9ucZo6uSEo6l0o4uoERj0HMoOoDnE8qYC9VPBfB02QOTkf49dSdlSJlZrBmqIVIhkQVTcAPvc4v0Q%3D--zyNbAuBifL3INCPs--nLSm7MTieC1LJuRyKUxvtQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"55ee8e2bf671a689755ad6e4aabed9c8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3b982c7a-9a92-4fd8-86b1-739bf8aa837a
+      X-Runtime:
+      - '0.005948'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.83, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=1.61
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"ingredients":{"data":[{"id":"2","type":"user_ingredients","attributes":{"name":"Mushrooms","quantity":"1","exp_date":"2021-12-11"}},{"id":"12","type":"user_ingredients","attributes":{"name":"Antoine","quantity":"5","exp_date":"2023-11-17"}},{"id":"14","type":"user_ingredients","attributes":{"name":"test","quantity":"1
+        cup","exp_date":"2023-11-19"}}]}}'
+  recorded_at: Fri, 17 Nov 2023 19:43:31 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/add_ingredient
+    body:
+      encoding: UTF-8
+      string: '{"name":"chicken","quantity":"1","exp_date":"2021-10-10","user_id":"1"}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=xWPbrF%2B1uhjW3KPmnHg9zQJ5DaGuj2eT7ZjDPssRYoz1NdhqWTKb3Ac%2FSOjWo46PyVtZ%2FbolB0%2BYU9j0Hz5iWNE28XkYyvdOf8sFVBHYnhnuNeC3UYZFOW3YMvJXNAfLhhaIPUASUAuYo1z1Ti%2FgYPG3nStiskE3X7v0vPGQDLClIFGHFAOll7TxEg%3D%3D--U%2BUP%2BXPnHRoyqRpn--0MV%2Fo5rOxU47LxYzPL2J5g%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=xWPbrF%2B1uhjW3KPmnHg9zQJ5DaGuj2eT7ZjDPssRYoz1NdhqWTKb3Ac%2FSOjWo46PyVtZ%2FbolB0%2BYU9j0Hz5iWNE28XkYyvdOf8sFVBHYnhnuNeC3UYZFOW3YMvJXNAfLhhaIPUASUAuYo1z1Ti%2FgYPG3nStiskE3X7v0vPGQDLClIFGHFAOll7TxEg%3D%3D--U%2BUP%2BXPnHRoyqRpn--0MV%2Fo5rOxU47LxYzPL2J5g%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=QdkpqRLK5SmXzYRxcdoU4RheDPNaF%2FjZdj1Gti5YEUEsPK8Ma7Qz0594TdOYoIK6ELgoeF9whh%2BddNKEQlo0%2BiYjIhCbmu77VgPEKu6LCArq9lLbTEm%2BwqVac4BaQjdwFmuZPN8wBeBVuLeNOIXGAtjOy7RXb5esER1SNmdH01a4lAg%3D--pkQDJ1iDSKow60N3--LqKyz1p18zo3r04S02Piwg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d8e1483b-bf43-4615-aa1c-f099bb8c5374
+      X-Runtime:
+      - '0.022099'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=15.69,
+        instantiation.active_record;dur=0.02, unpermitted_parameters.action_controller;dur=0.04,
+        process_action.action_controller;dur=17.35
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 17 Nov 2023 19:43:31 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_ingredients/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=%2BrYc33vX7XwPT0JwYYI3LRV8dc5sMX5gZbbRa5JkpTzABtErNSgiFCfh2s3G7R%2FZ87LtRIMrIR%2F%2FLY17hrZEyNIwzgIr6YyA1NlO2VDI0Q7lHAr%2B087rebiZKRImaGH6%2Bu%2FEedm9eD8foWo2D5GdOqz2cf2k%2FHeQrMMt05lqZMPmKoEf91m1m1oRig%3D%3D--Or6Kk7LaaRmXKoXZ--MgvzyouL9WAVpoVrL3bPkw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=%2BrYc33vX7XwPT0JwYYI3LRV8dc5sMX5gZbbRa5JkpTzABtErNSgiFCfh2s3G7R%2FZ87LtRIMrIR%2F%2FLY17hrZEyNIwzgIr6YyA1NlO2VDI0Q7lHAr%2B087rebiZKRImaGH6%2Bu%2FEedm9eD8foWo2D5GdOqz2cf2k%2FHeQrMMt05lqZMPmKoEf91m1m1oRig%3D%3D--Or6Kk7LaaRmXKoXZ--MgvzyouL9WAVpoVrL3bPkw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=Hb0HKELWN2Rpe6wCDpZF2f1hXvW8f9Idp0G5DO79o3ByIr%2FQ392SZc8i1z0c3x3axGy3WXpW6WRoA09gExlyhnapblGCDV7tW1UvdDzTUXnc9usGwOEB1K6TQv3riYvIK8HXYv3VjYjRDvcTbweWZmnUXgm5kZL3IZZUgw8yml6dEMw%3D--2ipBS%2Fy2k65%2BEZKa--94K7VDrIaIgmRSdHbY65fg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"d2a02b4f5bb779899c61c12e8b7d9ffa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 23b79f7d-fe05-437e-9649-023b16557ed8
+      X-Runtime:
+      - '0.006595'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.22, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=2.34
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"ingredients":{"data":[{"id":"19","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"2","type":"user_ingredients","attributes":{"name":"Mushrooms","quantity":"1","exp_date":"2021-12-11"}},{"id":"12","type":"user_ingredients","attributes":{"name":"Antoine","quantity":"5","exp_date":"2023-11-17"}},{"id":"14","type":"user_ingredients","attributes":{"name":"test","quantity":"1
+        cup","exp_date":"2023-11-19"}},{"id":"1","type":"user_ingredients","attributes":{"name":"Broccoli","quantity":"1","exp_date":"2023-12-10"}},{"id":"3","type":"user_ingredients","attributes":{"name":"Cheddar
+        Cheese","quantity":"1","exp_date":"2023-12-12"}}]}}'
+  recorded_at: Fri, 17 Nov 2023 19:43:32 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=mBT%2F6gjQW8P8fq8pLK4FtbZbH7R3LR16OQmjA4WPCRBWer0Hf0DQ86HoubJusoEvmbdrnclgr%2BuutQOdbmKDi4%2B8DoXOVj98QhFYvNiz4CVEhbMA3m1tZ301R%2FPYgDqTtb6ro3zYnLUxKsDocTpsiduvji9cAbfA7Z9hzgt8yr70MZTI%2FF1amCFzbg%3D%3D--9RJbhtSS82mB87ij--CXrObktu1aCee14XqjWhvw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=mBT%2F6gjQW8P8fq8pLK4FtbZbH7R3LR16OQmjA4WPCRBWer0Hf0DQ86HoubJusoEvmbdrnclgr%2BuutQOdbmKDi4%2B8DoXOVj98QhFYvNiz4CVEhbMA3m1tZ301R%2FPYgDqTtb6ro3zYnLUxKsDocTpsiduvji9cAbfA7Z9hzgt8yr70MZTI%2FF1amCFzbg%3D%3D--9RJbhtSS82mB87ij--CXrObktu1aCee14XqjWhvw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=kWD0wTuHFeOobBGUlaz9FL9meZnbF4MS7I04%2FTIFiOztpEiTvJzxejQAyL8c75wYyKZn91E1svqSwG51FWmNysTLw8qO2wkXAYmxRSai5%2F6zXhVkkXICjZ%2Fm%2FJpeS4qxaRVrLAFJox0MXMOc3fKJAXHn88LI0oSDz4JtLxIM%2B8vCYM8%3D--mMxqdT0mkY0VizRV--ToauA%2B1BHPY7n7uIizS1gQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"470c9b21de049f9a282411472b82919a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4e3b1077-09f6-4f07-b321-0e229d845fca
+      X-Runtime:
+      - '0.005190'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.66, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=1.04
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
+  recorded_at: Fri, 17 Nov 2023 19:43:32 GMT
+recorded_with: VCR 6.2.0

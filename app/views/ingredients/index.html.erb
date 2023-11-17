@@ -19,6 +19,7 @@
         </thead>
         <tbody>
           <% @ingredients.each do |ingredient| %>
+          <section id="ingredient-<%=ingredient.name%>">
             <tr>
               <td><%= ingredient.name %></td>
               <td><%= ingredient.quantity %></td>
@@ -33,6 +34,7 @@
                   <%= button_to "Delete", "/pantry/delete_ingredient", method: :delete, params: { ingredient_id: ingredient.id }, data: { turbo: false }, class: "btn btn-danger btn-sm mx-1" %>
               </td>
             </tr>
+          </section>
           <% end %>
         </tbody>
       </table>

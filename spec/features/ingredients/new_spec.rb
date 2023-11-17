@@ -8,7 +8,7 @@ RSpec.describe "Adding an ingredient to a user's pantry" do
   
     click_on "Login"
   end
-  describe "adding an ingredient" do 
+  describe "adding an ingredient", :vcr do 
     it "has a form where I can input name, quantity, and expiration date" do
       visit "/pantry/new"
 
@@ -29,7 +29,6 @@ RSpec.describe "Adding an ingredient to a user's pantry" do
       click_on "Add Ingredient"
 
       expect(current_path).to eq("/pantry")
-
     end
   end
 
