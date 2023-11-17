@@ -1,0 +1,11 @@
+<H3>Add an ingredient to you Pantry</H3>
+
+<%= form_with url: "/pantry/add_ingredient", method: :post, data:{turbo: false} do |f|  %>
+  <%= f.label "ingredient name" %>
+  <%= f.text_field :name %>
+  <%= f.label "quantity" %>
+  <%= f.text_field :quantity %>
+  <%= f.label "Expiration date" %>
+  <%= f.date_field :exp_date %>
+  <%= f.submit "Add Ingredient" %>
+<% end  %>
