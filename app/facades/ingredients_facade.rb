@@ -24,4 +24,12 @@ class IngredientsFacade
       {status: response.status}
     end
   end
+
+  def self.expiring_ingredients(user)
+    response = IngredientsService.new.expiring_ingredients(user)
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    response_body[:ingredients][:data].map do |ingredient_data|
+      UserIngredient.new(ingredient_data)
+    end
+  end
 end
