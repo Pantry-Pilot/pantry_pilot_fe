@@ -19,7 +19,6 @@ class RecipesController < ApplicationController
 
   def create
     @user = UsersFacade.new.get_user(current_user)
-
     recipe_data = params.permit(:recipe_id, :title, :image, :summary, :instructions, :ingredients)
     recipe_data[:user_id] = session[:user_id] 
     response = RecipeFacade.new.store_recipe(recipe_data)
