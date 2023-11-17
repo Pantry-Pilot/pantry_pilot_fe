@@ -30,6 +30,7 @@ class IngredientsController < ApplicationController
 
   def index
     @ingredients = IngredientsFacade.get_user_ingredients(current_user)
+    @user = UsersFacade.new.get_user(current_user)
   end
 
   private

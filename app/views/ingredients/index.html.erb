@@ -1,27 +1,38 @@
-<div class="text-center">
-  <%= button_to "Add ingredient", "/pantry/new", method: :get, data: { turbo: false }, class: "btn btn-primary rounded" %>
-</div>
-<br>
-<h3>Your ingredients</h3>
-<table>
-  <tr>
-    <th>Ingredient</th>
-    <th>Quantity</th>
-    <th>Expiration Date</th>
-    <th>Trash :(</th>
-  </tr>
+<div class="form-padding">
+  <div class="text-center pantry-header">
+    <%= button_to "Add ingredient", "/pantry/new", method: :get, data: { turbo: false }, class: "btn btn-primary rounded-pill" %>
+  </div>
+  <br>
 
-  <% @ingredients.each do |ingredient| %>
-    <tr>
-      <td><%= ingredient.name %></td>
-      <td><%= ingredient.quantity %></td>
-      <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
-      <td>
-        <%= button_to "Delete ingredient", "/pantry/delete_ingredient", method: :delete, params: { ingredient_id: ingredient.id }, data: { turbo: false }, class: "btn btn-danger" %>
-      </td>
-      <td>
-        <%= button_to "Search for Recipes", "/dashboard/search", method: :get, params: { query: ingredient.name }, data: { turbo: false }, class: "btn btn-success" %>
-      </td>
-    </tr>
-  <% end %>
-</table>
+  <div class="container">
+    <h2 class="text-center mb-4">Your Ingredients</h2>
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+            <th>Search</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @ingredients.each do |ingredient| %>
+            <tr>
+              <td><%= ingredient.name %></td>
+              <td><%= ingredient.quantity %></td>
+              <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
+              <td>
+                  <%= button_to "Recipes", "/dashboard/search", method: :get, params: { query: ingredient.name }, data: { turbo: false }, class: "btn btn-info btn-sm mx-1" %> 
+              </td>
+              <td>
+                  <%= button_to "Delete", "/pantry/delete_ingredient", method: :delete, params: { ingredient_id: ingredient.id }, data: { turbo: false }, class: "btn btn-danger btn-sm mx-1" %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
