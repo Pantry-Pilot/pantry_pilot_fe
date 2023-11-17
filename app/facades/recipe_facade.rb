@@ -18,7 +18,6 @@ class RecipeFacade
 
   def store_recipe(data)
     response = RecipesService.new.store_recipe(data)
-    # response_body = JSON.parse(response.body, symbolize_names: true)
 
     if response.status == 204
       {

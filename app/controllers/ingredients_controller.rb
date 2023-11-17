@@ -11,13 +11,12 @@ class IngredientsController < ApplicationController
       flash[:notice] = "Ingredient added to your Pantry"
       redirect_to "/pantry"
     else 
-      flash[:error] = "Ingredient not added - all fields buts be filled in"
+      flash[:error] = "Ingredient not added - all fields must be filled in"
       redirect_to "/pantry/new"
     end
   end
 
   def destroy
-    # require 'pry';binding.pry
     response = IngredientsFacade.delete_ingredient(params[:ingredient_id])
     if response[:status] == 204
       flash[:notice] = "Ingredient successfully removed"
