@@ -16,6 +16,18 @@ class IngredientsController < ApplicationController
     end
   end
 
+  def destroy
+    # require 'pry';binding.pry
+    response = IngredientsFacade.delete_ingredient(params[:ingredient_id])
+    if response[:status] == 204
+      flash[:notice] = "Ingredient successfully removed"
+      redirect_to "/pantry"
+    else
+      flash[:error] = response[:error]
+      redirect_to "/pantry"
+    end
+  end
+
   def index
     @ingredients = IngredientsFacade.get_user_ingredients(current_user)
   end
