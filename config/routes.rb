@@ -17,4 +17,8 @@ Rails.application.routes.draw do
   
   post "/dashboard/add_image", to: "avatars#create"
   delete "/dashboard/delete_avatar", to: "avatars#destroy"
+
+  post "/pantry/add_ingredient", to: "ingredients#create", as: :add_ingredient
+  get "/pantry", to: "ingredients#index"
+  get "/pantry/new", to: "ingredients#new", as: "new_ingredient"
 end
