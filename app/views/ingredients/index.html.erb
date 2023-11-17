@@ -1,21 +1,27 @@
-
 <div class="text-center">
-  <%= button_to "Add ingredient", "/pantry/new", method: :get, data:{turbo: false},  class: "btn btn-primary rounded" %>
+  <%= button_to "Add ingredient", "/pantry/new", method: :get, data: { turbo: false }, class: "btn btn-primary rounded" %>
 </div>
 <br>
 <h3>Your ingredients</h3>
-  <table>
-    <tr>
-      <th>Ingredient</th>
-      <th>Quantity</th>
-      <th>Expiration Date</th>
-    </tr>
+<table>
+  <tr>
+    <th>Ingredient</th>
+    <th>Quantity</th>
+    <th>Expiration Date</th>
+    <th>Trash :(</th>
+  </tr>
 
-    <% @ingredients.each do |ingredient| %>
-      <tr>
-        <td><%= ingredient.name %></td>
-        <td><%= ingredient.quantity %></td>
-        <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
-      </tr>
-    <% end %>
-  </table>
+  <% @ingredients.each do |ingredient| %>
+    <tr>
+      <td><%= ingredient.name %></td>
+      <td><%= ingredient.quantity %></td>
+      <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
+      <td>
+        <%= form_with url: "/pantry/delete_ingredient", method: :delete, data: { turbo: false } do |f| %>
+          <%= f.hidden_field :ingredient_id, value: ingredient.id %>
+          <%= f.submit "Delete ingredient", class: "btn btn-danger" %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
