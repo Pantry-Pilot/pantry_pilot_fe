@@ -34,16 +34,23 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=4ePSVLNFDFzRu2sQGHgXH%2F6QPrA3QzCgzv71PXXZbnejjJ%2FGw46qGypD2miAKODyavencoVV3BfxqNqqr9%2BI3wkRNDt4LIIY0XTUdry2yBhSukLRtX3Wk90WNobyQ%2FcSwiMJPLq5SNM%2FZrPgkamEho43NTcQq%2F6ebp3CuI0U%2FRROX%2FGq0ingLyRQbw%3D%3D--%2BAbnneXCJ2x%2BP3kn--aed5vgF32zGAIxEdVXFScQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=4ePSVLNFDFzRu2sQGHgXH%2F6QPrA3QzCgzv71PXXZbnejjJ%2FGw46qGypD2miAKODyavencoVV3BfxqNqqr9%2BI3wkRNDt4LIIY0XTUdry2yBhSukLRtX3Wk90WNobyQ%2FcSwiMJPLq5SNM%2FZrPgkamEho43NTcQq%2F6ebp3CuI0U%2FRROX%2FGq0ingLyRQbw%3D%3D--%2BAbnneXCJ2x%2BP3kn--aed5vgF32zGAIxEdVXFScQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=GsmTS%2BBojcp5%2B1b4inPQ2QG3u1UYNO%2B3L%2Ba2Yb%2FNpiD984cZchNN7O4JDUBLyr8vNk5gW91K2c0w%2FvCk0PipgEJhQ%2FtsWZVaaKodx1M9XUkLEXyJ7z9Gs1Cyes6YRUNyltR%2BbYop8HAQM3g2QvUcgP6%2Bq7n6ZDExdm4b%2B5tDtvZgiVo%3D--9tuW3u4EeOP1ud1J--XA9pJQiQ6DMHl6kCnTpnpw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"586c7b277e3f9e0d66441ffa3518c35d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 57a87372-4ed4-4479-8a86-4621a7eb15fb
+      - d0c809fe-a757-4c97-b586-678a2677a94b
       X-Runtime:
-      - '0.705885'
+      - '0.777364'
       Server-Timing:
-      - start_processing.action_controller;dur=0.13, process_action.action_controller;dur=694.88
+      - start_processing.action_controller;dur=0.08, process_action.action_controller;dur=765.89
       Transfer-Encoding:
       - chunked
     body:
@@ -59,5 +66,5 @@ http_interactions:
         Porridge","image":"https://spoonacular.com/recipeImages/638257-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"637999","type":"recipe","attributes":{"id":637999,"title":"Chicken
         Burritos","image":"https://spoonacular.com/recipeImages/637999-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638125","type":"recipe","attributes":{"id":638125,"title":"Chicken
         In A Pot","image":"https://spoonacular.com/recipeImages/638125-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
-  recorded_at: Thu, 09 Nov 2023 00:32:44 GMT
+  recorded_at: Fri, 17 Nov 2023 19:13:29 GMT
 recorded_with: VCR 6.2.0

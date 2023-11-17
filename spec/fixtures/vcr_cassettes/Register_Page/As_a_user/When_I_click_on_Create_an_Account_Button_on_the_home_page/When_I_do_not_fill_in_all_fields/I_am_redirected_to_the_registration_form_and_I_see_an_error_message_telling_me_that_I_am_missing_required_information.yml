@@ -36,19 +36,26 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=%2FYueXAkCOgWNQmjwVzNaUKJ76x3EpGBL8rynTlwISWBiz7xhc%2BdaOWnlZKLkTNvSYcTxzx6wuYfH%2FKgc0qwPILnL1KjaXSh3pxuZ3lQFg6sT172lLBK7wBZLUPV7oYTeqz9V5NoiSIm1xqwgvdlPn%2F4%2Fzq%2Fgsa3iwrRboG2%2Bf1mQicb4BXTU0Xjdaw%3D%3D--q1z73TYL0oVE6SWJ--fhrpqK3bS1fiJEEL89W1%2FQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=%2FYueXAkCOgWNQmjwVzNaUKJ76x3EpGBL8rynTlwISWBiz7xhc%2BdaOWnlZKLkTNvSYcTxzx6wuYfH%2FKgc0qwPILnL1KjaXSh3pxuZ3lQFg6sT172lLBK7wBZLUPV7oYTeqz9V5NoiSIm1xqwgvdlPn%2F4%2Fzq%2Fgsa3iwrRboG2%2Bf1mQicb4BXTU0Xjdaw%3D%3D--q1z73TYL0oVE6SWJ--fhrpqK3bS1fiJEEL89W1%2FQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=8rDe%2B1QSRDjZmFA5jCvg%2FxbsxiFKswUnmSXVGqtzVvyD5WSMiH%2Bo80RmlGCCzzbeAKgZNCPmt9HzlfvnNpEee5vjuwPjnSOFNfcd45om7DaQip98ukSb0sQ30jIQWgGn31nAKL%2BNOt%2FSMUx77icIcP8Zp8ci%2B4s6F9aR1zINrderzro%3D--4TN3xu2PsTfSx5xT--hWFQtRhCsS4pCIfD%2BQkI8Q%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e8c3d04f-dc92-48aa-ae1d-a0c3bee4dd5f
+      - a3edd405-edf8-41bd-a7b1-963890a8743c
       X-Runtime:
-      - '0.249383'
+      - '0.265445'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, unpermitted_parameters.action_controller;dur=0.05,
-        sql.active_record;dur=3.82, process_action.action_controller;dur=244.80
+      - start_processing.action_controller;dur=0.08, unpermitted_parameters.action_controller;dur=0.06,
+        sql.active_record;dur=1.24, process_action.action_controller;dur=256.12
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":"Name can''t be blank","status":400}'
-  recorded_at: Thu, 09 Nov 2023 00:32:52 GMT
+  recorded_at: Fri, 17 Nov 2023 19:13:37 GMT
 recorded_with: VCR 6.2.0
