@@ -15,4 +15,13 @@ class IngredientsFacade
       UserIngredient.new(ingredient_data)
     end
   end
+
+  def self.delete_ingredient(ingredient_id)
+    response = IngredientsService.new.delete_ingredient(ingredient_id)
+    if response.status == 204
+      {status: response.status}
+    else
+      {status: response.status}
+    end
+  end
 end
