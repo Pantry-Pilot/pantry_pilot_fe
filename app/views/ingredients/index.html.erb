@@ -17,10 +17,10 @@
       <td><%= ingredient.quantity %></td>
       <td><%= Date.parse(ingredient.exp_date).strftime('%B %d, %Y') %></td>
       <td>
-        <%= form_with url: "/pantry/delete_ingredient", method: :delete, data: { turbo: false } do |f| %>
-          <%= f.hidden_field :ingredient_id, value: ingredient.id %>
-          <%= f.submit "Delete ingredient", class: "btn btn-danger" %>
-        <% end %>
+        <%= button_to "Delete ingredient", "/pantry/delete_ingredient", method: :delete, params: { ingredient_id: ingredient.id }, data: { turbo: false }, class: "btn btn-danger" %>
+      </td>
+      <td>
+        <%= button_to "Search for Recipes", "/dashboard/search", method: :get, params: { query: ingredient.name }, data: { turbo: false }, class: "btn btn-success" %>
       </td>
     </tr>
   <% end %>
