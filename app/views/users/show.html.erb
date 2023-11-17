@@ -1,6 +1,8 @@
 <div class="text-center">
   <p>Welcome, <%= @user.name %></p>
   <%= button_to "Search Recipes", "/dashboard/search", method: :get, class: "btn btn-primary rounded" %>
+  <br>
+  <%= button_to "Your Pantry", "/pantry", method: :get, class: "btn btn-success rounded" %>
 </div>
 <br>
 <% if @user_recipes != [] %>
