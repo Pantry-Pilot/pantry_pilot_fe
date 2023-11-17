@@ -10,6 +10,10 @@ class IngredientsService
     conn.get("/api/v1/user_ingredients/#{user}")
   end
 
+  def delete_ingredient(ingredient_id)
+    conn.delete("/api/v1/delete_ingredient/#{ingredient_id}")
+  end
+
   private
 
   def conn
