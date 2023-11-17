@@ -3,6 +3,7 @@
   <%= button_to "Search Recipes", "/dashboard/search", method: :get, class: "btn btn-primary rounded" %>
   <br>
   <%= button_to "Your Pantry", "/pantry", method: :get, class: "btn btn-success rounded" %>
+  <p>You have <b><%= @user_expiring_ingredients.count %></b> ingredients in your pantry that are about to expire</p>
 </div>
 <br>
 <% if @user_recipes != [] %>
