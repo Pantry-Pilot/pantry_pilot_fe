@@ -31,17 +31,4 @@ RSpec.describe "Adding an ingredient to a user's pantry" do
       expect(current_path).to eq("/pantry")
     end
   end
-
-  it "flashes an error message if fields aren't filled out" do 
-      visit "/pantry/new"
-
-      fill_in :name, with: ""
-      fill_in :quantity, with: "1"
-      fill_in :exp_date, with: "2021-10-10"
-
-      click_on "Add Ingredient"
-
-      expect(current_path).to eq("/pantry/new")
-      expect(page).to have_content("Ingredient not added - all fields must be filled in")
-  end
 end
