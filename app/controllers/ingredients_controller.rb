@@ -11,8 +11,8 @@ class IngredientsController < ApplicationController
       flash[:notice] = "Ingredient added to your Pantry"
       redirect_to "/pantry"
     else 
-      flash[:error] = "Ingredient not added"
-      redirect_to "pantry/new"
+      flash[:error] = "Ingredient not added - all fields buts be filled in"
+      redirect_to "/pantry/new"
     end
   end
 
