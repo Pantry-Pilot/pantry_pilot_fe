@@ -37,25 +37,25 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=%2FYueXAkCOgWNQmjwVzNaUKJ76x3EpGBL8rynTlwISWBiz7xhc%2BdaOWnlZKLkTNvSYcTxzx6wuYfH%2FKgc0qwPILnL1KjaXSh3pxuZ3lQFg6sT172lLBK7wBZLUPV7oYTeqz9V5NoiSIm1xqwgvdlPn%2F4%2Fzq%2Fgsa3iwrRboG2%2Bf1mQicb4BXTU0Xjdaw%3D%3D--q1z73TYL0oVE6SWJ--fhrpqK3bS1fiJEEL89W1%2FQ%3D%3D;
+      - _interslice_session=I5Ol3CLNLmHKZYEdLCjniafnrjdvKO%2Bzytm6jky8h5OSN8RMihOokizpgyJ2yrPHVieYgZjjzkwcrBUXbuTjQrSVS7aQKD3TDg5TTWQJoj0j%2FivsEMj89ztXqjuJY80OCLjCyWuN8ygd8aga%2F3T2h1Pcnpn3WcP0Bn%2FwtUTB8ACpp1OowVp793iYCA%3D%3D--lNL33qikhL%2B91OWH--gca3LiOuOAu0WsKYlL%2FemA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=%2FYueXAkCOgWNQmjwVzNaUKJ76x3EpGBL8rynTlwISWBiz7xhc%2BdaOWnlZKLkTNvSYcTxzx6wuYfH%2FKgc0qwPILnL1KjaXSh3pxuZ3lQFg6sT172lLBK7wBZLUPV7oYTeqz9V5NoiSIm1xqwgvdlPn%2F4%2Fzq%2Fgsa3iwrRboG2%2Bf1mQicb4BXTU0Xjdaw%3D%3D--q1z73TYL0oVE6SWJ--fhrpqK3bS1fiJEEL89W1%2FQ%3D%3D;
+      - _interslice_session=I5Ol3CLNLmHKZYEdLCjniafnrjdvKO%2Bzytm6jky8h5OSN8RMihOokizpgyJ2yrPHVieYgZjjzkwcrBUXbuTjQrSVS7aQKD3TDg5TTWQJoj0j%2FivsEMj89ztXqjuJY80OCLjCyWuN8ygd8aga%2F3T2h1Pcnpn3WcP0Bn%2FwtUTB8ACpp1OowVp793iYCA%3D%3D--lNL33qikhL%2B91OWH--gca3LiOuOAu0WsKYlL%2FemA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=8rDe%2B1QSRDjZmFA5jCvg%2FxbsxiFKswUnmSXVGqtzVvyD5WSMiH%2Bo80RmlGCCzzbeAKgZNCPmt9HzlfvnNpEee5vjuwPjnSOFNfcd45om7DaQip98ukSb0sQ30jIQWgGn31nAKL%2BNOt%2FSMUx77icIcP8Zp8ci%2B4s6F9aR1zINrderzro%3D--4TN3xu2PsTfSx5xT--hWFQtRhCsS4pCIfD%2BQkI8Q%3D%3D;
+      - _session_id=ZMPbNNh%2FvekviYKybdeXrEekbolA8lva5a%2FhrVZhi8cSt6deBjHHSUM7E3HdEIkNKNeatnWfy9QPahvBkspT%2FEopdUct0pET5qd4OjPbpdEe2RTl2uHMaWdixkST4FX7JhVYXVmx3jOqddsNV4ECAX79V%2BgKrz%2BfM1sgK04b0HgFfSM%3D--VUBxt1bcjalZwloW--s6fE5ALi1JvomUVwJZdfEw%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - a3edd405-edf8-41bd-a7b1-963890a8743c
+      - dc534972-1264-41da-b46e-e2a25bc4f6c4
       X-Runtime:
-      - '0.265445'
+      - '0.247708'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, unpermitted_parameters.action_controller;dur=0.06,
-        sql.active_record;dur=1.24, process_action.action_controller;dur=256.12
+      - start_processing.action_controller;dur=0.06, unpermitted_parameters.action_controller;dur=0.04,
+        sql.active_record;dur=1.63, process_action.action_controller;dur=243.25
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":"Name can''t be blank","status":400}'
-  recorded_at: Fri, 17 Nov 2023 19:13:37 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:30 GMT
 recorded_with: VCR 6.2.0

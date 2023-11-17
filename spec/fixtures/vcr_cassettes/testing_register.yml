@@ -5,7 +5,7 @@ http_interactions:
     uri: http://localhost:5000/api/v1/register
     body:
       encoding: UTF-8
-      string: '{"name":"Testing","email":"other@test_example.com","password":"testiscool"}'
+      string: '{"name":"Testing","email":"new@test_example.com","password":"testiscool"}'
     headers:
       User-Agent:
       - Faraday v2.7.11
@@ -37,27 +37,27 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=X1SSpxsUzTsAkYXmlDvhOtjHslJRtiHTFNT94AB2%2FgYsDMhZgcd2yAG5uyDW6RrTKyrJ%2F9E7JGDdm4CGMcA41w%2Bea1VsFfrr1h3rlNpBE%2FWJg9sS%2FChqkbRqIQn31uMKCEwbMO2C5wLjCF%2FFnwcrr8b0%2B2Ri6dLgYELY3rJcJhzkPkstorfd6FlRLQ%3D%3D--hfDKsJVGF7PVNaBf--BZoj%2BP7Hp%2B6ByaB2159lgQ%3D%3D;
+      - _interslice_session=Uv%2F9R1XOzPaLGeI7wZQ3lfP%2F3QC57EBkPNTWA4xbQDfVJWCyC4724PnfpgcDXJc9z1gQ9mahUOAepHm5GpyCCoAY8%2BUdS8vHlkxiUu7CxO8n4irAX%2BYS8YPpJijoGUsz4yPcuYQ9EiXM6HwsF8XLyAqrstJ%2F4Jpu4C8a9gXbK8vI0p0VBKjigtFUFA%3D%3D--KWnsgz%2BRCL%2Bx00F5--YxEEArHuneMsnho2bN1eDQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=X1SSpxsUzTsAkYXmlDvhOtjHslJRtiHTFNT94AB2%2FgYsDMhZgcd2yAG5uyDW6RrTKyrJ%2F9E7JGDdm4CGMcA41w%2Bea1VsFfrr1h3rlNpBE%2FWJg9sS%2FChqkbRqIQn31uMKCEwbMO2C5wLjCF%2FFnwcrr8b0%2B2Ri6dLgYELY3rJcJhzkPkstorfd6FlRLQ%3D%3D--hfDKsJVGF7PVNaBf--BZoj%2BP7Hp%2B6ByaB2159lgQ%3D%3D;
+      - _interslice_session=Uv%2F9R1XOzPaLGeI7wZQ3lfP%2F3QC57EBkPNTWA4xbQDfVJWCyC4724PnfpgcDXJc9z1gQ9mahUOAepHm5GpyCCoAY8%2BUdS8vHlkxiUu7CxO8n4irAX%2BYS8YPpJijoGUsz4yPcuYQ9EiXM6HwsF8XLyAqrstJ%2F4Jpu4C8a9gXbK8vI0p0VBKjigtFUFA%3D%3D--KWnsgz%2BRCL%2Bx00F5--YxEEArHuneMsnho2bN1eDQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=7732ifz9dAcs3%2B6tyiB1Z%2FQYfpoJvw%2FZl0vIN0PDCbgcOiYSPR9Vp%2B6hQEYJjS%2Bca5PbOCeYt0u7fS0gyJAimNRy048UhdkXgkwAvrDWl6b3tO9ADQ2qsGxIUFAqv0HmgDyjhMRM%2Bi8hr3rPOobm2IVlJ6a%2FITmUvIbGDyY12mpK4yQ%3D--BiKPcswe%2BqsTNz6W--LRPObLai0MDdxTy4nwEEsw%3D%3D;
+      - _session_id=i5uwSI2KOtPLcEfCyJhiWEcMPp8zWT2KArOYGKU3bSVYLwAD1Y30En8wClQCihNrcdMh6aHiuy38pNc2dmmcqPfgAgrwhVWXSbtwPhysBu2Xjz6UJRv5mhSMhsW%2Bikmc8Z0UkLVMZPA4uTiFJE1bOma1zeo2tGtkAZyLr3cKomYi2Cc%3D--7EZJSvImGJ2fo9wK--Ri5P1hdhGWW1uKhCo1cYew%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"eec7a1dd16c7575f9284b3981298ef9d"
+      - W/"bc680dde3f6b98e186b0f8fdaff14bd2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46849c9c-bca1-4925-b250-e741851f559b
+      - 84302727-70e5-42c9-8142-d6e96ce9cfc8
       X-Runtime:
-      - '0.250371'
+      - '0.263640'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, unpermitted_parameters.action_controller;dur=0.04,
-        sql.active_record;dur=4.02, process_action.action_controller;dur=245.52
+      - start_processing.action_controller;dur=0.07, unpermitted_parameters.action_controller;dur=0.05,
+        sql.active_record;dur=16.35, process_action.action_controller;dur=257.76
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"users","attributes":{"name":"Testing","email":"other@test_example.com"}}}'
-  recorded_at: Fri, 17 Nov 2023 19:13:37 GMT
+      string: '{"data":{"id":"4","type":"users","attributes":{"name":"Testing","email":"new@test_example.com"}}}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 recorded_with: VCR 6.2.0
