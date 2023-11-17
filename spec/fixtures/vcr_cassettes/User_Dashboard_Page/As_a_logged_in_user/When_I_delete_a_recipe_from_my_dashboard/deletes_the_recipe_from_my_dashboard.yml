@@ -37,29 +37,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=pMUBgZhTV4IcFIITPMKXTYudEj3r1BwbLVMoU1hpmm6zRYxSKYiNpdche3Id0IPejxo4ayPsEAt5othWBHMxRERQ0I7vvwi44fpilTFM71f0dxGG858x%2Fy2RO650hAOwEvkk%2BQN4dGHuX6aeUdtfygSySISPuE%2BkhrIZOfylIqTmFYl3gcQ7jY8kuA%3D%3D--Xxu5jXVHbJnxwBy2--UfaOZo3IJIZ%2BF1R7PiMzvw%3D%3D;
+      - _interslice_session=%2F%2F83SgZ2%2BuQ6hj5U60winunXt2T%2FFzEuFLgvKd8y3a4KRUKGsGeEIMSSsbOYXz9635q4H1nENnUfdfVuc7apxCXnFKSzidinSjEywgzTMIR1SUateANpBvetL8Ya0frfhQPYQ3hW5wlOK6MuLpsTkl3%2F4gY2EIOPBDb9prZvNZ0ZDiyM2nCtxaW3dQ%3D%3D--xex4il88C3yK1%2B%2FJ--kDHFo1GhX6jiXhalIZDJew%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=pMUBgZhTV4IcFIITPMKXTYudEj3r1BwbLVMoU1hpmm6zRYxSKYiNpdche3Id0IPejxo4ayPsEAt5othWBHMxRERQ0I7vvwi44fpilTFM71f0dxGG858x%2Fy2RO650hAOwEvkk%2BQN4dGHuX6aeUdtfygSySISPuE%2BkhrIZOfylIqTmFYl3gcQ7jY8kuA%3D%3D--Xxu5jXVHbJnxwBy2--UfaOZo3IJIZ%2BF1R7PiMzvw%3D%3D;
+      - _interslice_session=%2F%2F83SgZ2%2BuQ6hj5U60winunXt2T%2FFzEuFLgvKd8y3a4KRUKGsGeEIMSSsbOYXz9635q4H1nENnUfdfVuc7apxCXnFKSzidinSjEywgzTMIR1SUateANpBvetL8Ya0frfhQPYQ3hW5wlOK6MuLpsTkl3%2F4gY2EIOPBDb9prZvNZ0ZDiyM2nCtxaW3dQ%3D%3D--xex4il88C3yK1%2B%2FJ--kDHFo1GhX6jiXhalIZDJew%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=HAxtZomhPiNON5z0ABxfaY63qIHfI6tHwifc1GQnn0EQHKCabp4NU8qlv7l167Zm2LwCjA6YO%2BkiwTTSkHjB1r1d5HMMlGkF0OnXKs3MnuGlK0yE8JaVj8LBXHMVfIbo%2BSLeWMcKtVeMPEQ9YD55jo6Je1bBAf6baXH203RPZ%2FhIM8M%3D--EhfbT2AfrTTLGI8G--Y1nzHuYBjz2ytFryH4Ra%2BQ%3D%3D;
+      - _session_id=xMt87hSj1EnGGyso0pxR4%2FPj1sMY5LpA3dVeJkG84yBTg4Cw375FFa1%2BAFVw82wql1WCH%2BY9sHfdIcBTlhR1JPOVGbz7rcqTtIjNbLnSfHTRe%2FyUrQfLc0hwrkiZ2fY556t23T3i4zGYC2GfTKTXrccnH2YgO%2FdEX1JKQK%2Fwxd8bkas%3D--D1x1IgFX8R5MraPb--p5MkS1M%2FX3LlmiNGGhX1KQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7bf976ca-db0d-4605-b0fd-499962e6686e
+      - bc769413-fbdd-4cec-8545-155affaa5449
       X-Runtime:
-      - '0.254281'
+      - '0.246906'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.40, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=249.82
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.37, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=242.37
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:16 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -95,29 +95,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=H06zn4T2iPfZAJk0h%2FvJ6UM4NKUkaj5%2BgLD1t2F6cpNQ%2BcOs%2B0staTuC632YJoKz4IDI49StSBT8AEzcWXlA3UwY80xe6%2B%2B5W4YvsuepmSsowGyUuA9mWOV03S6B8nvtJ024rQz9XtAOFT0J8f%2FG9%2FvF2l8lA6TRv%2BbnsIpmc5RqZZh0EcdYZUcJMQ%3D%3D--jECqGuFUmtfK%2Bp99--75GBd45g5LPWd892NtAj2Q%3D%3D;
+      - _interslice_session=M8FZnrWbHh39d3dRHUlQAaHIOPFzT7KC2bO3to4thbhmM2T3KS3Li5cgYCOgzwzBNEnZkrUc89Vs%2BuEQA1veztuujFKWvwTc%2FhU42Y3R58eIRhmJ6fC5%2FT9JNFdgdVxh9KpogH5qkP%2BdysolYcHOrtEIn%2B9vY%2BX%2BrW004NNulkqRACYpeJ4BTaPGLg%3D%3D--3mN7RyahETxR1%2FAf--lZnfM4BhICPctqweC0rs3w%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=H06zn4T2iPfZAJk0h%2FvJ6UM4NKUkaj5%2BgLD1t2F6cpNQ%2BcOs%2B0staTuC632YJoKz4IDI49StSBT8AEzcWXlA3UwY80xe6%2B%2B5W4YvsuepmSsowGyUuA9mWOV03S6B8nvtJ024rQz9XtAOFT0J8f%2FG9%2FvF2l8lA6TRv%2BbnsIpmc5RqZZh0EcdYZUcJMQ%3D%3D--jECqGuFUmtfK%2Bp99--75GBd45g5LPWd892NtAj2Q%3D%3D;
+      - _interslice_session=M8FZnrWbHh39d3dRHUlQAaHIOPFzT7KC2bO3to4thbhmM2T3KS3Li5cgYCOgzwzBNEnZkrUc89Vs%2BuEQA1veztuujFKWvwTc%2FhU42Y3R58eIRhmJ6fC5%2FT9JNFdgdVxh9KpogH5qkP%2BdysolYcHOrtEIn%2B9vY%2BX%2BrW004NNulkqRACYpeJ4BTaPGLg%3D%3D--3mN7RyahETxR1%2FAf--lZnfM4BhICPctqweC0rs3w%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=WKHgt%2Bb2O48SRqH5eP37%2FHSfLtghBLe6SB2MXRX%2Bce%2FtMOjuC1uSe3DzWOXmxWBllJ96v49ohl9WXaPrz3hOAfp6i%2F8Osr%2FnHuTIHUtCJFQJOs1rGf7hkSAZnM601%2BkizyWRIqackICSm%2FmbrWReuVTY1wbLVoIAhP0PH42ZEJWMjDo%3D--Mej66Fd44QBVNMod--ByvjtFg9Pu567JTceqVJQg%3D%3D;
+      - _session_id=E1uzGy87T2t5CAb%2B0AB3Mw60oANJL80a4ToH%2BXUc3xy2iNCUtwdSUOQkSqgzo8Gbw6AgpKF%2BIiF1HBi87A1O8cI50uKP03522SYrKjE4lIZkf7jFcpJ2m4aCDlRnef9lTBwbg2bYMTXAH%2BEVDkdcXEC1CCDUw%2B4pKoMIgHngfJNCqBw%3D--M4OZj7wGHuwDP3By--A4pMuCr7ISeZgGCM67NYtQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ca4f1ad9-9d94-4ea5-8c7e-4e2a91fa9574
+      - 0b7ac27e-4ef2-4a8f-87f4-666323c75c6f
       X-Runtime:
-      - '0.006109'
+      - '0.005374'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.40, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=1.22
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.74
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:16 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -153,32 +153,94 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=0qP%2F0dqoCRDZr%2FHEDwoYk19D%2F%2BA%2BN69vNx1X8QamW3d9BKXtRae8LDun%2BoTP8DAe7LUk3HmA1FoiVZpgAEZ69R6r4Rl9KafOWFf2lsToa%2BCcvPyWRTp9tfLia%2BRV0AEhb95Qh91qtE6Y8TbSKEubqrVfSS%2BeG1e3p3eDok2Rk9iujbXgeNByNrpAFg%3D%3D--Q9cHjEbRDVkgV74n--RzOjvTUb4eY%2BvapYL1K8rA%3D%3D;
+      - _interslice_session=DH00rUn0rozfBkrjlPqobQlMVPmEvW7p6KXloXelC66egwuGeXOp%2BDFhyd3Xnx7EU1SGxXr8%2FG1L%2B%2F0F4C4%2Bfk0zpA9KHmE4eE%2FVkvMAffeL1xr4uGCe%2BZK9xKEx2VEfDPkxCgvnLnZZy3NJbkIvH5f%2BcB8n5vAQzROwULg%2FjrGpAgZqUBoSS4N3nQ%3D%3D--wqryD8UJviLyiSoU--x3C4NI30VNMRmEg9KK32jA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=0qP%2F0dqoCRDZr%2FHEDwoYk19D%2F%2BA%2BN69vNx1X8QamW3d9BKXtRae8LDun%2BoTP8DAe7LUk3HmA1FoiVZpgAEZ69R6r4Rl9KafOWFf2lsToa%2BCcvPyWRTp9tfLia%2BRV0AEhb95Qh91qtE6Y8TbSKEubqrVfSS%2BeG1e3p3eDok2Rk9iujbXgeNByNrpAFg%3D%3D--Q9cHjEbRDVkgV74n--RzOjvTUb4eY%2BvapYL1K8rA%3D%3D;
+      - _interslice_session=DH00rUn0rozfBkrjlPqobQlMVPmEvW7p6KXloXelC66egwuGeXOp%2BDFhyd3Xnx7EU1SGxXr8%2FG1L%2B%2F0F4C4%2Bfk0zpA9KHmE4eE%2FVkvMAffeL1xr4uGCe%2BZK9xKEx2VEfDPkxCgvnLnZZy3NJbkIvH5f%2BcB8n5vAQzROwULg%2FjrGpAgZqUBoSS4N3nQ%3D%3D--wqryD8UJviLyiSoU--x3C4NI30VNMRmEg9KK32jA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=zvT9L6awEn3r%2FU8OTQa3b5xfaJb6nwasAeBU4vPeLyxuMbWx4VWwYGvYy9IGkfdeilig6hLCtn8xazkIi5M%2FDa1NGXdLDufrfcQ6GDL%2BG22a%2Br1FZAIJhT9J2MzI3pomM6LyBOPimxun2kPKm%2B7%2Fo8F8AXalDiYDmpqWM1O6HM1ZVQQ%3D--1Qw61GtD4n1Rqghb--Si9NzAF2iAxTQhUeS%2BEdLw%3D%3D;
+      - _session_id=5gM3u%2BrLx0ooq6ec9VuByjlE5JLq3gKD7IyjL1nYgCwjwaR0NSfy5yvIoDxwEsWGHmm11xBl57GeAq7NXZYRl1hmKqMyz7aGCPNTy6yX0RBgusR0%2BXOG5ATwDh0ek1SFEjkDFm%2FqX599c%2FHkoUGQqkdoplLeilNTm9MCoytp0xmb1Ts%3D--5S4PZMLQL7r035ZK--0dycu85A3JHgvqzQWAjzRQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"999e84cdc4eef9d72a224dfbf358e61d"
+      - W/"2131abe6f5d20fab89800af50d9b33ed"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - eb8c6651-a83e-4610-b93e-bc46bd71c3e8
+      - 2a80acf0-7df6-48c4-b22e-1a4ea289c116
       X-Runtime:
-      - '0.010084'
+      - '0.016913'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=3.33, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=5.40
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=2.94, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=12.54
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"recipes":{"data":[{"id":"9","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"15","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"14","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null]}'
-  recorded_at: Thu, 09 Nov 2023 16:31:16 GMT
+      string: '{"recipes":{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"636228","title":"Broccoli
+        Tartar","image":"https://spoonacular.com/recipeImages/636228-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null,null,null,null]}'
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/expiring_user_ingredients/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=sSfWYuGDVrdHO1Tb%2B7e1m8Ub5nVbhjefDl%2FJ%2F30akVhg1t9lgkcMCiPNEaD2ctMDrnI6pWIcalvvZBc0o1KfqNWWP4oslrPK%2FyAVsfAN7WorDLu%2FXhqUuPeu49T9FOuPBK8Ngf5t1WpH1bdBWH6fl5wUTVr8JuQOtfm0Jlml%2FZhiXJuANt%2FEDIBx%2FA%3D%3D--0Ph34q5uw3Cd8%2BMu--chMwV%2BEOIyqfYqy%2FYX%2Fhzw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=sSfWYuGDVrdHO1Tb%2B7e1m8Ub5nVbhjefDl%2FJ%2F30akVhg1t9lgkcMCiPNEaD2ctMDrnI6pWIcalvvZBc0o1KfqNWWP4oslrPK%2FyAVsfAN7WorDLu%2FXhqUuPeu49T9FOuPBK8Ngf5t1WpH1bdBWH6fl5wUTVr8JuQOtfm0Jlml%2FZhiXJuANt%2FEDIBx%2FA%3D%3D--0Ph34q5uw3Cd8%2BMu--chMwV%2BEOIyqfYqy%2FYX%2Fhzw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=yqxCcPHdROdemqobCs9NwY%2Bj7QyNNNHJ0nCfrRjcrGhsZXpM7n%2FXWIOPrGHMilYhpzytjgQwuyExrXlG0x5Zo8lWkz%2Bdhb8We4tFxd6zEk2G%2B1nWq3SMIWSnEgaKhw%2BlHqQ%2BqlBbB54JpQzW9DPsOIwDo5wnJ8zeiFptoaCqVNBYbPI%3D--dil%2ByPyV1nswjoUE--Lot4J3KgFSRi4JE0%2B8EMWQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"4e8c6ddd76409002edc4b16c5c18a6f6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b87ae996-e96f-4f36-b755-097cd285d154
+      X-Runtime:
+      - '0.007629'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=2.45, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=3.43
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"ingredients":{"data":[{"id":"2","type":"user_ingredients","attributes":{"name":"Mushrooms","quantity":"1","exp_date":"2021-12-11"}},{"id":"12","type":"user_ingredients","attributes":{"name":"Antoine","quantity":"5","exp_date":"2023-11-17"}},{"id":"14","type":"user_ingredients","attributes":{"name":"test","quantity":"1
+        cup","exp_date":"2023-11-19"}},{"id":"33","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"34","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}},{"id":"36","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"37","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}}]}}'
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -214,29 +276,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=b9g6lMPpnfQz%2BDGNo40OjvuaiHRJwPpc2eRpXEeMlhgCHIUhE1inmjmyDKUoVZnNOY9ARSXFTZ3HMkTyLvtvMDjEzazz3KtCkqm%2FX3UM1ZOHY3rVM7979a9RD1t%2B0taEjvd0IbYCskCGsVZWgA3rxI0qXP4EeWki9Fgekbb9rba4XsErZ7NVAVrPsg%3D%3D--31%2B0uBMEPvJ7qKHg--fMpT%2BQQV8MV3bVkdWM%2BlVg%3D%3D;
+      - _interslice_session=1v3em3TCc2LBHr%2FjBJJm9i3lKEL4MeBtozvTlMyfxiLPH8nP6Zxwite2OEp6Y16pheITT66fVkfRfEw%2Bn9dCVSGe6Toi6hVSMLAQBThpNj%2BT9A8eqfNhabuhIqP2FMIuMgXsjrzdEaM7ZTp%2FYKsoaxBatRDIzYK5hjmjB6oi%2F9FJlJ4jB75EQwZxRA%3D%3D--lGP%2FXgkicDeY5QKW--fp6R4B8%2B81tuKEstWlwlMg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=b9g6lMPpnfQz%2BDGNo40OjvuaiHRJwPpc2eRpXEeMlhgCHIUhE1inmjmyDKUoVZnNOY9ARSXFTZ3HMkTyLvtvMDjEzazz3KtCkqm%2FX3UM1ZOHY3rVM7979a9RD1t%2B0taEjvd0IbYCskCGsVZWgA3rxI0qXP4EeWki9Fgekbb9rba4XsErZ7NVAVrPsg%3D%3D--31%2B0uBMEPvJ7qKHg--fMpT%2BQQV8MV3bVkdWM%2BlVg%3D%3D;
+      - _interslice_session=1v3em3TCc2LBHr%2FjBJJm9i3lKEL4MeBtozvTlMyfxiLPH8nP6Zxwite2OEp6Y16pheITT66fVkfRfEw%2Bn9dCVSGe6Toi6hVSMLAQBThpNj%2BT9A8eqfNhabuhIqP2FMIuMgXsjrzdEaM7ZTp%2FYKsoaxBatRDIzYK5hjmjB6oi%2F9FJlJ4jB75EQwZxRA%3D%3D--lGP%2FXgkicDeY5QKW--fp6R4B8%2B81tuKEstWlwlMg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=Fx%2BgxmEO%2FasEVBNx6Zgu1H2%2FX4Fr1OhAOSa1XJi1io%2BV4EVQTRU7ezsusuTOHednxVJ5rAFx3ZAsk0NlVrCyF3CVUNOoUpqAXiao%2F4Nl2fbBiuK1SvSIZ4EiYIGEGbQq%2BppeApj%2FgOY%2Fz%2BraO1owr4qCmSZI%2FO9yzaSBuPJ4jnoD19o%3D--vHkI%2FJXSTvTchSaN--uo2z2Q%2BTm2cWHB3VIrJtvQ%3D%3D;
+      - _session_id=rNUzZdQC69J42Avijj25RMv3R7SYd%2FNewbW7JpWU%2Fxqnf8n%2FJIUs9wwFG8GEwSoqrJjflkDgAkGUV71ZmMSEXEroJbYlsAfSQmavuO1YBZP5oqWKy7bgbNJgpmME0vNqFix7WXQcdJie%2FfHqpVe4qBwwuI2BN6LYdnYFU4Rmt0vqczA%3D--ct1UYbgVEYj5I4bS--cn1pgkK3UggWeIgoQuNs0w%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6ed57db8-b1d8-49c4-8e83-2be2b6db95ce
+      - de3170a9-cd50-43fd-8ae2-47953733d2f0
       X-Runtime:
-      - '0.005730'
+      - '0.005120'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.31, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.81
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.36, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.82
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:16 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -272,29 +334,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=%2B3lOnT23SPigtGXNyVgLRsbwhO1FVBKbSsaQzECyU60FG%2Fhl5ZJCICyr3sXsekoByzSlDl2JOHuBiIXoX0ahSKvgYmmnIDoQfnFk3jy%2FnKYg485eaHU4a5%2FzYg%2BR02iiztDOOZNNX1j8Y5fYUwA9otQ35tYj0mofWRxrat11Et74ZQiGKEaR1syZ1g%3D%3D--X3VOsozTBS%2Fv5Qw4--hvhtiuPBxh5%2B0DQ3%2Fw30Dg%3D%3D;
+      - _interslice_session=AqotMGkO1ZAzMl43tf5wM26HDnpYDIOy%2B0vPmiFBboJQznZkE0RVHGjJ%2BVhtytPVyv5Y072howawR9lcNcBM9I8mE4evcGuMZZORlfuQtWcMLt7fhOwW05apXgUzf19y7AMfVJz6e5eWQDtJztS89pvh7nWd%2BE0N9nxdgNZpS65d5%2B%2BNJl61K8rK9A%3D%3D--vZF%2BzIXOdnMcYBs2--xIo8QClEoCwqrUebd%2F0tIg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=%2B3lOnT23SPigtGXNyVgLRsbwhO1FVBKbSsaQzECyU60FG%2Fhl5ZJCICyr3sXsekoByzSlDl2JOHuBiIXoX0ahSKvgYmmnIDoQfnFk3jy%2FnKYg485eaHU4a5%2FzYg%2BR02iiztDOOZNNX1j8Y5fYUwA9otQ35tYj0mofWRxrat11Et74ZQiGKEaR1syZ1g%3D%3D--X3VOsozTBS%2Fv5Qw4--hvhtiuPBxh5%2B0DQ3%2Fw30Dg%3D%3D;
+      - _interslice_session=AqotMGkO1ZAzMl43tf5wM26HDnpYDIOy%2B0vPmiFBboJQznZkE0RVHGjJ%2BVhtytPVyv5Y072howawR9lcNcBM9I8mE4evcGuMZZORlfuQtWcMLt7fhOwW05apXgUzf19y7AMfVJz6e5eWQDtJztS89pvh7nWd%2BE0N9nxdgNZpS65d5%2B%2BNJl61K8rK9A%3D%3D--vZF%2BzIXOdnMcYBs2--xIo8QClEoCwqrUebd%2F0tIg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=serFVqMmHD07pu47ybiwWxZjCO5cR3y%2B%2BytKbHSKQbiZr2B0rMEbwLzUL8gUnPUjNLmDma3jVx4QQBeqVTkwwQ%2BT%2Bj4X9h4fwRNeUepIi42TtZjLARK%2FaQMc19EeZnqbmZsvYCdI2ZVKJEqzpsxstxAZpEO%2FnC9TYki8KlUGw3rA59Q%3D--7YxP9qx8bhLpAar3--9r7MOT368nPlUgH4fkshBw%3D%3D;
+      - _session_id=xAYowCCNbQ%2FzKPk8JZZMu4tMImeo5fWfQ1iQGtxOoN7cpzhSGrvJ%2B%2Bw4zTf09971XnadkARK5GQPtqHcN0QzCtMU6PSBRI%2BWSS2fcqmo8MgI%2Bi8aAHIpUOJIbwq9cGAI6nUOUaDJuCS9x01XbDoL86fhuHYcguQZNOycODeElQQxEY8%3D--zCYQ5bW1V9TvCnmx--3R0REottsu3ItKcgshHvxw%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 77d40428-9cfd-41e2-b1a9-307517510450
+      - d8b3efe5-265d-4d52-a0bb-8d1bd839cf78
       X-Runtime:
-      - '0.005158'
+      - '0.005039'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.31, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.75
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.35, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.78
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:16 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/recipes/search?query=Tofu
@@ -330,22 +392,22 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=R%2BkETFYquNO1CkLwiXQJ7ZVGO02t7lZ4ZlS4xJoEt800QmBFGMWao2xVYq8sbGHQSMz0WgguzwMm8ncKPpYzjYWfPmRe4P3XAYR%2FgqQLeELNo%2FuN7VplHdCbyCvMtK8TaWODj3rIgGa3EwXMw4KHgbjx7dT8bt99DcC12jY8hCBK8OrgkXcU%2FdkfNA%3D%3D--7PIrHy270zInddyV--NQfOd83shIKC2cxFYZHSLw%3D%3D;
+      - _interslice_session=IzYSvqdMhYBiX%2FNa41LQ8ifEq9xfK26jegwp3Gj%2F2fvnlfAHYnQK4vqDoP2TqJ%2BTv6MNT9BZd9ffZsB2ox2cILWpi28DWyalbpNea%2FIjvROYv0cij9lIIzDlq5dH9X%2BIB3frNVgBEHG9pvZpd8A2EtFo8uxD0hHG7IGPIQ8MjSuCkS4Xs0Hq26Y20g%3D%3D--T6LX0jpZvRTwCP2r--m0UE5fTo2qNp5jGriMkvcQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=R%2BkETFYquNO1CkLwiXQJ7ZVGO02t7lZ4ZlS4xJoEt800QmBFGMWao2xVYq8sbGHQSMz0WgguzwMm8ncKPpYzjYWfPmRe4P3XAYR%2FgqQLeELNo%2FuN7VplHdCbyCvMtK8TaWODj3rIgGa3EwXMw4KHgbjx7dT8bt99DcC12jY8hCBK8OrgkXcU%2FdkfNA%3D%3D--7PIrHy270zInddyV--NQfOd83shIKC2cxFYZHSLw%3D%3D;
+      - _interslice_session=IzYSvqdMhYBiX%2FNa41LQ8ifEq9xfK26jegwp3Gj%2F2fvnlfAHYnQK4vqDoP2TqJ%2BTv6MNT9BZd9ffZsB2ox2cILWpi28DWyalbpNea%2FIjvROYv0cij9lIIzDlq5dH9X%2BIB3frNVgBEHG9pvZpd8A2EtFo8uxD0hHG7IGPIQ8MjSuCkS4Xs0Hq26Y20g%3D%3D--T6LX0jpZvRTwCP2r--m0UE5fTo2qNp5jGriMkvcQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=9J9onX6oz3CyBZKbDd08mKPe9QBc2H1fH4frgCEyrJ4zWQ5ImBSkH2DQOr4EzelT5DKC%2BkfbD1gCyYxEXQ4PkYm7QIeP%2F5cYc6PG2lCgV%2Br4RZUVqEOWk3%2FZ2FFLsPi%2FF1lL9R%2BzskYX%2FY1AtRXxkU%2B73CIXEBn0ieuJ3La0no0Q5o4%3D--c2alYQODb554mFYj--efaAAqhMwOTNQBbr%2Bsx7Eg%3D%3D;
+      - _session_id=oU8zk6GUWg9rp1CPeL%2BV3km0TpZoHcU0dTLiIK0m0fD1wlJhzuZdGwy136wKRwVbPMp%2FBXScd0GeTkLYncu%2F3bUiWXxGYF4MP38yGUV1lB0jJS8pAOgmamJbP5aBx80U0Fa8tVnOYksp%2B5glhLX%2BtQXwcCGbI4Wmts%2BXXYBpYIrgDLc%3D--QHNkiJouF1v0Wpya--yEX4ncbEFgRYBgLakHwvHg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"f5c9ba0305f6ef35438ff4feac31e585"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a22f83a-049a-4568-a1b8-5b68e7375057
+      - 3a9ce2c1-2ef6-4ab0-88f2-6c93400ab652
       X-Runtime:
-      - '0.658474'
+      - '0.615464'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=652.35
+      - start_processing.action_controller;dur=0.04, process_action.action_controller;dur=610.80
       Transfer-Encoding:
       - chunked
     body:
@@ -361,7 +423,7 @@ http_interactions:
         Tofu In Ginger and Spring Onion Sauce","image":"https://spoonacular.com/recipeImages/660067-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"651190","type":"recipe","attributes":{"id":651190,"title":"Masala-Tofu
         Burger","image":"https://spoonacular.com/recipeImages/651190-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"636268","type":"recipe","attributes":{"id":636268,"title":"Broiled
         Tofu","image":"https://spoonacular.com/recipeImages/636268-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
-  recorded_at: Thu, 09 Nov 2023 16:31:17 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -397,29 +459,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=dhhbUrSxYYVSW5obGtmVWllqfDOikgG19Z6cds4X8bscx0GV5D51q6jY5FSUoDAygvGcImJAUef2%2Bjo%2B2igckrfNlkFkKk0PJ9Slyvi%2FXZmIdk0Z2o7Enpc8Gia33EwRpHaRexK2RC08nvePurwHD3pwZA1dhF3IG8HMR6%2Blb9%2BWDm7VK8t9trCAow%3D%3D--B4W4xEJbtLbvT00T--qkeA0DFFWs5NUj6JIveGrg%3D%3D;
+      - _interslice_session=184cCkaTiNy6%2B4PtooRzd2TQcVEKnRpcwstBT7CKHth2Hj%2Bn02vAY4zZIYwGwUpIKb2pk97w5Se41yf%2FTj5ordHFVpH%2BjAqdv8lazhUGFSMVBEyOvh%2B6Bg8ya4bZLTD4yd5kKGUdiebSTXMEEF%2FTEOZZa55p9Hr8ZMMkLYzpI6EHPq5S3HSp9Ug%2BQw%3D%3D--gmduHzrPpI1C%2FpUY--lpR90cEPwru%2FPHwujYKrQA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=dhhbUrSxYYVSW5obGtmVWllqfDOikgG19Z6cds4X8bscx0GV5D51q6jY5FSUoDAygvGcImJAUef2%2Bjo%2B2igckrfNlkFkKk0PJ9Slyvi%2FXZmIdk0Z2o7Enpc8Gia33EwRpHaRexK2RC08nvePurwHD3pwZA1dhF3IG8HMR6%2Blb9%2BWDm7VK8t9trCAow%3D%3D--B4W4xEJbtLbvT00T--qkeA0DFFWs5NUj6JIveGrg%3D%3D;
+      - _interslice_session=184cCkaTiNy6%2B4PtooRzd2TQcVEKnRpcwstBT7CKHth2Hj%2Bn02vAY4zZIYwGwUpIKb2pk97w5Se41yf%2FTj5ordHFVpH%2BjAqdv8lazhUGFSMVBEyOvh%2B6Bg8ya4bZLTD4yd5kKGUdiebSTXMEEF%2FTEOZZa55p9Hr8ZMMkLYzpI6EHPq5S3HSp9Ug%2BQw%3D%3D--gmduHzrPpI1C%2FpUY--lpR90cEPwru%2FPHwujYKrQA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=dumqPTpiP2PcNvBv1mOq9OA3NiZQbtiQ06mn2wzuySlFkIeUzLa7uNiD0OPT2v%2Ft3CNGSFrfmrDMBmVYC%2BP1qfrIyNiPlSF9mUdw6KWlrbXz0ia4tKNL0NZLEuT9MO56DP8bCOGmdthvHPlUllqblHBCjm2RXGWOXkBXs9F%2B4Td3ySQ%3D--%2BoOF3rql%2BwoYJCn0--0FU8u7jPrXXV%2FyZ6D0MIaw%3D%3D;
+      - _session_id=%2FcPUI4Cc%2Bh%2ByBojzUOPfKwN4rHhN7D1bmr4nT0mCscoe1cknJ7oRkNHAlQMArrlNm0YSkOH9zSsFOIN%2F10raruS3Vnc9UbrurVn%2B3%2BCB4VDXZwXYiq2uxWh11AUQM370hQJ1s9iDD3UzTlYBUIyp4wB4wdzptkqzrIQFZgjxZoT99yY%3D--XmMYYr9zY8Ap%2BB5Y--awjJAL39e2d6MP%2BTIayybQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 21f93a15-bc48-4647-85e5-abe43c61dfe5
+      - 45d46e55-dbdc-419c-a855-37bf18de95f6
       X-Runtime:
-      - '0.007945'
+      - '0.008859'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.42, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=1.10
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.49, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.23
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:17 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/recipes/663505
@@ -455,29 +517,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=FdwCSQ9%2Bzu0qWkeiEtgEwW%2FyJMMx5o2Azuh2DQcc9O9GWtgX5A6l73CxISNGlyF7IXoChYWJoyyF9uZ0cb55I%2FRa5xEOQ2I3J8czOikUvtBwHWzEJrDsLaL4c2eE%2FZGFZTZg8nRuUqyw7zNvnl2cOM5DCmkUMP9yoj8k7yVAnEmX0E9XjEb01zxXIw%3D%3D--ERfqflm%2FHgodH5FS--dnA9l4k8NOl02Oep9aA7Ww%3D%3D;
+      - _interslice_session=4oKQfu9NJPA5hrPbLLJfDdaMphpzEHUMyOUHapCXCa5QUQBrIeYwQP%2FZZ%2BQU6EG%2BVPzoGbub0i4ZTrTg7VOLEQMxokaO6Ye6VeHageGds5RG2pkNoUd%2FwTjYyVG42qSyoy1dN%2Byb9Erdx8qV0BowsvVxa3qJl76F9DZbHkUevFPPBuJO6iBsI7a5oQ%3D%3D--1jadjH%2F1rhfMzXv8--dEgTMpuA78QsbMOyuMoLxA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=FdwCSQ9%2Bzu0qWkeiEtgEwW%2FyJMMx5o2Azuh2DQcc9O9GWtgX5A6l73CxISNGlyF7IXoChYWJoyyF9uZ0cb55I%2FRa5xEOQ2I3J8czOikUvtBwHWzEJrDsLaL4c2eE%2FZGFZTZg8nRuUqyw7zNvnl2cOM5DCmkUMP9yoj8k7yVAnEmX0E9XjEb01zxXIw%3D%3D--ERfqflm%2FHgodH5FS--dnA9l4k8NOl02Oep9aA7Ww%3D%3D;
+      - _interslice_session=4oKQfu9NJPA5hrPbLLJfDdaMphpzEHUMyOUHapCXCa5QUQBrIeYwQP%2FZZ%2BQU6EG%2BVPzoGbub0i4ZTrTg7VOLEQMxokaO6Ye6VeHageGds5RG2pkNoUd%2FwTjYyVG42qSyoy1dN%2Byb9Erdx8qV0BowsvVxa3qJl76F9DZbHkUevFPPBuJO6iBsI7a5oQ%3D%3D--1jadjH%2F1rhfMzXv8--dEgTMpuA78QsbMOyuMoLxA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=KolF8IwcwsgwaZdp9RvYth2w%2F49%2BO1rGpuC9iwLVqQm89CRO1b7D2rBC9eQos5cjkBaNP2eJoKv2r0t99AiZM0cwNbdZymId61LC4jJPWsN1Z6lwaLZVERww5mvfY3FnifKaNP1%2FlIBaRilMArglZ2bx%2BzQuHIjrbpSgQnPAbgpw78g%3D--LvZ3rezPaYnt1xjy--e4sV69Jz3dCQ4rcEbUdo1w%3D%3D;
+      - _session_id=mlPyQCQtq8hv9z7rczsHBRbC9%2Fhj%2BxcPR1Be2qxblI%2BRbb87QqsBD%2B2jQCzsmBBKbIb%2FwdMzXZRjUTpNXH4Q2JserPRITCP0AeC9k0k7N1SYp3no%2BkCgHDW6P0EwotzHYhcncRZOj1WSFktYIIMDh54Lj%2Bne%2FFANYkHCYGrzQhuWGSI%3D--ddVSA4hK0vivf8gJ--nfT0%2FHPOxL9NoyLCQymOnA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"a15562be7c16293f80fc71c3757d4208"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a57e4481-9e5a-4d47-8473-6eb13c54c970
+      - dae303c9-41ad-4134-b8e5-2a690157408d
       X-Runtime:
-      - '0.644382'
+      - '0.661620'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=638.38
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=655.46
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJkYXRhIjp7ImlkIjoiNjYzNTA1IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsiaWQiOjY2MzUwNSwidGl0bGUiOiJUb2Z1IEdyYXRpbiIsImltYWdlIjoiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlSW1hZ2VzLzY2MzUwNS01NTZ4MzcwLmpwZyIsInN1bW1hcnkiOiJUb2Z1IEdyYXRpbiBpcyBhIFx1MDAzY2JcdTAwM2VwZXNjYXRhcmlhblx1MDAzYy9iXHUwMDNlIHNpZGUgZGlzaC4gVGhpcyByZWNpcGUgc2VydmVzIDggYW5kIGNvc3RzIDU5IGNlbnRzIHBlciBzZXJ2aW5nLiBPbmUgc2VydmluZyBjb250YWlucyBcdTAwM2NiXHUwMDNlODcgY2Fsb3JpZXNcdTAwM2MvYlx1MDAzZSwgXHUwMDNjYlx1MDAzZTNnIG9mIHByb3RlaW5cdTAwM2MvYlx1MDAzZSwgYW5kIFx1MDAzY2JcdTAwM2U2ZyBvZiBmYXRcdTAwM2MvYlx1MDAzZS4gT25seSBhIGZldyBwZW9wbGUgbWFkZSB0aGlzIHJlY2lwZSwgYW5kIDEgd291bGQgc2F5IGl0IGhpdCB0aGUgc3BvdC4gRnJvbSBwcmVwYXJhdGlvbiB0byB0aGUgcGxhdGUsIHRoaXMgcmVjaXBlIHRha2VzIHJvdWdobHkgXHUwMDNjYlx1MDAzZTQ1IG1pbnV0ZXNcdTAwM2MvYlx1MDAzZS4gVGhpcyByZWNpcGUgZnJvbSBGb29kaXN0YSByZXF1aXJlcyBtaXNvIHBhc3RlLCBzdWdhciwgZmxvdXIsIGFuZCBzYWtlIHdpbmUuIFdpdGggYSBzcG9vbmFjdWxhciBcdTAwM2NiXHUwMDNlc2NvcmUgb2YgMjclXHUwMDNjL2JcdTAwM2UsIHRoaXMgZGlzaCBpcyByYXRoZXIgYmFkLiBTaW1pbGFyIHJlY2lwZXMgaW5jbHVkZSBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2dyYXRpbi1vZi1iZWxnaWFuLWVuZGl2ZS13aXRoLWJhY29uLWdyYXRpbi1kZW5kaXZlcy1hcmRlbm5haXNlLTEyNzM5XCJcdTAwM2VHcmF0aW4gb2YgQmVsZ2lhbiBFbmRpdmUgd2l0aCBCYWNvbiAoR3JhdGluIGQnRW5kaXZlcyBBcmRlbm5haXNlKVx1MDAzYy9hXHUwMDNlLCBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2JlbGdpYW4tY2hpY29ucy1hdS1ncmF0aW4tZW5kaXZlcy1hdS1ncmF0aW4tOTY4MDRcIlx1MDAzZUJlbGdpYW4gQ2hpY29ucyBBdSBHcmF0aW4gKEVuZGl2ZXMgQXUgR3JhdGluKVx1MDAzYy9hXHUwMDNlLCBhbmQgXHUwMDNjYSBocmVmPVwiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlcy9ncmF0aW4tZGF1cGhpbm9pcy1wb3RhdG8tZ3JhdGluLTU0Njg5OVwiXHUwMDNlR3JhdGluIERhdXBoaW5vaXMgKFBvdGF0byBHcmF0aW4pXHUwMDNjL2FcdTAwM2UuIiwiaW5zdHJ1Y3Rpb25zIjoiSGVhdCBvbGl2ZSBvaWwgb3ZlciBhIGdlbnRsZSBmbGFtZSBhbmQgYWRkIGZsb3VyLCB3aGlza2luZyBicmllZmx5IHRvIGZvcm0gYSByb3V4IChwYXN0ZSkuXG5BZGQgc295YSBtaWxrIChvciB1c2UgbG93IGZhdCBtaWxrKSB0byB0aGUgcGFzdGUsIHdoaXNraW5nIGFsbCB0aGUgd2hpbGUgdW50aWwgYSBzYXVjZSBmb3JtcyBhbmQgdGhpY2tlbnMuXG5BZGQgbWlzbyBwYXN0ZSAoMSB0YnNwIG9yIGFkZCB0byB0YXN0ZSkgYW5kIGNvbnRpbnVlIHdoaXNraW5nLCB0aGVuIHNlYXNvbiB3aXRoIHN1Z2FyIGFuZCBzYWtlIHdpbmUuXG5IZWF0IG92ZW4gdG8gMTgwQy5cbkN1dCBlYWNoIGRyYWluZWQgYW5kIGNoaWxsZWQgdG9mdSBjYWtlIGludG8gZm91ciBwaWVjZXMuXG5QbGFjZSBhIHRvZnUgc3F1YXJlIGluIGEgcmFtZWtpbiBvciBpbmRpdmlkdWFsIGJvd2wgYW5kIHNlYXNvbiB3aXRoIHR3byBzcG9vbmZ1bHMsIG9yIG1vcmUsIG9mIHRoZSBzYXVjZS4gUmVwZWF0IHdpdGggdGhlIHJlc3Qgb2YgdGhlIHRvZnUgc3F1YXJlcyBvciBzZXJ2ZSBpdCBmYW1pbHktc3R5bGUgaW4gYSBzaGFsbG93IGJha2luZyBkaXNoLlxuUGxhY2UgdG9mdSBzcXVhcmVzIGluIHRoZSBvdmVuLiBCYWtlIGZvciA4LTEwIG1pbnV0ZXMgb3IgdW50aWwgYnJvd25lZC5cbkdhcm5pc2ggd2l0aCBzaHJlZGRlZCBub3JpIHNlYXdlZWQgYW5kIGJvbml0byBmbGFrZXMgYW5kIHNlcnZlIGltbWVkaWF0ZWx5LiIsImluZ3JlZGllbnRzIjpbeyJpZCI6MTYxNjEsImFpc2xlIjoiUmVmcmlnZXJhdGVkIiwiaW1hZ2UiOiJ0b2Z1LnBuZyIsImNvbnNpc3RlbmN5IjoiU09MSUQiLCJuYW1lIjoic2lsa2VuIHRvZnUgY2FrZXMiLCJuYW1lQ2xlYW4iOiJzaWxrZW4gdG9mdSIsIm9yaWdpbmFsIjoiMiBTaWxrZW4gdG9mdSBjYWtlcywgZHJhaW5lZCBhbmQgY2hpbGxlZCIsIm9yaWdpbmFsTmFtZSI6IlNpbGtlbiB0b2Z1IGNha2VzLCBkcmFpbmVkIGFuZCBjaGlsbGVkIiwiYW1vdW50IjoyLjAsInVuaXQiOiIiLCJtZXRhIjpbImNoaWxsZWQiLCJkcmFpbmVkIl0sIm1lYXN1cmVzIjp7InVzIjp7ImFtb3VudCI6Mi4wLCJ1bml0U2hvcnQiOiIiLCJ1bml0TG9uZyI6IiJ9LCJtZXRyaWMiOnsiYW1vdW50IjoyLjAsInVuaXRTaG9ydCI6IiIsInVuaXRMb25nIjoiIn19fSx7ImlkIjo0MDUzLCJhaXNsZSI6Ik9pbCwgVmluZWdhciwgU2FsYWQgRHJlc3NpbmciLCJpbWFnZSI6Im9saXZlLW9pbC5qcGciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6Im9saXZlIG9pbCIsIm5hbWVDbGVhbiI6Im9saXZlIG9pbCIsIm9yaWdpbmFsIjoiMiB0YWJsZXNwb29ucyBPbGl2ZSBvaWwiLCJvcmlnaW5hbE5hbWUiOiJPbGl2ZSBvaWwiLCJhbW91bnQiOjIuMCwidW5pdCI6InRhYmxlc3Bvb25zIiwibWV0YSI6W10sIm1lYXN1cmVzIjp7InVzIjp7ImFtb3VudCI6Mi4wLCJ1bml0U2hvcnQiOiJUYnNwcyIsInVuaXRMb25nIjoiVGJzcHMifSwibWV0cmljIjp7ImFtb3VudCI6Mi4wLCJ1bml0U2hvcnQiOiJUYnNwcyIsInVuaXRMb25nIjoiVGJzcHMifX19LHsiaWQiOjIwMDgxLCJhaXNsZSI6IkJha2luZyIsImltYWdlIjoiZmxvdXIucG5nIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJmbG91ciIsIm5hbWVDbGVhbiI6IndoZWF0IGZsb3VyIiwib3JpZ2luYWwiOiIyIHRhYmxlc3Bvb25zIFBsYWluIGZsb3VyIiwib3JpZ2luYWxOYW1lIjoiUGxhaW4gZmxvdXIiLCJhbW91bnQiOjIuMCwidW5pdCI6InRhYmxlc3Bvb25zIiwibWV0YSI6WyJwbGFpbiJdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn0sIm1ldHJpYyI6eyJhbW91bnQiOjIuMCwidW5pdFNob3J0IjoiVGJzcHMiLCJ1bml0TG9uZyI6IlRic3BzIn19fSx7ImlkIjoxMDc3LCJhaXNsZSI6Ik1pbGssIEVnZ3MsIE90aGVyIERhaXJ5IiwiaW1hZ2UiOiJtaWxrLnBuZyIsImNvbnNpc3RlbmN5IjoiTElRVUlEIiwibmFtZSI6InNveWEgbWlsayIsIm5hbWVDbGVhbiI6Im1pbGsiLCJvcmlnaW5hbCI6IjIgY3VwcyBTb3lhIG1pbGsgKEkgdXNlZCAxIMK9IGN1cHMsIHVuc3dlZXRlbmVkIHNveWEgbWlsayB0byBnZXQgYSBjcmVhbWllciBzYXVjZSkiLCJvcmlnaW5hbE5hbWUiOiJTb3lhIG1pbGsgKEkgdXNlZCAxIMK9IGN1cHMsIHVuc3dlZXRlbmVkIHNveWEgbWlsayB0byBnZXQgYSBjcmVhbWllciBzYXVjZSkiLCJhbW91bnQiOjIuMCwidW5pdCI6ImN1cHMiLCJtZXRhIjpbInVuc3dlZXRlbmVkIiwiKEkgdXNlZCkiXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50IjoyLjAsInVuaXRTaG9ydCI6ImN1cHMiLCJ1bml0TG9uZyI6ImN1cHMifSwibWV0cmljIjp7ImFtb3VudCI6NDg4LjAsInVuaXRTaG9ydCI6Im1sIiwidW5pdExvbmciOiJtaWxsaWxpdGVycyJ9fX0seyJpZCI6MTAxMTYxMTIsImFpc2xlIjoiRXRobmljIEZvb2RzIiwiaW1hZ2UiOiJtaXNvLmpwZyIsImNvbnNpc3RlbmN5IjoiU09MSUQiLCJuYW1lIjoibWlzbyBwYXN0ZSIsIm5hbWVDbGVhbiI6IndoaXRlIG1pc28iLCJvcmlnaW5hbCI6IjEgdGFibGVzcG9vbiBXaGl0ZSBtaXNvIHBhc3RlIChvciBhZGQgdG8gdGFzdGUpIiwib3JpZ2luYWxOYW1lIjoiV2hpdGUgbWlzbyBwYXN0ZSAob3IgYWRkIHRvIHRhc3RlKSIsImFtb3VudCI6MS4wLCJ1bml0IjoidGFibGVzcG9vbiIsIm1ldGEiOlsid2hpdGUiLCJ0byB0YXN0ZSIsIihvciBhZGQgKSJdLCJtZWFzdXJlcyI6eyJ1cyI6eyJhbW91bnQiOjEuMCwidW5pdFNob3J0IjoiVGJzcCIsInVuaXRMb25nIjoiVGJzcCJ9LCJtZXRyaWMiOnsiYW1vdW50IjoxLjAsInVuaXRTaG9ydCI6IlRic3AiLCJ1bml0TG9uZyI6IlRic3AifX19LHsiaWQiOjE5MzM1LCJhaXNsZSI6IkJha2luZyIsImltYWdlIjoic3VnYXItaW4tYm93bC5wbmciLCJjb25zaXN0ZW5jeSI6IlNPTElEIiwibmFtZSI6InN1Z2FyIiwibmFtZUNsZWFuIjoic3VnYXIiLCJvcmlnaW5hbCI6IjEgdGVhc3Bvb24gU3VnYXIgKFVzZWQgwr0gdHNwIHN1Z2FyKSIsIm9yaWdpbmFsTmFtZSI6IlN1Z2FyIChVc2VkIMK9IHRzcCBzdWdhcikiLCJhbW91bnQiOjEuMCwidW5pdCI6InRlYXNwb29uIiwibWV0YSI6WyIoVXNlZCkiXSwibWVhc3VyZXMiOnsidXMiOnsiYW1vdW50IjoxLjAsInVuaXRTaG9ydCI6InRzcCIsInVuaXRMb25nIjoidGVhc3Bvb24ifSwibWV0cmljIjp7ImFtb3VudCI6MS4wLCJ1bml0U2hvcnQiOiJ0c3AiLCJ1bml0TG9uZyI6InRlYXNwb29uIn19fSx7ImlkIjoxNDA4NCwiYWlzbGUiOiJBbGNvaG9saWMgQmV2ZXJhZ2VzIiwiaW1hZ2UiOiJyZWQtd2luZS5qcGciLCJjb25zaXN0ZW5jeSI6IkxJUVVJRCIsIm5hbWUiOiJzYWtlIHdpbmUiLCJuYW1lQ2xlYW4iOiJ3aW5lIiwib3JpZ2luYWwiOiIxIHRhYmxlc3Bvb24gU2FrZSB3aW5lIiwib3JpZ2luYWxOYW1lIjoiU2FrZSB3aW5lIiwiYW1vdW50IjoxLjAsInVuaXQiOiJ0YWJsZXNwb29uIiwibWV0YSI6W10sIm1lYXN1cmVzIjp7InVzIjp7ImFtb3VudCI6MS4wLCJ1bml0U2hvcnQiOiJUYnNwIiwidW5pdExvbmciOiJUYnNwIn0sIm1ldHJpYyI6eyJhbW91bnQiOjEuMCwidW5pdFNob3J0IjoiVGJzcCIsInVuaXRMb25nIjoiVGJzcCJ9fX0seyJpZCI6OTg4OTgsImFpc2xlIjoiRXRobmljIEZvb2RzIiwiaW1hZ2UiOiJib25pdG8tZmlzaC1mbGFrZXMuanBnIiwiY29uc2lzdGVuY3kiOiJTT0xJRCIsIm5hbWUiOiJib25pdG8gZmxha2VzIGFuZCBub3JpIHNlYXdlZWQiLCJuYW1lQ2xlYW4iOiJib25pdG8gZmxha2VzIiwib3JpZ2luYWwiOiJCb25pdG8gZmxha2VzIGFuZCBzaHJlZGRlZCBub3JpIHNlYXdlZWQgZm9yIGdhcm5pc2hpbmciLCJvcmlnaW5hbE5hbWUiOiJCb25pdG8gZmxha2VzIGFuZCBzaHJlZGRlZCBub3JpIHNlYXdlZWQgZm9yIGdhcm5pc2hpbmciLCJhbW91bnQiOjguMCwidW5pdCI6InNlcnZpbmdzIiwibWV0YSI6WyJzaHJlZGRlZCIsImZvciBnYXJuaXNoaW5nIl0sIm1lYXN1cmVzIjp7InVzIjp7ImFtb3VudCI6OC4wLCJ1bml0U2hvcnQiOiJzZXJ2aW5ncyIsInVuaXRMb25nIjoic2VydmluZ3MifSwibWV0cmljIjp7ImFtb3VudCI6OC4wLCJ1bml0U2hvcnQiOiJzZXJ2aW5ncyIsInVuaXRMb25nIjoic2VydmluZ3MifX19XX19fQ==
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -513,29 +575,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=DV5LL%2FoGbzAVkpl9DXG9VeJI0sPTsMb6Osbvw1wUee%2FDtyoGEHXCKoYu2Rl7TneYPADrD6bYIWUQCY14LDQwaWaeq3eZS5U9Qrc7UG%2FXY0G%2B3s%2BP8IlEaxsroie6RqGIwUMdbVORkNNA%2BG9Kio3qc%2BLA9LHynsaPlptTHasQIN%2FuMNz89AJxTOkatQ%3D%3D--w5Oi58u9Kkrx9mL3--22Vjy8ZsFrPmljsQYDFdWA%3D%3D;
+      - _interslice_session=bnH%2FXuOwnrYGbmrwoz3RdRe3hShdRLPCaXz9hFygkUFdm2xMVVd27WsdOukopea7YLVx85Tczac4Tujf%2FiH6W3Lc9H%2BwBlAWWpVCdbhRpPcy3GGdJHCvtiPC%2FolapuHnkeK6D6928ts8mziTX401k2mMIbo4IGQ63CotrInE%2FDkc8AiOqcfAhZnkfA%3D%3D--J3d%2BL28Ce0SV1uI1--INf0u93lziKRzhuWfsHSxA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=DV5LL%2FoGbzAVkpl9DXG9VeJI0sPTsMb6Osbvw1wUee%2FDtyoGEHXCKoYu2Rl7TneYPADrD6bYIWUQCY14LDQwaWaeq3eZS5U9Qrc7UG%2FXY0G%2B3s%2BP8IlEaxsroie6RqGIwUMdbVORkNNA%2BG9Kio3qc%2BLA9LHynsaPlptTHasQIN%2FuMNz89AJxTOkatQ%3D%3D--w5Oi58u9Kkrx9mL3--22Vjy8ZsFrPmljsQYDFdWA%3D%3D;
+      - _interslice_session=bnH%2FXuOwnrYGbmrwoz3RdRe3hShdRLPCaXz9hFygkUFdm2xMVVd27WsdOukopea7YLVx85Tczac4Tujf%2FiH6W3Lc9H%2BwBlAWWpVCdbhRpPcy3GGdJHCvtiPC%2FolapuHnkeK6D6928ts8mziTX401k2mMIbo4IGQ63CotrInE%2FDkc8AiOqcfAhZnkfA%3D%3D--J3d%2BL28Ce0SV1uI1--INf0u93lziKRzhuWfsHSxA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=MSU89ZoYECfAs3SeuqbmOuAroUJY9u16PRUWE%2BcJNo4GMn%2FND%2FzB54dpUbwnmjrKY9yGYaRzLSrgaORSkbXJ%2BUVC1RBanist3%2Bv4lYj%2FdPK6xSV3HtuX%2FDv%2FEw6PFO9bl3V5L187egbhA6FttQOa%2F8GfhqAVPdhs8R6F6Ykd7y%2FI1CI%3D--9IfrE0Vw4Ca6XrbW--%2BRr0rc%2F08LlC7MX81ElhJA%3D%3D;
+      - _session_id=5Nzm8txrYCXc2MGns0Fr%2F6Bjq7FGjzSoR2qcB2cGnoE0GI35kayVL824GrjXbzn0yTxVNeBtxolT5SMf81fbk99%2BgYbZdLBH2j5FifDxUtX4GDBs2PqTFD9XXpfZcb0Zv1WnP9rDD023JUyvpU%2BYwTxzrF07p0uHcy2Y3T2PwQEt%2Fyc%3D--S4FF6W5wiyf5N6ND--x2tq4H88NuZb1oK1uOU0YQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e25b4ee-6080-4b63-bb03-e3f6fc6ffc0d
+      - e90fa5ad-aef8-4563-ab93-ab4bf4189f29
       X-Runtime:
-      - '0.007598'
+      - '0.008410'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.39, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.99
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.36, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.02
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: post
     uri: http://localhost:5000/api/v1/add_recipe
@@ -595,25 +657,25 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Set-Cookie:
-      - _interslice_session=rxMlKcI1LWzGK08Gfg%2B0dR76GX0qnO0cn7Yvj3AOPej3YeJZ4cv7Z21VnGWDsg046%2FipeKrB5JI2iJ9qiw3%2BbWI5RnemxLUaTXpY9V08X5MNagN3J244iyo0G2CIJeKzXVXb%2Bxf54S2i2dlDeN5N8z2Cz2b6zhOoPQAHVDjuNh1XoCJm3rsYdXD%2FBg%3D%3D--G5POIqKkSwRPXyM0--YJV33R36GNVUkyLdcH3TtQ%3D%3D;
+      - _interslice_session=qstOhmV5HWCZSPQqmTax%2FxvjWq72hN0m3m4jZ7%2F9PC4xGjxpi3yc25obmF7%2F%2BA%2FY3oXcdSfqwUplwqWPU2Frp4GDlEc2Ktb5rc7V4dFIVMxwaL3gsatR2OScSAoYxMorYB%2Byc38N2ojZNhVf8UT3XyQqv0ShB7Eks3y%2BIgHHt3nTxIUSCJEbX8JXLQ%3D%3D--EwtrxWSC5O7rDUYt--MdLBISpC1o3ry%2F6w0tFEjQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=rxMlKcI1LWzGK08Gfg%2B0dR76GX0qnO0cn7Yvj3AOPej3YeJZ4cv7Z21VnGWDsg046%2FipeKrB5JI2iJ9qiw3%2BbWI5RnemxLUaTXpY9V08X5MNagN3J244iyo0G2CIJeKzXVXb%2Bxf54S2i2dlDeN5N8z2Cz2b6zhOoPQAHVDjuNh1XoCJm3rsYdXD%2FBg%3D%3D--G5POIqKkSwRPXyM0--YJV33R36GNVUkyLdcH3TtQ%3D%3D;
+      - _interslice_session=qstOhmV5HWCZSPQqmTax%2FxvjWq72hN0m3m4jZ7%2F9PC4xGjxpi3yc25obmF7%2F%2BA%2FY3oXcdSfqwUplwqWPU2Frp4GDlEc2Ktb5rc7V4dFIVMxwaL3gsatR2OScSAoYxMorYB%2Byc38N2ojZNhVf8UT3XyQqv0ShB7Eks3y%2BIgHHt3nTxIUSCJEbX8JXLQ%3D%3D--EwtrxWSC5O7rDUYt--MdLBISpC1o3ry%2F6w0tFEjQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=mCER%2F%2FcV%2BbYJh3MBWg5IV79cpV3%2Fyob12919kDabmRkrb2UpfoyIUiWkJENkSoc9o1wlIEp2MvAntK74SZ%2BJfsOpzgJd3qv7qjOt8yA1o7%2BmBW%2BKPaYp54Nc%2BcZa652LMDmYlME15xuIw5yMG3Zs9G1V04UHkLkljD8ukhyNAgl%2BOgM%3D--9FD6TPsizz88GwjI--Wf%2BHbEH3%2B8ttgm7YTeS9Xg%3D%3D;
+      - _session_id=vnFSxVP16IDgMKQdJq1Z9jexv13v3%2F3aFZqXcIyzEBEw0wxmYkgIEniZcjD3OxNxApa2amzeErgX3LHPqPVhZ2%2FXztcaiC9LLCGtnujnmaraYU0J36HtdTRCaeySeWq4FpZsxOpWZ89ajZKJ3lSsL%2FgKZvgXzvflU914ezvmYP6XKWw%3D--UbqI7ntdJ2etzlqM--2u1%2BZ8Wphi6foYe%2FrOreGw%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c7d6b619-0847-4031-a143-27fe30d3cb9b
+      - cda0cc8e-de0a-468b-adca-d825a826e7f4
       X-Runtime:
-      - '0.022557'
+      - '0.012362'
       Server-Timing:
-      - start_processing.action_controller;dur=0.26, unpermitted_parameters.action_controller;dur=0.42,
-        sql.active_record;dur=14.82, instantiation.active_record;dur=0.05, process_action.action_controller;dur=16.98
+      - start_processing.action_controller;dur=0.21, unpermitted_parameters.action_controller;dur=0.37,
+        sql.active_record;dur=4.53, instantiation.active_record;dur=0.05, process_action.action_controller;dur=6.62
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -649,29 +711,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=JVTeODC%2FlsSbg3kKK5XLpop6fFWh9wXDwS%2BDTu3EVCRtClvZyFnLl9Sf7GwLLrRNP28eWaqA37zP%2BI7GhKHl0GGYxB8BGHtlkt8FNtrIUvnskLVzR7FsIP6C9zcgqxUu0TfYF4N9t7kbkBgio4wLXWcga3pdec%2FKO2ILhBbwHijwighjaoODcF1NEw%3D%3D--FsUysvBDlURU5u7s--2QEAnFx6j24mbN24QW0UCA%3D%3D;
+      - _interslice_session=sTNHr4s6F%2F6CwXO%2BWLvqGpyCfZFgx8TECBGTr%2BXvIipdard5WXrnYsRPygCqOQN68cSbeDWq4rNWmae7d%2FztSYGQevgYfQNbuCvyHqoS3KUvPsLCwXZhQAxcTlOSRWBuz%2BRjXQBxnqS5qhgl%2B7E%2F77tt5oihWba8bSuraIuRBqH8%2FEOkZOlEVrtO%2FQ%3D%3D--N64VSl46HgL5Mhw8--fFdOQ%2FgSGWt%2FkLa%2FvEEKSQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=JVTeODC%2FlsSbg3kKK5XLpop6fFWh9wXDwS%2BDTu3EVCRtClvZyFnLl9Sf7GwLLrRNP28eWaqA37zP%2BI7GhKHl0GGYxB8BGHtlkt8FNtrIUvnskLVzR7FsIP6C9zcgqxUu0TfYF4N9t7kbkBgio4wLXWcga3pdec%2FKO2ILhBbwHijwighjaoODcF1NEw%3D%3D--FsUysvBDlURU5u7s--2QEAnFx6j24mbN24QW0UCA%3D%3D;
+      - _interslice_session=sTNHr4s6F%2F6CwXO%2BWLvqGpyCfZFgx8TECBGTr%2BXvIipdard5WXrnYsRPygCqOQN68cSbeDWq4rNWmae7d%2FztSYGQevgYfQNbuCvyHqoS3KUvPsLCwXZhQAxcTlOSRWBuz%2BRjXQBxnqS5qhgl%2B7E%2F77tt5oihWba8bSuraIuRBqH8%2FEOkZOlEVrtO%2FQ%3D%3D--N64VSl46HgL5Mhw8--fFdOQ%2FgSGWt%2FkLa%2FvEEKSQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=wBz720VSKNU3tcDrM8QANM5%2Biyt3X48Omt4CEZw0STIqmY9bc5g%2Btrler%2BRH42KUboGn0dojurcJ0ozO56N4dN1hsvI3nYQN9CoW0t1Xbwaw%2FHVkwDHCtjXn6aj4PL5KbPPEw0lTX8fytC6fB9FzC5uUHEektZIKt%2BagSE0uDlIeyeA%3D--0CHGLeTMYiPwe7Nq--NC1J%2FjfNPPbJ2F72KV5o%2FQ%3D%3D;
+      - _session_id=5GrMIQxU5TYXUyTLRKXpagqqcu%2FaHq3KSJWkKtcztHQ9Qs%2BOd6HZk7o%2B0IOMnWVK2OaFTah9VT9bzamZnC%2FHMZGgky9Wv0kGDH9Ot1smwOlF%2BLsbyNKRS7y43Bwy%2BaIwnvlewLSOYuf0fA%2FS4am4SDedk%2Bgh2%2FcdhyWmfhGQgUV8uL4%3D--9tUvIytvYG%2Fo1HYM--97S5diYSTQRo6gYV9zw0Dg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0dd9eb24-2975-4c58-9920-705440ebc48d
+      - 971f5480-405c-4f0d-bf96-d31f1afe6a61
       X-Runtime:
-      - '0.005728'
+      - '0.005441'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.75
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.50, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.90
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -707,39 +769,101 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=JpPoyQK2Obu982XI2xbZ86maHl5I6hWaZ0JMTjhlQZmJAgcd0leG9lA52yfuMc3aerLb4kH34wHFY%2BdlxS81E2SBwiGLv0p5yOe24R9Ey3AzM5hZnlP3dBR44CQWxh1BTFxrGW%2FXKJVFWd57UKYfJAq1Aj9Y9MOo2EpyhtBnQlRzV%2BY5%2BCvTm2ugCA%3D%3D--m%2B7UleBe7BQCGPpk--o50VYJ5FzooMd4NEpqzwEA%3D%3D;
+      - _interslice_session=vDxWmq6d1BrlvvQJi%2B5GK%2Fz7taSvpG%2FR5KfO7QIYdGqRSi1i1rrNuvBHLRJakeSAEL6LmYf%2FqYX9r69q3yGpvbeYyZLnqqRNfagN9zlj0JhxKM7z1HsgFoYnGLqGNXw58HWydVTVP0slO%2B8qaDQXb%2B1LcsLk4uLI3mkxGHluGmnGFiuZbnj1H%2FSXPQ%3D%3D--7c3Uno4HJ7jjIu%2BL--2pdyEr0i%2FhxbOK3msRJQFA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=JpPoyQK2Obu982XI2xbZ86maHl5I6hWaZ0JMTjhlQZmJAgcd0leG9lA52yfuMc3aerLb4kH34wHFY%2BdlxS81E2SBwiGLv0p5yOe24R9Ey3AzM5hZnlP3dBR44CQWxh1BTFxrGW%2FXKJVFWd57UKYfJAq1Aj9Y9MOo2EpyhtBnQlRzV%2BY5%2BCvTm2ugCA%3D%3D--m%2B7UleBe7BQCGPpk--o50VYJ5FzooMd4NEpqzwEA%3D%3D;
+      - _interslice_session=vDxWmq6d1BrlvvQJi%2B5GK%2Fz7taSvpG%2FR5KfO7QIYdGqRSi1i1rrNuvBHLRJakeSAEL6LmYf%2FqYX9r69q3yGpvbeYyZLnqqRNfagN9zlj0JhxKM7z1HsgFoYnGLqGNXw58HWydVTVP0slO%2B8qaDQXb%2B1LcsLk4uLI3mkxGHluGmnGFiuZbnj1H%2FSXPQ%3D%3D--7c3Uno4HJ7jjIu%2BL--2pdyEr0i%2FhxbOK3msRJQFA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=gSgLezKVe8WoSbsrjaKCLCnEhqmaFmVut4%2FPAefIuyEaLi8KFRFAfT0Q7n6xYcJ1BMjDTt6ob6g2ouEHf23mKSL5uzBQok7NEZNtQp3ZYIB4XBCPlCwRp3kw%2Fboki6o0sTxGUeBct8N7a34jIM2swvaCwnAMQMImg0bZKItXi7ZuAcA%3D--RoH974fUZvb4kbos--uS7QixdiGhZPkRq7YcW1ag%3D%3D;
+      - _session_id=%2BwPu5OtnUG%2FJGbJM8c4ALO7AHbthtiHje8z2kT7JmmvU6bVz1fZck%2FjgX1Cde95kxPqYL5vxPadPj68S8G5XwGZAvLzWsLzIbwMkhgaYAaSslqqICj%2FvCdfIM0rD1S4kdS69jNSpPth7e1y20ufbHU15qkiU2TFwrPmZF4MrgHHAoFw%3D--2EDAKcednUkEIHGq--%2Bp4TeW8JPIpVFQ%2FsnZkK1w%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"da2c3179d06df35ae37286960fd0762a"
+      - W/"4ac066739272ebfb196e910e09ecc099"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 466a86ef-28b5-40b4-a113-cb3c3d34c1c5
+      - 0010611f-ead6-4f7e-bad0-151d3bb893aa
       X-Runtime:
-      - '0.009010'
+      - '0.012031'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=2.04, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=4.07
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=4.06, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=7.76
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"recipes":{"data":[{"id":"9","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"15","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"16","type":"user_recipes","attributes":{"recipe_id":"663505","title":"Tofu
-        Gratin","image":"https://spoonacular.com/recipeImages/663505-556x370.jpg"}},{"id":"14","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null,null]}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+      string: '{"recipes":{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"636228","title":"Broccoli
+        Tartar","image":"https://spoonacular.com/recipeImages/636228-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"11","type":"user_recipes","attributes":{"recipe_id":"663505","title":"Tofu
+        Gratin","image":"https://spoonacular.com/recipeImages/663505-556x370.jpg"}}]},"avatar_urls":[null,null,null,null,null,null,null]}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/expiring_user_ingredients/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=PDqIaw2Xsbf1ydfRC6i5RZJ8lBo8fDlQGyqrutHLM0oq0mFfrkt6Acmm9LrJVJpx9wasfPS8EYquzjzuQHpQLN7ffGjWYoGqaxybX4VyupwURk2f2V53SvARdpuRgxv2iA%2FdqiZPzmPgQqekSFfPElFBps4UYkRd3EG%2BcO4dsfujAC7ZBmFwdxj7dQ%3D%3D--WlZUegblxlRdYLEI--BwoP8KspJSHORvNLTlh8Lw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=PDqIaw2Xsbf1ydfRC6i5RZJ8lBo8fDlQGyqrutHLM0oq0mFfrkt6Acmm9LrJVJpx9wasfPS8EYquzjzuQHpQLN7ffGjWYoGqaxybX4VyupwURk2f2V53SvARdpuRgxv2iA%2FdqiZPzmPgQqekSFfPElFBps4UYkRd3EG%2BcO4dsfujAC7ZBmFwdxj7dQ%3D%3D--WlZUegblxlRdYLEI--BwoP8KspJSHORvNLTlh8Lw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=dBTTs0AvJtR9ueP3wFG7H9c%2BR063XdtGulAk88UDwxjt1HK244pyNSEvzpECEgKHCG0CJA30CCeLWMa6yZcDrErNnW94XO0p4%2BeifVSSBzHvHzIesb65QXms7CfLn7BgLQ11dzjyhO9A%2FStxCHMLQngkOSAKyAnKRvIepOUH9bQc2%2Fg%3D--4j0DtiMxgJHPrCeA--hoDZl%2FvsWTFvwcxItG3CcA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"4e8c6ddd76409002edc4b16c5c18a6f6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa1e30f4-8e69-4ea0-83bd-dbeb7d252072
+      X-Runtime:
+      - '0.006254'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.85, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=1.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"ingredients":{"data":[{"id":"2","type":"user_ingredients","attributes":{"name":"Mushrooms","quantity":"1","exp_date":"2021-12-11"}},{"id":"12","type":"user_ingredients","attributes":{"name":"Antoine","quantity":"5","exp_date":"2023-11-17"}},{"id":"14","type":"user_ingredients","attributes":{"name":"test","quantity":"1
+        cup","exp_date":"2023-11-19"}},{"id":"33","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"34","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}},{"id":"36","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"37","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}}]}}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: delete
     uri: http://localhost:5000/api/v1/delete_recipe
     body:
       encoding: UTF-8
-      string: '{"id":"16"}'
+      string: '{"id":"11"}'
     headers:
       User-Agent:
       - Faraday v2.7.11
@@ -771,29 +895,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=sUU7RtzwaQq3vtl2KhdNBYr0MbGnwbps8pCRsLXP0kuFvyRqh5kxwIz5E9cpqHgH1%2BC1hOgua59LlXizsrzoDfOQtmDdIjcBv916B6SJDjw6eqKlrnGCqiwvMQBVwSan2Rpo2IGmPZGLA4P5O1BI3QWun6bMw9wvCTSB86nMbiJ0WtpHgMJ3O3RP0w%3D%3D--DxDUECUn7iXivINh--PUsFZalv7aHqPujsEEEdGA%3D%3D;
+      - _interslice_session=Va1I5QqZ1Qk4LTvM3jXezSNWPSHdxF9FnIBQne214Q9GU0VquFKJTKB%2BwXSsOJmR%2BfGMfIwI%2FBt0gyG4mbTLBJeRdAlJ6Lj%2F4EA7Iz%2FNP0JHsvPquqbw%2By37MXT4iMwd6SoM3C3w%2BE7yNjAguFbr1UVlLQuqKjdre148JX%2BcqQ8NzGhfbToByCOymw%3D%3D--CEwosGWoIK0BSbIL--zTHLKXcHaW%2BmEoZhqLJAHg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=sUU7RtzwaQq3vtl2KhdNBYr0MbGnwbps8pCRsLXP0kuFvyRqh5kxwIz5E9cpqHgH1%2BC1hOgua59LlXizsrzoDfOQtmDdIjcBv916B6SJDjw6eqKlrnGCqiwvMQBVwSan2Rpo2IGmPZGLA4P5O1BI3QWun6bMw9wvCTSB86nMbiJ0WtpHgMJ3O3RP0w%3D%3D--DxDUECUn7iXivINh--PUsFZalv7aHqPujsEEEdGA%3D%3D;
+      - _interslice_session=Va1I5QqZ1Qk4LTvM3jXezSNWPSHdxF9FnIBQne214Q9GU0VquFKJTKB%2BwXSsOJmR%2BfGMfIwI%2FBt0gyG4mbTLBJeRdAlJ6Lj%2F4EA7Iz%2FNP0JHsvPquqbw%2By37MXT4iMwd6SoM3C3w%2BE7yNjAguFbr1UVlLQuqKjdre148JX%2BcqQ8NzGhfbToByCOymw%3D%3D--CEwosGWoIK0BSbIL--zTHLKXcHaW%2BmEoZhqLJAHg%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=jQWcJAO2uR%2FbYnLfSeZEQASuJ%2BGgJOkqqkyTaxq%2FJN%2BfRDq7VY3Qe9m%2Bz2VtF3FkWqd7bH%2Bx%2Bz%2BXaVkTwv0LDP3YKVfgImdr9JWXbG2rXFQnGKIjO8wemiCPGva8YudCeyA%2BeAXhQ1ArAJr09Xm6EEIcLZeOip%2BSBj4p21X2%2F92fzWI%3D--IBGJrrwEsSikZ%2BKo--C04zv8bEeFM2T0s94%2Ff96Q%3D%3D;
+      - _session_id=dYzZd237BsqO8W1H%2FPSTntW2MJdnIogleJPTP2jCoEaADVltd%2FWUIs3sm4gowMpG3t%2BR8ttuwEre8kjeypcEuEjSZmtR1bMyfhNXM2pHrNGKkyjuurlz%2FNrXaewNK5XoRp6JrsJuRSvlFFZT0pBR1EVIr87BIKap%2FSe8%2FwoGB%2BbM9Ig%3D--KH99zAuuCqIfxiwD--AebDF7Igj6MesuHMjbteaQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"b8af2081a4509e768138cb739c740c7c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6114122e-999c-4562-879f-1963b6518568
+      - 8d37d220-b556-44a8-b994-04f93a768114
       X-Runtime:
-      - '0.009997'
+      - '0.009232'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=3.76, instantiation.active_record;dur=0.08,
-        process_action.action_controller;dur=5.46
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=3.40, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=4.68
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"status":204,"notice":"Recipe successfully removed"}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -829,29 +953,29 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=7nEyhlsuuOQ3vOZ0j4azItCCklgcSE6uGHqCj5h3YgdjFK%2FhUAs6XaNgJS4kgsgkeYJiqZdxvMNKGwXwL7xwBq0W4U5F%2BFLZAYGgaGgeJNbThKbX660JJKei7ZWMZnM7Mo0l4glatvbN5FMavj2klp8fxowv02x%2F7R8uXU72mXQNQXGQXurJJ0qNnA%3D%3D--DH1BhVG%2FTvbmtsX%2B--2WVv2MDwQAXGlGhBqwRmsg%3D%3D;
+      - _interslice_session=gCCMuDTtbPHHJI64Q2virSwPzTdsXiBNY%2BJBb3hjx5M5P13vHhELVHMD9rE%2FVhy%2B%2F9WL44kErgeVVot7L5zVWuAuzwkkw3RR8ZrhKEr5qHh1kmV2ZBt%2Fgyi%2B%2Fgzo9crkFnyPMT1GqTw9oYZo3xFu40dczTWKSZ72D76S%2BrF%2FRQMRtuB8UT%2BQTi3ddQ%3D%3D--KucfY8svpj%2BGRDwW--ebtwkt18N8iCrzRG580MTQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=7nEyhlsuuOQ3vOZ0j4azItCCklgcSE6uGHqCj5h3YgdjFK%2FhUAs6XaNgJS4kgsgkeYJiqZdxvMNKGwXwL7xwBq0W4U5F%2BFLZAYGgaGgeJNbThKbX660JJKei7ZWMZnM7Mo0l4glatvbN5FMavj2klp8fxowv02x%2F7R8uXU72mXQNQXGQXurJJ0qNnA%3D%3D--DH1BhVG%2FTvbmtsX%2B--2WVv2MDwQAXGlGhBqwRmsg%3D%3D;
+      - _interslice_session=gCCMuDTtbPHHJI64Q2virSwPzTdsXiBNY%2BJBb3hjx5M5P13vHhELVHMD9rE%2FVhy%2B%2F9WL44kErgeVVot7L5zVWuAuzwkkw3RR8ZrhKEr5qHh1kmV2ZBt%2Fgyi%2B%2Fgzo9crkFnyPMT1GqTw9oYZo3xFu40dczTWKSZ72D76S%2BrF%2FRQMRtuB8UT%2BQTi3ddQ%3D%3D--KucfY8svpj%2BGRDwW--ebtwkt18N8iCrzRG580MTQ%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=bsdo94lgULKW6XGnhwL7sWV1v9hUH%2BWVFuS3M1PgW2iWRuWAL6SbxEYwamzRDGyPy6gdX3OLnGZH9hS3sosLgXJpkQjuyJbe0WeXarMu9gZ%2B1nTFgBXXpZbOMPDKM7BwMdYZkoqtGHU10jSPTOMR7q2eeo38EHL7qjbP860gzx6xthY%3D--w7LYP3TCMb1LDh8C--%2B9djYJxfoT3OIkZDuLKLLw%3D%3D;
+      - _session_id=kfupxZK7c6iDRpfghlPvhFMR1mlvQlILnzlVA5xtN%2F9kROamq9j3dRM2oehWoqri6hXbnjVHvB50sB%2Bdkf1znqSvMla8xstC%2BUz2bV1g%2By02wI%2B1zBGp18c7WEshd8Kir%2FPgyLLGDSMjomzM3G7GgMzPxs1WkgRlLcMrf9aKHJ9HZyo%3D--e%2FmL0f0ToIUt50Xs--3MW758plZwTYP%2BScmK4QWA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
       - W/"470c9b21de049f9a282411472b82919a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4ab32146-ea3e-498c-864e-68d6d6829114
+      - 6b36fa42-ef26-457d-99bd-4e9a551b91cc
       X-Runtime:
-      - '0.005075'
+      - '0.004937'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.96
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.34, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.75
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"users","attributes":{"name":"test","email":"test@test.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user_recipes/1
@@ -887,30 +1011,92 @@ http_interactions:
       Vary:
       - Accept
       Set-Cookie:
-      - _interslice_session=z3Ps9TbHOOw4bY8J4N%2BMLDI%2FaqDmRd4%2FfVuUSopLi5JTvoJ4QpXhYIHzr23U0PIrP6bIb1dkHH7zJ1EGLXumE6tt6Na%2FtR0nHgVOD58%2FYxUGxvpK0eKVff0b%2BE9zzdIL7sAFG9%2BPqxWrdYwU0JqmYj1gR%2BniqLUa3SRtvvRvV5vdDAAd4eR2KwyS6A%3D%3D--NDmHion9DbmQ%2BW1t--mRK1k8SPbylbjfy5Tqs7wA%3D%3D;
+      - _interslice_session=e7P0H6OM5rP4GACbXOr2lb%2Fiy7k%2Bj7f52eQMRii2NR73K9bUE6hSHKLZQLWtAUA59Iks4%2Bu3qVpbTjqXYztiZrPh2b8MERFHMWj53I%2F8wsott%2FL9xxUOYOgYUZ18tRViaF%2B1Dg3M4VuKbai1AFrOpCX41zopB5CjjugBSkEGKxrol7Y1FzgW6e5DiA%3D%3D--P7RHqjFU7NyOJTnN--0w3hS5GAq5gHtAVd0v2yjA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _interslice_session=z3Ps9TbHOOw4bY8J4N%2BMLDI%2FaqDmRd4%2FfVuUSopLi5JTvoJ4QpXhYIHzr23U0PIrP6bIb1dkHH7zJ1EGLXumE6tt6Na%2FtR0nHgVOD58%2FYxUGxvpK0eKVff0b%2BE9zzdIL7sAFG9%2BPqxWrdYwU0JqmYj1gR%2BniqLUa3SRtvvRvV5vdDAAd4eR2KwyS6A%3D%3D--NDmHion9DbmQ%2BW1t--mRK1k8SPbylbjfy5Tqs7wA%3D%3D;
+      - _interslice_session=e7P0H6OM5rP4GACbXOr2lb%2Fiy7k%2Bj7f52eQMRii2NR73K9bUE6hSHKLZQLWtAUA59Iks4%2Bu3qVpbTjqXYztiZrPh2b8MERFHMWj53I%2F8wsott%2FL9xxUOYOgYUZ18tRViaF%2B1Dg3M4VuKbai1AFrOpCX41zopB5CjjugBSkEGKxrol7Y1FzgW6e5DiA%3D%3D--P7RHqjFU7NyOJTnN--0w3hS5GAq5gHtAVd0v2yjA%3D%3D;
         path=/; HttpOnly; SameSite=Lax
-      - _session_id=hxWFxOTpohmAewqtA2v8qd3R7pbSReB6FRGDOfM2NHV8s9Gv2wrOMI6Q7Miv%2BULIiECchu9s55KvuScd2sfPT1iUZboXpdotlMgqn6BHQUeLiQJ69n5w07QplEKTM%2BZlIPY2pHrFaLzXMkaP25zntaIdJ08HvTuQ4yS6MCFTGN48T68%3D--pnTlqTzFzHMa2zaw--Fl0cP1kUOmr4H0LCoBuxSw%3D%3D;
+      - _session_id=HmyX4dj35A2TmrXB4DMTHzv1CZfoCBE4QH76dpilAqgmyuBz%2FluemI3moNkECG1lBlC3g%2BdkrTn8SG9Xx39ldbGto0PIaq%2F4mogDxBfNUYQk0Jc7IQ8JwW5NCu%2BGqmQ%2FjKDQv1VALEHwXsgUAwjPSRkg98KW1gw9ivVUD0EF3P6v7sI%3D--HsTL3YCgh1NOhgJe--FxA46e7vcXIyL6Om0QfZjw%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"999e84cdc4eef9d72a224dfbf358e61d"
+      - W/"2131abe6f5d20fab89800af50d9b33ed"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a76e38e0-af82-4921-b2dd-b41f5acad9a1
+      - 738513cb-cde3-4855-8437-c1a0db852aed
       X-Runtime:
-      - '0.007348'
+      - '0.010587'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.41, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=2.93
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=2.93, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=5.22
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"recipes":{"data":[{"id":"9","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"15","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"14","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
-        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null]}'
-  recorded_at: Thu, 09 Nov 2023 16:31:18 GMT
+      string: '{"recipes":{"data":[{"id":"1","type":"user_recipes","attributes":{"recipe_id":"636228","title":"Broccoli
+        Tartar","image":"https://spoonacular.com/recipeImages/636228-556x370.jpg"}},{"id":"2","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"4","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"6","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"8","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}},{"id":"10","type":"user_recipes","attributes":{"recipe_id":"637876","title":"Chicken
+        65","image":"https://spoonacular.com/recipeImages/637876-556x370.jpg"}}]},"avatar_urls":[null,null,null,null,null,null]}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/expiring_user_ingredients/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=Ztm%2BBKojqu96xdcZjFDInnufjZZaEyQ4ro3%2FOQz0DPThXfbWoUXOd4xmNM50qvSmVe%2FPs2O9z82bVk0o24nwUFgeXMdN69wXjCYST3gtgAWvT4MrGJ6ka0P47TNYXjvSX8bH8gU9Qr5awdPX0GuzsktY%2B5%2BoyRZbzpXAN%2FYdnvJyZ3%2BnvdjsTBJcxg%3D%3D--9Myo0dmNTgJXOHyY--JvmjuM6AmwTHgVOFdw1CjQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=Ztm%2BBKojqu96xdcZjFDInnufjZZaEyQ4ro3%2FOQz0DPThXfbWoUXOd4xmNM50qvSmVe%2FPs2O9z82bVk0o24nwUFgeXMdN69wXjCYST3gtgAWvT4MrGJ6ka0P47TNYXjvSX8bH8gU9Qr5awdPX0GuzsktY%2B5%2BoyRZbzpXAN%2FYdnvJyZ3%2BnvdjsTBJcxg%3D%3D--9Myo0dmNTgJXOHyY--JvmjuM6AmwTHgVOFdw1CjQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=499v%2Bdh1thpsM08CHMi9aOmvWDJN4HLTNEKkXpi2KHnZLPl305VORjc%2BXO7AfC7ks13jTYAyDFr2n9CmAlOVcRK4Ytuknu0lcT8zV0QnhtGKvU2NACed3ywyQWlv%2FFoUvIrE92hr4CHvNc1yXqApWQyisvA1l4H7%2FDNQZoZKMlJFL7A%3D--EKoCBQx%2F5e0SRL2S--ugAKMsGBgkU2P6p3B88%2FZg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"4e8c6ddd76409002edc4b16c5c18a6f6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dfa7abf7-53ae-4497-aafe-8084d252cf6f
+      X-Runtime:
+      - '0.006292'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.93, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=2.05
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"ingredients":{"data":[{"id":"2","type":"user_ingredients","attributes":{"name":"Mushrooms","quantity":"1","exp_date":"2021-12-11"}},{"id":"12","type":"user_ingredients","attributes":{"name":"Antoine","quantity":"5","exp_date":"2023-11-17"}},{"id":"14","type":"user_ingredients","attributes":{"name":"test","quantity":"1
+        cup","exp_date":"2023-11-19"}},{"id":"33","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"34","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}},{"id":"36","type":"user_ingredients","attributes":{"name":"chicken","quantity":"1","exp_date":"2021-10-10"}},{"id":"37","type":"user_ingredients","attributes":{"name":"greens","quantity":"1","exp_date":"2021-10-10"}}]}}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 recorded_with: VCR 6.2.0

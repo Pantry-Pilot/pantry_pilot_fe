@@ -5,7 +5,7 @@ http_interactions:
     uri: http://localhost:5000/api/v1/register
     body:
       encoding: UTF-8
-      string: '{"name":"Testing","email":"test@test_example.com","password":"testiscool"}'
+      string: '{"name":"Testing","email":"new@test_example.com","password":"testiscool"}'
     headers:
       User-Agent:
       - Faraday v2.7.11
@@ -36,22 +36,28 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=Uv%2F9R1XOzPaLGeI7wZQ3lfP%2F3QC57EBkPNTWA4xbQDfVJWCyC4724PnfpgcDXJc9z1gQ9mahUOAepHm5GpyCCoAY8%2BUdS8vHlkxiUu7CxO8n4irAX%2BYS8YPpJijoGUsz4yPcuYQ9EiXM6HwsF8XLyAqrstJ%2F4Jpu4C8a9gXbK8vI0p0VBKjigtFUFA%3D%3D--KWnsgz%2BRCL%2Bx00F5--YxEEArHuneMsnho2bN1eDQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=Uv%2F9R1XOzPaLGeI7wZQ3lfP%2F3QC57EBkPNTWA4xbQDfVJWCyC4724PnfpgcDXJc9z1gQ9mahUOAepHm5GpyCCoAY8%2BUdS8vHlkxiUu7CxO8n4irAX%2BYS8YPpJijoGUsz4yPcuYQ9EiXM6HwsF8XLyAqrstJ%2F4Jpu4C8a9gXbK8vI0p0VBKjigtFUFA%3D%3D--KWnsgz%2BRCL%2Bx00F5--YxEEArHuneMsnho2bN1eDQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=i5uwSI2KOtPLcEfCyJhiWEcMPp8zWT2KArOYGKU3bSVYLwAD1Y30En8wClQCihNrcdMh6aHiuy38pNc2dmmcqPfgAgrwhVWXSbtwPhysBu2Xjz6UJRv5mhSMhsW%2Bikmc8Z0UkLVMZPA4uTiFJE1bOma1zeo2tGtkAZyLr3cKomYi2Cc%3D--7EZJSvImGJ2fo9wK--Ri5P1hdhGWW1uKhCo1cYew%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"96c876512af307c56abd0edefa6b4632"
+      - W/"bc680dde3f6b98e186b0f8fdaff14bd2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4d73497e-b446-4dbc-afd8-06b323233510
+      - 84302727-70e5-42c9-8142-d6e96ce9cfc8
       X-Runtime:
-      - '1.388888'
+      - '0.263640'
       Server-Timing:
-      - start_processing.action_controller;dur=0.12, unpermitted_parameters.action_controller;dur=0.05,
-        sql.active_record;dur=5.10, render_template.action_view;dur=0.09, render_layout.action_view;dur=0.18,
-        process.action_mailer;dur=6.16, deliver.action_mailer;dur=1078.62, process_action.action_controller;dur=1346.43
+      - start_processing.action_controller;dur=0.07, unpermitted_parameters.action_controller;dur=0.05,
+        sql.active_record;dur=16.35, process_action.action_controller;dur=257.76
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"users","attributes":{"name":"Testing","email":"test@test_example.com"}}}'
-  recorded_at: Thu, 09 Nov 2023 00:34:18 GMT
+      string: '{"data":{"id":"4","type":"users","attributes":{"name":"Testing","email":"new@test_example.com"}}}'
+  recorded_at: Fri, 17 Nov 2023 20:06:29 GMT
 recorded_with: VCR 6.2.0

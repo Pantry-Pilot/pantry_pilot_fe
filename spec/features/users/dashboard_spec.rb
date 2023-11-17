@@ -11,7 +11,7 @@ RSpec.describe "User Dashboard Page" do
 
         click_on "Login"
 
-        expect(page).to have_content("Welcome, test")
+        expect(page).to have_content("test's Dashboard")
         # expect(page).to have_button("My Dashboard")
         expect(page).to have_button("Logout")
         expect(page).to have_content("My Recipes")

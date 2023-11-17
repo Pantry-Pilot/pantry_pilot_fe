@@ -26,7 +26,7 @@ RSpec.describe "Register Page" do
 
           VCR.use_cassette("testing_register") do
             fill_in :name, with: "Testing"
-            fill_in :email, with: "test@test_example.com"
+            fill_in :email, with: "new@test_example.com"
             fill_in :password, with: "testiscool"
             fill_in :confirm_password, with: "testiscool"
 

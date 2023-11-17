@@ -34,16 +34,23 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=uxgJNHyYqr8BI7jhQTk1josJfSf64hipOF5g59T66M78%2B7Ky8EW%2FAZ3BvrrmlCdvMOBeYLAzH6mHKSdTQNgnwhX6gjuHVFBCGM6NIW7e7%2B5O1z0YHooAO2XMCpU1fKSE5T4bB%2BETrmCmQBIDbi9M1cx2CYY0s3PS6UmLiUYGRWNYZTcaYHSpafi%2F2g%3D%3D--nAycdaV1QMR%2BlxTP--ytSmu0fSUy6m2DWAi3LCHg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=uxgJNHyYqr8BI7jhQTk1josJfSf64hipOF5g59T66M78%2B7Ky8EW%2FAZ3BvrrmlCdvMOBeYLAzH6mHKSdTQNgnwhX6gjuHVFBCGM6NIW7e7%2B5O1z0YHooAO2XMCpU1fKSE5T4bB%2BETrmCmQBIDbi9M1cx2CYY0s3PS6UmLiUYGRWNYZTcaYHSpafi%2F2g%3D%3D--nAycdaV1QMR%2BlxTP--ytSmu0fSUy6m2DWAi3LCHg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=Zm8ChsJ7bXpdKVCM0TL3xRfjlaZ%2BlMNpAuG0QH5it%2FnLl6VZHEV88GKdcWQQSJYjqs94bItTWe5zE5zY2%2FLOHw9N02fZBUkUvkO0xw1qADlp8JFNkk%2FW3SlomchGkP43jx6XR9FU%2FYVrzqZRHxtDSYSfDLZq1mglzNlWRxwUlyFshiw%3D--g3wryZMu9DTYBvPf--gc7TKqB%2BY9WdiTY9qqt%2Blg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"72f0cb2c950b149f51ae28fdac3e8437"
+      - W/"e63c44de918958fe7a8c557c9a7461b8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 37ac8f63-8340-469b-b0f9-ee458e76014a
+      - 93c7e307-09bb-46b7-84b2-e1a9a4b0c22d
       X-Runtime:
-      - '0.688164'
+      - '0.727916'
       Server-Timing:
-      - start_processing.action_controller;dur=0.12, process_action.action_controller;dur=680.57
+      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=721.75
       Transfer-Encoding:
       - chunked
     body:
@@ -68,8 +75,8 @@ http_interactions:
         salad ingredients in a large bowl and season with salt and pepper.\u003c/li\u003e\u003cli\u003ePlace
         dressing ingredients and 1/4 cup water in a blender and puree until smooth.
         Season with salt and pepper. (If thick, add water by the tablespoon.)\u003c/li\u003e\u003cli\u003eDrizzle
-        salad with 1/3 cup dressing.\u003c/li\u003e\u003c/ol\u003e","ingredients":[{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
-        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":15001,"aisle":"Seafood","image":"anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        salad with 1/3 cup dressing.\u003c/li\u003e\u003c/ol\u003e","ingredients":[{"id":15001,"aisle":"Seafood","image":"anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
+        anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"SOLID","name":"anchovy","nameClean":"boquerones","original":"1
         anchovy, chopped","originalName":"anchovy, chopped","amount":1.0,"unit":"","meta":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":9037,"aisle":"Produce","image":"avocado.jpg","consistency":"SOLID","name":"avocado","nameClean":"avocado","original":"1/2
         ripe avocado","originalName":"ripe avocado","amount":0.5,"unit":"","meta":["ripe"],"measures":{"us":{"amount":0.5,"unitShort":"","unitLong":""},"metric":{"amount":0.5,"unitShort":"","unitLong":""}}},{"id":11156,"aisle":"Produce","image":"fresh-chives.jpg","consistency":"SOLID","name":"freshly
         chives","nameClean":"chives","original":"2 tablespoons freshly minced chives","originalName":"freshly
@@ -84,8 +91,7 @@ http_interactions:
         lemon juice","amount":1.0,"unit":"tablespoon","meta":["fresh"],"measures":{"us":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"},"metric":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"}}},{"id":1088,"aisle":"Milk,
         Eggs, Other Dairy","image":"buttermilk.jpg","consistency":"SOLID","name":"buttermilk","nameClean":"low
         fat buttermilk","original":"1/2 cup low-fat buttermilk","originalName":"low-fat
-        buttermilk","amount":0.5,"unit":"cup","meta":["low-fat"],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":120.0,"unitShort":"ml","unitLong":"milliliters"}}},{"id":93621,"aisle":"Spices
-        and Seasonings","image":"sorrel.jpg","consistency":"SOLID","name":"sorrel","nameClean":"sorrel","original":"4
+        buttermilk","amount":0.5,"unit":"cup","meta":["low-fat"],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":120.0,"unitShort":"ml","unitLong":"milliliters"}}},{"id":93621,"aisle":"Produce","image":"sorrel.jpg","consistency":"SOLID","name":"sorrel","nameClean":"sorrel","original":"4
         packed cups sorrel (4 oz)","originalName":"packed cups sorrel","amount":4.0,"unit":"oz","meta":["packed"],"measures":{"us":{"amount":4.0,"unitShort":"oz","unitLong":"ounces"},"metric":{"amount":113.398,"unitShort":"g","unitLong":"grams"}}}]}}}'
-  recorded_at: Thu, 09 Nov 2023 00:32:54 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:31 GMT
 recorded_with: VCR 6.2.0

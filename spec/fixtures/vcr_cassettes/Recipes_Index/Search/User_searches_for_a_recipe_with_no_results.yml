@@ -34,18 +34,25 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=247k0a%2FgPSYg3PiMeHVI1SjPUC3aTar2MeLhg4kSngEYfn1HG6bjdRt%2FiYH1%2BldxgO2zCwmF%2BF8N3UDQAbeyfl6d2fKc%2FiyJiJEpc4ey2nW6W1MlzK%2FvimxzfEfWJ8YxVmBhVUrjiqajcH90dzeHjvxxkyInHvnmE%2FIc33b%2FJEGW4DxmUKILwRogRQ%3D%3D--i%2BEYtZ6l0rwHBUIm--VV7gxVLClg1WC%2FK9j65WSg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=247k0a%2FgPSYg3PiMeHVI1SjPUC3aTar2MeLhg4kSngEYfn1HG6bjdRt%2FiYH1%2BldxgO2zCwmF%2BF8N3UDQAbeyfl6d2fKc%2FiyJiJEpc4ey2nW6W1MlzK%2FvimxzfEfWJ8YxVmBhVUrjiqajcH90dzeHjvxxkyInHvnmE%2FIc33b%2FJEGW4DxmUKILwRogRQ%3D%3D--i%2BEYtZ6l0rwHBUIm--VV7gxVLClg1WC%2FK9j65WSg%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=ZaQE4JP6lzsqpNl1XqsYn7x6sZmp81kxISOtLQudOEhAXJrHYrwGEdmVTzHIYz%2BV%2F%2FmZuKr44jNK8ZtPHcncNp48VT2CR6QTtt2XXS3KCuUxckQWm8LJiiXK4pZTTRejNofXqnG8Rud1QWPRiTH2EUYxTFdS8tAhySIynLze38TKLMg%3D--p3SM7HsiPWFDC0OM--7ixQZZQSqBF29TOkzutTBw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 35680069-d66b-48bf-a64a-53f46819a0a3
+      - 8aebefd7-4ea7-40b2-98c0-a09f29151a15
       X-Runtime:
-      - '0.969667'
+      - '0.672363'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=962.24
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=666.01
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":"No recipes match those key words","status":421}'
-  recorded_at: Thu, 09 Nov 2023 00:32:47 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:23 GMT
 recorded_with: VCR 6.2.0

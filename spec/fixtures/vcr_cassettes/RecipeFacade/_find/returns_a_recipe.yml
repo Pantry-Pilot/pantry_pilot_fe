@@ -34,16 +34,23 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Set-Cookie:
+      - _interslice_session=3RbKtPbYlNwIJe0bJbaT6yiAqcTd5Kmz8YL83ZPi3eVwLCsMJ%2Bexq4B%2BLSCqwfRQxQd81iyhtHaTNJgzHB%2F%2B%2BApWcKEz19kc%2B8BKHJeQA0tMGNdtm1D9k2hjTnXcVKxhWbxk36EDFiiANajX%2BhCdXElMwBmDDhvE%2F%2B7hsT08DKzVVNXlfwposu2BRA%3D%3D--WESWIxvhOHV%2Bkoem--LkF1AWKNzLGHyxM8xYzYnA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=3RbKtPbYlNwIJe0bJbaT6yiAqcTd5Kmz8YL83ZPi3eVwLCsMJ%2Bexq4B%2BLSCqwfRQxQd81iyhtHaTNJgzHB%2F%2B%2BApWcKEz19kc%2B8BKHJeQA0tMGNdtm1D9k2hjTnXcVKxhWbxk36EDFiiANajX%2BhCdXElMwBmDDhvE%2F%2B7hsT08DKzVVNXlfwposu2BRA%3D%3D--WESWIxvhOHV%2Bkoem--LkF1AWKNzLGHyxM8xYzYnA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=rG91l%2F17t2x9Slg29Z0m%2BFdnQ3tU6WE09rVn5z4ZQdfPxvtGEP4eRiuMaTP%2F49LqZI9274PIj3662irjpYWVar%2Ft%2FdDGPyEDUMlFBcZpKZNange9KQQzqdPiTIc6iHYihIJJh0xkRjGXX4SSY5w2PMUq2WnaDwjbwQQQa3Sf7VN6dZI%3D--Lk3IOlsL5eGAvyMl--I%2BPb2%2FIqeMdpBELPGDO3Pw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
       Etag:
-      - W/"84e5d38e3266bd2a0be17485c5f85a14"
+      - W/"e676801206988d43b7e9c55b4f416cdd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a130ebfc-d37a-4a0e-b422-4cf5322d4c59
+      - eb8bbaef-0bdc-41b7-814b-ccde8fbbee0e
       X-Runtime:
-      - '0.669761'
+      - '0.674004'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, process_action.action_controller;dur=662.45
+      - start_processing.action_controller;dur=0.06, process_action.action_controller;dur=667.45
       Transfer-Encoding:
       - chunked
     body:
@@ -100,8 +107,8 @@ http_interactions:
         salt","original":"1 teaspoon of salt","originalName":"salt","amount":1.0,"unit":"teaspoon","meta":[],"measures":{"us":{"amount":1.0,"unitShort":"tsp","unitLong":"teaspoon"},"metric":{"amount":1.0,"unitShort":"tsp","unitLong":"teaspoon"}}},{"id":14121,"aisle":"Beverages","image":"sparkling-water.png","consistency":"LIQUID","name":"seltzer
         water","nameClean":"sparkling water","original":"seltzer water","originalName":"seltzer
         water","amount":3.0,"unit":"servings","meta":[],"measures":{"us":{"amount":3.0,"unitShort":"servings","unitLong":"servings"},"metric":{"amount":3.0,"unitShort":"servings","unitLong":"servings"}}},{"id":4669,"aisle":"Oil,
-        Vinegar, Salad Dressing","image":"vegetable-oil.jpg","consistency":"LIQUID","name":"vegetable
+        Vinegar, Salad Dressing","image":"vegetable-oil.jpg","consistency":"SOLID","name":"vegetable
         oil","nameClean":"vegetable oil","original":"vegetable oil for frying","originalName":"vegetable
         oil for frying","amount":3.0,"unit":"servings","meta":["for frying"],"measures":{"us":{"amount":3.0,"unitShort":"servings","unitLong":"servings"},"metric":{"amount":3.0,"unitShort":"servings","unitLong":"servings"}}}]}}}'
-  recorded_at: Thu, 09 Nov 2023 00:32:45 GMT
+  recorded_at: Fri, 17 Nov 2023 20:06:20 GMT
 recorded_with: VCR 6.2.0

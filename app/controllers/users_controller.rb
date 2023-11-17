@@ -22,5 +22,6 @@ class UsersController < ApplicationController
   def show
     @user = UsersFacade.new.get_user(current_user)
     @user_recipes = UserRecipesFacade.new.get_user_recipes(current_user)
+    @user_expiring_ingredients = IngredientsFacade.expiring_ingredients(current_user)
   end
 end
