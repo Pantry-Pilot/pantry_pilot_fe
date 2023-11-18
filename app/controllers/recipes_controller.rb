@@ -63,7 +63,7 @@ class RecipesController < ApplicationController
     if params[:exclude_ingredient].present?
       requirements[:exclude] = params[:exclude_ingredient]
     end
-    require 'pry';binding.pry
+    
     requirements
   end
 
