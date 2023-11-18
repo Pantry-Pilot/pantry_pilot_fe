@@ -1,99 +1,106 @@
 <div class="form-padding">
   <div class="form-container">
     <%= form_with(url: "/dashboard/search", method: :get, local: true) do |form| %>
-      <div class="text-center">
+      <div class="text-center search-bar-container">
         <%= form.label :query, "Search for recipes:" %>
         <%= form.text_field :query %><br><br>
         <%= form.submit "Search" %>
       </div>
-      <div class="recipe-filter-container">
-        <h3>Filters</h3>
-        <p>Diet:</p>
+      <div class="filter-and-recipe-results-container">
         <div class="row">
-          <div class="col-md-6">
-            <%= check_box_tag 'diet[gluten free]' %>
-            <%= form.label "Gluten Free" %><br>
-            <%= check_box_tag 'diet[ketogenic]' %>
-            <%= form.label "Ketogenic" %><br>
-            <%= check_box_tag 'diet[vegetarian]' %>
-            <%= form.label "Vegetarian" %><br>
-            <%= check_box_tag 'diet[lacto-vegetarian]' %>
-            <%= form.label "Lacto-Vegetarian" %><br>
-            <%= check_box_tag 'diet[ovo-vegetarian]' %>
-            <%= form.label "Ovo-Vegetarian" %><br>
-            <%= check_box_tag 'diet[vegan]' %>
-            <%= form.label "Vegan" %>
-          </div>
-          <div class="col-md-6">
-            <%= check_box_tag 'diet[pescetarian]' %>
-            <%= form.label "Pescetarian" %><br>
-            <%= check_box_tag 'diet[paleo]' %>
-            <%= form.label "Paleo" %><br>
-            <%= check_box_tag 'diet[primal]' %>
-            <%= form.label "Primal" %><br>
-            <%= check_box_tag 'diet[low FODMAP]' %>
-            <%= form.label "Low FODMAP" %><br>
-            <%= check_box_tag 'diet[whole30]' %>
-            <%= form.label "Whole30" %>
-          </div>
-        </div><br>
-        <p>Intolerances:</p>
-        <div class="row">
-          <div class="col-md-6">
-            <%= check_box_tag 'intolerances[dairy]' %>
-            <%= form.label "Dairy" %><br>
-            <%= check_box_tag 'intolerances[egg]' %>
-            <%= form.label "Egg" %><br>
-            <%= check_box_tag 'intolerances[gluten]' %>
-            <%= form.label "Gluten" %><br>
-            <%= check_box_tag 'intolerances[grain]' %>
-            <%= form.label "Grain" %><br>
-            <%= check_box_tag 'intolerances[peanut]' %>
-            <%= form.label "Peanut" %><br>
-            <%= check_box_tag 'intolerances[seafood]' %>
-            <%= form.label "Seafood" %><br>
-          </div>
-          <div class="col-md-6">
-            <%= check_box_tag 'intolerances[sesame]' %>
-            <%= form.label "Sesame" %><br>
-            <%= check_box_tag 'intolerances[shellfish]' %>
-            <%= form.label "Shellfish" %><br>
-            <%= check_box_tag 'intolerances[soy]' %>
-            <%= form.label "Soy" %><br>
-            <%= check_box_tag 'intolerances[sulfite]' %>
-            <%= form.label "Sulfite" %><br>
-            <%= check_box_tag 'intolerances[tree_nut]' %>
-            <%= form.label "Tree Nut" %><br>
-            <%= check_box_tag 'intolerances[wheat]' %>
-            <%= form.label "Wheat" %><br><br>
-          </div>
-        </div>
-        <p><%= form.label "Include Ingredient:" %>
-        <%= form.text_field :include_ingredient %></p>
-        <p><%= form.label "Exclude Ingredient:" %>
-        <%= form.text_field :exclude_ingredient %></p>
-      </div>
-    <% end %>
-  </div>
-</div>
-
-<div class="form-padding">
-  <div class="container">
-    <div id="recipes" class="row text-center">
-      <% if @recipes.present? %>
-        <% @recipes.each do |recipe| %>
-          <div class="col-md-6 saved-recipes">
-            <a href="/dashboard/search/<%= recipe.id %>" class="recipe-link">
-              <div class="recipe-container">
-                <%= image_tag(recipe.image, alt: recipe.title, class: "recipe-image rounded") if recipe.image.present? %>
-                <div class="recipe-details">
-                  <h2><%= recipe.title %></h2>
+          <div class="col-md-3"><br>
+            <div class="recipe-filter-container">
+              <h3>Filters</h3>
+              <p>Diet:</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <%= check_box_tag 'diet[gluten free]' %>
+                  <%= form.label "Gluten Free" %><br>
+                  <%= check_box_tag 'diet[ketogenic]' %>
+                  <%= form.label "Ketogenic" %><br>
+                  <%= check_box_tag 'diet[vegetarian]' %>
+                  <%= form.label "Vegetarian" %><br>
+                  <%= check_box_tag 'diet[lacto-vegetarian]' %>
+                  <%= form.label "Lacto-Vegetarian" %><br>
+                  <%= check_box_tag 'diet[ovo-vegetarian]' %>
+                  <%= form.label "Ovo-Vegetarian" %><br>
+                  <%= check_box_tag 'diet[vegan]' %>
+                  <%= form.label "Vegan" %>
+                </div>
+                <div class="col-md-6">
+                  <%= check_box_tag 'diet[pescetarian]' %>
+                  <%= form.label "Pescetarian" %><br>
+                  <%= check_box_tag 'diet[paleo]' %>
+                  <%= form.label "Paleo" %><br>
+                  <%= check_box_tag 'diet[primal]' %>
+                  <%= form.label "Primal" %><br>
+                  <%= check_box_tag 'diet[low FODMAP]' %>
+                  <%= form.label "Low FODMAP" %><br>
+                  <%= check_box_tag 'diet[whole30]' %>
+                  <%= form.label "Whole30" %>
+                </div>
+              </div><br>
+              <p>Intolerances:</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <%= check_box_tag 'intolerances[dairy]' %>
+                  <%= form.label "Dairy" %><br>
+                  <%= check_box_tag 'intolerances[egg]' %>
+                  <%= form.label "Egg" %><br>
+                  <%= check_box_tag 'intolerances[gluten]' %>
+                  <%= form.label "Gluten" %><br>
+                  <%= check_box_tag 'intolerances[grain]' %>
+                  <%= form.label "Grain" %><br>
+                  <%= check_box_tag 'intolerances[peanut]' %>
+                  <%= form.label "Peanut" %><br>
+                  <%= check_box_tag 'intolerances[seafood]' %>
+                  <%= form.label "Seafood" %><br>
+                </div>
+                <div class="col-md-6">
+                  <%= check_box_tag 'intolerances[sesame]' %>
+                  <%= form.label "Sesame" %><br>
+                  <%= check_box_tag 'intolerances[shellfish]' %>
+                  <%= form.label "Shellfish" %><br>
+                  <%= check_box_tag 'intolerances[soy]' %>
+                  <%= form.label "Soy" %><br>
+                  <%= check_box_tag 'intolerances[sulfite]' %>
+                  <%= form.label "Sulfite" %><br>
+                  <%= check_box_tag 'intolerances[tree_nut]' %>
+                  <%= form.label "Tree Nut" %><br>
+                  <%= check_box_tag 'intolerances[wheat]' %>
+                  <%= form.label "Wheat" %><br><br>
                 </div>
               </div>
-            </a>
+              <p><%= form.label "Include Ingredient:" %>
+              <%= form.text_field :include_ingredient %></p>
+              <p><%= form.label "Exclude Ingredient:" %>
+              <%= form.text_field :exclude_ingredient %></p>
+            </div>
           </div>
-        <% end %>
-      <% end %>
-    </div>
+          <div class="col-md-9">
+            <div class="form-padding">
+              <div class="recipe-results-container">
+                <div id="recipes" class="row text-center">
+                  <% if @recipes.present? %>
+                    <% @recipes.each do |recipe| %>
+                      <div class="col-md-6 saved-recipes">
+                        <a href="/dashboard/search/<%= recipe.id %>" class="recipe-link">
+                          <div class="recipe-container">
+                            <%= image_tag(recipe.image, alt: recipe.title, class: "recipe-image rounded") if recipe.image.present? %>
+                            <div class="recipe-details">
+                              <h2><%= recipe.title %></h2>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    <% end %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
