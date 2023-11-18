@@ -8,7 +8,7 @@ class RecipesService
         req.params['diet'] = array_to_csv(recipe_parameters[:diets])
       end
       if recipe_parameters[:intolerances].present?
-        req.params['intolerances'] = array_to_csv(recipe_parameters['intolerance'])
+        req.params['intolerances'] = array_to_csv(recipe_parameters[:intolerances])
       end
       if recipe_parameters[:include].present?
         req.params['includeIngredients'] = recipe_parameters[:include]
