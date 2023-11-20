@@ -2,7 +2,7 @@ class RecipesController < ApplicationController
   def index
     @user = UsersFacade.new.get_user(current_user)
     begin
-      @recipes = RecipeFacade.search(recipe_params)
+      @recipes = RecipeFacade.search(recipe_params) if !recipe_params.empty?
     rescue StandardError => e
       flash.now[:error] = "No recipes found"
     end
@@ -63,7 +63,7 @@ class RecipesController < ApplicationController
     if params[:exclude_ingredient].present?
       requirements[:exclude] = params[:exclude_ingredient]
     end
-    
+
     requirements
   end
 

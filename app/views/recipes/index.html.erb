@@ -78,10 +78,10 @@
             </div>
           </div>
           <div class="col-md-9">
-            <div class="form-padding">
-              <div class="recipe-results-container">
-                <div id="recipes" class="row text-center">
-                  <% if @recipes.present? %>
+            <% if @recipes.present? %>
+              <div class="form-padding">
+                <div class="recipe-results-container">
+                  <div id="recipes" class="row text-center">
                     <% @recipes.each do |recipe| %>
                       <div class="col-md-6 saved-recipes">
                         <a href="/dashboard/search/<%= recipe.id %>" class="recipe-link">
@@ -94,10 +94,10 @@
                         </a>
                       </div>
                     <% end %>
-                  <% end %>
+                  </div>
                 </div>
               </div>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
