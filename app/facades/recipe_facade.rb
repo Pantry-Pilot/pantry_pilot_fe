@@ -1,6 +1,6 @@
 class RecipeFacade
-  def self.search(query)
-    response = RecipesService.new.search(query)
+  def self.search(recipe_parameters)
+    response = RecipesService.new.search(recipe_parameters)
     raw_recipes = response[:data]
     raw_recipes.map do |recipe_data|
       create_recipe(recipe_data[:attributes])
@@ -46,22 +46,6 @@ class RecipeFacade
       }
     end
   end
-
-  # def add_image_to_recipe(avatar_data)
-  #   response = RecipesService.new.add_image_to_recipe(avatar_data)
-  #   response_body = JSON.parse(response.body, symbolize_names: true)
-  #   if response.status == 200
-  #     {
-  #       status: response.status,
-  #       notice: response_body[:notice]
-  #     }
-  #   else
-  #     {
-  #       status: response.status,
-  #       error: response_body[:error]
-  #     }
-  #   end
-  # end
 
   private
 

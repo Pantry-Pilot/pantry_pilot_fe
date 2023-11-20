@@ -1,13 +1,10 @@
 class RecipesController < ApplicationController
   def index
     @user = UsersFacade.new.get_user(current_user)
-
-    if params[:query].present?
-      begin
-        @recipes = RecipeFacade.search(params[:query])
-      rescue StandardError => e
-        flash.now[:error] = "No recipes found"
-      end
+    begin
+      @recipes = RecipeFacade.search(recipe_params)
+    rescue StandardError => e
+      flash.now[:error] = "No recipes found"
     end
   end
 
@@ -40,38 +37,41 @@ class RecipesController < ApplicationController
       flash[:error] = response[:error]
       redirect_to "/dashboard"
     end
-  end 
+  end
 
-  # def destroy
-  #   response = RecipeFacade.new.remove_recipe(params[:id])
-  #   if response[:status] == 204
-  #     flash[:notice] = "Recipe successfully removed"
-  #     redirect_to "/dashboard"
-  #   else
-  #     flash[:error] = response[:error]
-  #     redirect_to "/dashboard"
-  #   end
-  # end
+  private
 
-  # def edit
-  #   @recipe_id = params[:id]
-  # end
+  def recipe_params
+    requirements = {}
 
-  # def update
-  #   recipe_data = params.permit(:id, :avatar)
-  #   response = RecipeFacade.new.add_image_to_recipe(recipe_data)
-  #   if response[:status] == 200
-  #     flash[:notice] = response[:notice]
-  #     redirect_to "/dashboard"
-  #   else
-  #     flash[:error] = response[:error]
-  #     redirect_to "/dashsboard/add_image"
-  #   end
-  # end
+    if params[:query].present?
+      requirements[:query] = params[:query]
+    end
 
-  # private
+    if params[:diet].present?
+      requirements[:diets] = selected_diets(params[:diet])
+    end
+    
+    if params[:intolerances].present?
+      requirements[:intolerances] = selected_intolerances(params[:intolerances])
+    end
 
-  # def recipe_params
-  #   params.require(:recipe).permit(:avatar)
-  # end
+    if params[:include_ingredient].present?
+      requirements[:include] = params[:include_ingredient]
+    end
+
+    if params[:exclude_ingredient].present?
+      requirements[:exclude] = params[:exclude_ingredient]
+    end
+    
+    requirements
+  end
+
+  def selected_diets(diets)
+    diets.keys
+  end
+
+  def selected_intolerances(intolerances)
+    intolerances.keys
+  end
 end

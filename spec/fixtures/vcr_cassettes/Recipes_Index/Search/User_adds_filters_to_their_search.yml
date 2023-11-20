@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=KOU%2F4wAqaJQE3MUZFQ6Wj3ILoA71X90V7OVpK7C%2BTduaoU52K6NyGlbY6PsDBbJ1Vh2Q5mPGAo9hjfoqdQPHVs4ZWgEBV3B9pb1InrEgNJyiusgk%2FtiMyRzLjk4LGlNP%2BLGkY%2B327%2Bk0VU1g7enQOEZ5FpXmdOU78juWJ%2BsklQv8%2FOF2G7D7yKf2pQ%3D%3D--5tgwrudtkXyxFC%2FR--IZ%2B3Xsj%2Fyow7pna5EaH0Xw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=KOU%2F4wAqaJQE3MUZFQ6Wj3ILoA71X90V7OVpK7C%2BTduaoU52K6NyGlbY6PsDBbJ1Vh2Q5mPGAo9hjfoqdQPHVs4ZWgEBV3B9pb1InrEgNJyiusgk%2FtiMyRzLjk4LGlNP%2BLGkY%2B327%2Bk0VU1g7enQOEZ5FpXmdOU78juWJ%2BsklQv8%2FOF2G7D7yKf2pQ%3D%3D--5tgwrudtkXyxFC%2FR--IZ%2B3Xsj%2Fyow7pna5EaH0Xw%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=qhIKajZAhe3l%2FsG1iJCkXOf1mwsc0w2tKCyPAerCPUMWcqlC7j%2BzblxMH0z6xyLJ%2FARp8Wueo4kGYdLCm0smygr89Eq6Ue3btpd0fxn6OkJbmnH3DO7FnSrrJ3s14MsJFTevSbfJzQ78IREaH1C938pNbi%2FPh7byfPYvzgqFEGuDzq4%3D--glBlKoMPwyDihSKz--vSxBkTX9%2BIUFDEaAeiZTPQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"b0054163f4ce265f686811c5ab6567ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - be405c41-cabb-4951-93e5-5161efcafcc2
+      X-Runtime:
+      - '0.889593'
+      Server-Timing:
+      - start_processing.action_controller;dur=1.20, process_action.action_controller;dur=872.04
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"782585","type":"recipe","attributes":{"id":782585,"title":"Cannellini
+        Bean and Asparagus Salad with Mushrooms","image":"https://spoonacular.com/recipeImages/782585-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"716426","type":"recipe","attributes":{"id":716426,"title":"Cauliflower,
+        Brown Rice, and Vegetable Fried Rice","image":"https://spoonacular.com/recipeImages/716426-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"715497","type":"recipe","attributes":{"id":715497,"title":"Berry
+        Banana Breakfast Smoothie","image":"https://spoonacular.com/recipeImages/715497-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"715415","type":"recipe","attributes":{"id":715415,"title":"Red
+        Lentil Soup with Chicken and Turnips","image":"https://spoonacular.com/recipeImages/715415-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"716406","type":"recipe","attributes":{"id":716406,"title":"Asparagus
+        and Pea Soup: Real Convenience Food","image":"https://spoonacular.com/recipeImages/716406-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"644387","type":"recipe","attributes":{"id":644387,"title":"Garlicky
+        Kale","image":"https://spoonacular.com/recipeImages/644387-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"715446","type":"recipe","attributes":{"id":715446,"title":"Slow
+        Cooker Beef Stew","image":"https://spoonacular.com/recipeImages/715446-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"782601","type":"recipe","attributes":{"id":782601,"title":"Red
+        Kidney Bean Jambalaya","image":"https://spoonacular.com/recipeImages/782601-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"795751","type":"recipe","attributes":{"id":795751,"title":"Chicken
+        Fajita Stuffed Bell Pepper","image":"https://spoonacular.com/recipeImages/795751-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"766453","type":"recipe","attributes":{"id":766453,"title":"Hummus
+        and Za''atar","image":"https://spoonacular.com/recipeImages/766453-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
+  recorded_at: Sat, 18 Nov 2023 19:16:37 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/search?intolerances=dairy,seafood&query=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Set-Cookie:
+      - _interslice_session=H65SzCz623lo64SMefvTs1fktLYuINR2qJsZ1gehLJML9Jw9G0iFkFs6dWgRfFRmmSyBP1gjvEDS6Qfu3H0iFMuVGE9UAsRtHM7%2BY0dxAGeUgXj6PW0KHirRCGYSr2vC0bEkYxuzZR7DoAXekuOee9VCaTVtaLko33IUJ74Og7SsGJr5VCXSr5yrcg%3D%3D--OTsQZLPITmwLaQVO--bC9Ha%2BuGRfVdVg%2F6qAmuug%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _interslice_session=H65SzCz623lo64SMefvTs1fktLYuINR2qJsZ1gehLJML9Jw9G0iFkFs6dWgRfFRmmSyBP1gjvEDS6Qfu3H0iFMuVGE9UAsRtHM7%2BY0dxAGeUgXj6PW0KHirRCGYSr2vC0bEkYxuzZR7DoAXekuOee9VCaTVtaLko33IUJ74Og7SsGJr5VCXSr5yrcg%3D%3D--OTsQZLPITmwLaQVO--bC9Ha%2BuGRfVdVg%2F6qAmuug%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      - _session_id=3dufFPBywnhnhUSCcU4H2PFIKDLo9rVKe7qGDsU%2FrMjzGEa4Xss9iz3unoRMI4SNESHGMbynhfzsXZjpM%2FMfk2zuLWav8OS%2FCUO5CC3OVOQH2tU7RdqS28bxvxnBoDFlJdmavPVwBgD1lArpFkD5bj5JtfeWyBRZ9SEV9u%2F0oAi%2B5WA%3D--6epgH44ExV07MB0u--HuJe6EbignrczmA9kvAa6Q%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      Etag:
+      - W/"2112ae39eac9e34ac0b8c38113c86b27"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d236f323-379d-4cd3-af07-adbe6d584461
+      X-Runtime:
+      - '21.644149'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, process_action.action_controller;dur=21636.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"716342","type":"recipe","attributes":{"id":716342,"title":"Chicken
+        Suya","image":"https://spoonacular.com/recipeImages/716342-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638308","type":"recipe","attributes":{"id":638308,"title":"Chicken
+        Satay","image":"https://spoonacular.com/recipeImages/638308-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638174","type":"recipe","attributes":{"id":638174,"title":"Chicken
+        Lo Mein","image":"https://spoonacular.com/recipeImages/638174-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638125","type":"recipe","attributes":{"id":638125,"title":"Chicken
+        In A Pot","image":"https://spoonacular.com/recipeImages/638125-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"667707","type":"recipe","attributes":{"id":667707,"title":"chicken
+        marbella","image":"https://spoonacular.com/recipeImages/667707-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638257","type":"recipe","attributes":{"id":638257,"title":"Chicken
+        Porridge","image":"https://spoonacular.com/recipeImages/638257-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"637999","type":"recipe","attributes":{"id":637999,"title":"Chicken
+        Burritos","image":"https://spoonacular.com/recipeImages/637999-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"638166","type":"recipe","attributes":{"id":638166,"title":"Chicken
+        Liver Salad","image":"https://spoonacular.com/recipeImages/638166-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"630484","type":"recipe","attributes":{"id":630484,"title":"Chicken
+        shish kabobs","image":"https://spoonacular.com/recipeImages/630484-312x231.jpg","summary":"","instructions":"","ingredients":[]}},{"id":"918033","type":"recipe","attributes":{"id":918033,"title":"Chicken
+        Spring Rolls","image":"https://spoonacular.com/recipeImages/918033-312x231.jpg","summary":"","instructions":"","ingredients":[]}}]}'
+  recorded_at: Sat, 18 Nov 2023 19:16:59 GMT
+recorded_with: VCR 6.2.0

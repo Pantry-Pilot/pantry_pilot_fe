@@ -1,9 +1,34 @@
 class RecipesService
-  def search(query)
+  def search(recipe_parameters)
     response = conn.get("/api/v1/recipes/search") do |req|
-      req.params['query'] = query
+      if recipe_parameters[:query].present?
+        req.params['query'] = recipe_parameters[:query]
+      end
+      if recipe_parameters[:diets].present?
+        req.params['diet'] = array_to_csv(recipe_parameters[:diets])
+      end
+      if recipe_parameters[:intolerances].present?
+        req.params['intolerances'] = array_to_csv(recipe_parameters[:intolerances])
+      end
+      if recipe_parameters[:include].present?
+        req.params['includeIngredients'] = recipe_parameters[:include]
+      end
+      if recipe_parameters[:exclude].present?
+        req.params['excludeIngredients'] = recipe_parameters[:exclude]
+      end
     end
     parse_response(response)
+  end
+
+  def array_to_csv(array)
+    csv_string = ""
+    array.each do |element|
+      csv_string += element
+      if element != array.last
+        csv_string += ","
+      end
+    end
+    csv_string
   end
   
   def find(id)
@@ -22,12 +47,6 @@ class RecipesService
       req.body = {id: id}.to_json
     end
   end
-
-  # def add_image_to_recipe(avatar_data)
-  #   conn.post("/api/v1/add_image") do |req|
-  #     req.body = {id: avatar_data[:id], avatar: avatar_data[:avatar]}
-  #   end
-  # end
 
   private
 
