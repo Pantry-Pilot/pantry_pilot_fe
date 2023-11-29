@@ -1,4 +1,6 @@
-<div class="container form-padding">
+<div class="row">
+  <div class="col-md-6 offset-md-3 text-center">
+    <div class="form-padding">
   <h2 class="text-center">Create Your Account</h2>
   <%= form_with url: "/register", method: :post, class: "mt-4" do |f| %>
     <div class="form-group">
@@ -19,4 +21,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   <% end %>
+    </div>
+  </div>
 </div>
