@@ -6,7 +6,6 @@ RSpec.describe "Welcome Page" do
       it "Then I see a company title, and I also see a logo for Pantry Pilot, and I see a button to create an account" do
         visit "/"
 
-        expect(page).to have_content("Pantry Pilot")
         expect(page).to have_button("Create an Account")
       end
 

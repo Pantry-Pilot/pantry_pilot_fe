@@ -13,7 +13,8 @@ body {
 
 body.login {
   margin: 10px;
-  background: url('background.jpg');
+  height: 100vh;
+  background: url('new_bg22.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -29,27 +30,46 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #46584a;
+  background-color: #23b4bc;
   padding: 10px;
+  padding-top: 10px;
   text-align: center;
   font-size: 35px;
   color: #dbdfba;
   z-index: 1;
 }
 
+
 img.logo {
-  max-width: 5%; 
-  max-height: 5%;
+  max-width: 25%; 
+  max-height: 25%;
   height: auto; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns children to the start (left) */
+  margin-top: 33vh;
+}
+
+.logo-welcome {
+  max-width: 63%; 
+  max-height: 63%;
+  height: auto;
+  margin-left: 10px; /* Adjust for left alignment */
 }
 
 .button-container {
   display: flex;
-  gap: 20px; 
-  justify-content: flex-end; 
-  position: absolute;
-  top: 0;
-  right: 0;
+  justify-content: center; /* Center buttons within the container */
+  width: 63%; /* Same width as the logo for alignment */
+  margin-top: 20px; /* Adjust as needed */
+  gap: 20px;
+}
+
+.equal-btn {
+  flex: 1; /* This will make both buttons take equal space */
 }
 
 .button-container .btn-primary {
@@ -93,7 +113,7 @@ img.logo {
 }
 
 .saved-recipes .recipe-container:hover {
-  background-color: #6d826f; 
+  background-color: #1fd4b3; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,6 +140,9 @@ img.logo {
 
 .welcome-header {
   font-size: 100px;
+  align-items: center; /* Center the logo vertically */
+  justify-content: flex-start; /* Align the logo to the left */
+  padding-left: 10px;
 }
 
 h1 {
@@ -152,6 +175,17 @@ p {
   font-size: .875rem;
   line-height: 1.5;
   border-radius: .2rem;
+}
+
+.btn-turquoise {
+  background-color: turquoise; /* Change the background color */
+  border-color: turquoise; /* Change the border color to match */
+  /* If you want to change the text color as well, add a color property here */
+}
+
+.btn-magenta {
+  background-color: rgb(239, 13, 243); /* Change the background color */
+  border-color: rgb(239, 13, 243); 
 }
 
 .recipe-filter-container {

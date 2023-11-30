@@ -4,27 +4,17 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<body class="login">
+ <body class="login">
   <div class="overlay">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-start">
-        <div class="text-center welcome-header">
-          <h1 style="margin: 100px;">Pantry Pilot</h1>
-          <% if session[:user_id] && request.path != "/dashboard" %>
-            <%= button_to "Dashboard", dashboard_path, class: "btn btn-primary", method: :get %>
-          <% end %>
-        </div>
-        <div class="d-flex justify-content-right align-items-start">
-          <div>
-            <%= button_to "Login", "/login", class: "btn btn-secondary", method: :get %>
-          </div>
-          <p>&nbsp;&nbsp;</p>
-          <div>
-            <%= button_to "Create an Account", "/register", class: "btn btn-primary", method: :get %>
-          </div>
+      <div class="d-flex flex-column align-items-start">
+        <img src="<%= image_path('logo_full.png') %>" alt="Logo" class="logo-welcome">
+        <div class="button-container">
+          <%= button_to "Login", "/login", class: "btn btn-secondary equal-btn btn-magenta", method: :get %>
+          <%= button_to "Create an Account", "/register", class: "btn btn-primary equal-btn btn-turquoise", method: :get %>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 </body>
 </html>
