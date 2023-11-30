@@ -1,5 +1,6 @@
 class AvatarsController < ApplicationController
   def create
+    
     avatar_data = params.permit(:id, :avatar)
     response = AvatarsFacade.new.add_image_to_recipe(avatar_data)
     if response[:status] == 200
